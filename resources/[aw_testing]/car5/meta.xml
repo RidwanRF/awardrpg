@@ -1,0 +1,19 @@
+<meta>
+    <script src="shared.lua" type="shared" cache="false"/>
+
+    <script src="server.lua" type="shared"  cache="false"/>
+    <script src="client.lua" type="client" cache="false"/>
+
+    <export function="createVehicle" type="shared"/>
+    <export function="createVehicle" type="client"/>
+    <export function="getVehicleType" type="shared"/>
+
+    <file src="data/porschetaycan.txd" />
+    <file src="data/porschetaycan.dff" />
+    <file src="data/ferrarisf90.txd" />
+    <file src="data/ferrarisf90.dff" />
+    <file src="data/test.txd" />
+    <file src="data/test.dff" />
+    <file src="data/test2.txd" />
+    <file src="data/test2.dff" />
+</meta>

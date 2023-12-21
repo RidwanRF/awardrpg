@@ -1,0 +1,306 @@
+<meta>
+	<info author="Amethyst" type="script" />
+	
+   <script type="client" src="client.lua" cache="false"/>
+   <script type="server" src="server.lua" cache="false"/>
+   <script src="config.lua" type="shared" cache="false"/>
+
+
+    <file src="assets/helper.png" />
+
+    <file src="assets/aw_ui_dashboard_blackout.png" />
+    <file src="assets/aw_ui_dashboard_logotype.png" />
+    <file src="assets/aw_ui_dashboard_copy.png" />
+    <file src="assets/aw_ui_dashboard_ratinginfo.png" />
+    <file src="assets/aw_ui_dashboard_character.png" />
+    <file src="assets/aw_ui_dashboard_noicon.png" />
+    <file src="assets/aw_ui_dashboard_other1.png" />
+    <file src="assets/aw_ui_dashboard_other2.png" />
+    <file src="assets/aw_ui_dashboard_other3.png" />
+    <file src="assets/aw_ui_dashboard_button_activate1.png" />
+    <file src="assets/aw_ui_dashboard_button_activate2.png" />
+    <file src="assets/aw_ui_dashboard_button_death1.png" />
+    <file src="assets/aw_ui_dashboard_button_death2.png" />
+    <file src="assets/aw_ui_dashboard_button_editbox1.png" />
+    <file src="assets/aw_ui_dashboard_button_editbox2.png" />
+    <file src="assets/aw_ui_dashboard_button_moto1.png" />
+    <file src="assets/aw_ui_dashboard_button_moto2.png" />
+    <file src="assets/aw_ui_dashboard_button_rating1.png" />
+    <file src="assets/aw_ui_dashboard_button_rating2.png" />
+    <file src="assets/aw_ui_dashboard_button_repair1.png" />
+    <file src="assets/aw_ui_dashboard_button_repair2.png" />
+    <file src="assets/aw_ui_dashboard_button_report1.png" />
+    <file src="assets/aw_ui_dashboard_button_report2.png" />
+
+    <file src="assets/aw_ui_dashboard_shop_best_premiumtext.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium1d1.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium1d2.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium3d1.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium3d2.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium7d1.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium7d2.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium14d1.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium14d2.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium21d2.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium21d1.png" />
+
+    <file src="assets/aw_ui_dashboard_shop_juniormoder1.png" />
+    <file src="assets/aw_ui_dashboard_shop_juniormoder2.png" />
+    <file src="assets/aw_ui_dashboard_shop_moder1.png" />
+    <file src="assets/aw_ui_dashboard_shop_moder2.png" />
+    <file src="assets/aw_ui_dashboard_shop_chiefmoder1.png" />
+    <file src="assets/aw_ui_dashboard_shop_chiefmoder2.png" />
+    <file src="assets/aw_ui_dashboard_shop_junioradmin1.png" />
+    <file src="assets/aw_ui_dashboard_shop_junioradmin2.png" />
+    <file src="assets/aw_ui_dashboard_shop_admin1.png" />
+    <file src="assets/aw_ui_dashboard_shop_admin2.png" />
+    <file src="assets/aw_ui_dashboard_shop_chiefadmin1.png" />
+    <file src="assets/aw_ui_dashboard_shop_chiefadmin2.png" />
+    <file src="assets/aw_ui_dashboard_shop_upgrade1.png" />
+    <file src="assets/aw_ui_dashboard_shop_upgrade2.png" />
+
+    <file src="assets/aw_ui_dashboard_shop_button_buy1.png" />
+    <file src="assets/aw_ui_dashboard_shop_button_buy2.png" />
+
+    <file src="assets/aw_ui_dashboard_button_back1.png" />
+    <file src="assets/aw_ui_dashboard_button_back2.png" />
+
+    <file src="assets/aw_ui_dashboard_shop_case_1.png" />
+    <file src="assets/aw_ui_dashboard_shop_case_2.png" />
+    <file src="assets/aw_ui_dashboard_shop_case_3.png" />
+    <file src="assets/aw_ui_dashboard_shop_case_4.png" />
+
+
+    <file src="assets/aw_ui_dashboard_money1.png" />
+    <file src="assets/aw_ui_dashboard_awcoins1.png" />
+    <file src="assets/aw_ui_dashboard_awcoins2.png" />
+
+   <file src="assets/aw_ui_dashboard_shop_priv.png" />
+ 
+    <file src="assets/aw_ui_dashboard_shop_other.png" />
+    <file src="assets/aw_ui_dashboard_shop_light1.png" />
+    <file src="assets/aw_ui_dashboard_shop_premium.png" />
+    <file src="assets/aw_ui_dashboard_shop_parkslots.png" />
+    <file src="assets/aw_ui_dashboard_shop_money.png" />
+
+    <file src="assets/aw_ui_dashboard_shop_1.png" />
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+
+
+    <file src="images/bg.png" />
+    <file src="images/loft.png" />
+    <file src="images/icon_donate.png" />
+    <file src="images/main_donate.png" />
+    <file src="images/user.png" />
+    <file src="images/vip.png" />
+    <file src="images/vip_no.png" />
+    <file src="images/line.png" />
+    <file src="images/button.png" />
+    <file src="images/button_alpha.png" />
+    <file src="images/main_info.png" />
+    <file src="images/button_info.png" />
+    <file src="images/button_bonus.png" />
+    <file src="images/line_bonus.png" />
+    <file src="images/anim.png" />
+    <file src="images/scidon.png" />
+
+    <file src="images/icon/home.png" />
+    <file src="images/icon/bonus.png" />
+    <file src="images/icon/case.png" />
+    <file src="images/icon/gps.png" />
+    <file src="images/icon/info.png" />
+    <file src="images/icon/partnerka.png" />
+    <file src="images/icon/setting.png" />
+
+    <file src="images/fonts/hb.ttf" />
+    <file src="images/fonts/Inter-Black.ttf" />
+    <file src="images/fonts/Inter-Medium.ttf" />
+
+    <file src="images/case/bgCase.png" />
+    <file src="images/case/bgMainCase.png" />
+    <file src="images/case/bgPrize.png" />
+    <file src="images/case/HoveverCase.png" />
+    <file src="images/case/PrizeBgMain.png" />
+
+    <file src="images/case/prize.png" />
+    <file src="images/case/button.png" />
+    <file src="images/case/ButtonMicle.png" />
+
+    <file src="images/case/effect.png" />
+    <file src="images/case/BgPrizeGive.png" />
+
+    <file src="images/case/icons/911.png" />
+    <file src="images/case/icons/ak-47.png" />
+    <file src="images/case/icons/all_350z.png" />
+    <file src="images/case/icons/all_pagani.png" />
+    <file src="images/case/icons/all_Taycan.png" />
+    <file src="images/case/icons/armor.png" />
+    <file src="images/case/icons/armor_m4.png" />
+    <file src="images/case/icons/Aventodor.png" />
+    <file src="images/case/icons/Chiron.png" />
+    <file src="images/case/icons/diegle.png" />
+    <file src="images/case/icons/Divo.png" />
+    <file src="images/case/icons/E60.png" />
+    <file src="images/case/icons/e63.png" />
+    <file src="images/case/icons/f90.png" />
+    <file src="images/case/icons/G65.png" />
+    <file src="images/case/icons/Grenade.png" />
+    <file src="images/case/icons/gtr.png" />
+    <file src="images/case/icons/hurucan.png" />
+    <file src="images/case/icons/m4.png" />
+    <file src="images/case/icons/money_1.png" />
+    <file src="images/case/icons/money_2.png" />
+    <file src="images/case/icons/money_3.png" />
+    <file src="images/case/icons/Priora.png" />
+    <file src="images/case/icons/R8.png" />
+    <file src="images/case/icons/RS6.png" />
+    <file src="images/case/icons/Urus.png" />
+    <file src="images/case/icons/uzi.png" />
+    <file src="images/case/icons/vip.png" />
+    <file src="images/case/icons/crystal.png" />
+    <file src="images/case/icons/donate.png" />
+    <file src="images/case/icons/case_1.png" />
+    <file src="images/case/icons/case_2.png" />
+    <file src="images/case/icons/case_3.png" />
+    <file src="images/case/icons/case_4.png" />
+    <file src="images/case/icons/case_5.png" />
+    <file src="images/case/icons/case_6.png" />
+    <file src="images/case/icons/case_7.png" />
+    <file src="images/case/icons/case_8.png" />
+    <file src="images/case/icons/case_9.png" />
+    <file src="images/case/icons/case_10.png" />
+    <file src="images/case/icons/case_11.png" />
+    <file src="images/case/icons/case_12.png" />
+    <file src="images/case/icons/case_13.png" />
+    <file src="images/case/icons/case_14.png" />
+    <file src="images/case/icons/case_15.png" />
+    <file src="images/case/icons/case_16.png" />
+    <file src="images/case/icons/case_17.png" />
+    <file src="images/case/icons/case_18.png" />
+
+    <file src="images/case/icons/IventCar/1.png" />
+    <file src="images/case/icons/IventCar/2.png" />
+    <file src="images/case/icons/IventCar/3.png" />
+    <file src="images/case/icons/IventCar/4.png" />
+    <file src="images/case/icons/IventCar/5.png" />
+    <file src="images/case/icons/IventCar/6.png" />
+    <file src="images/case/icons/IventCar/7.png" />
+    <file src="images/case/icons/IventCar/8.png" />
+    <file src="images/case/icons/IventCar/9.png" />
+    <file src="images/case/icons/IventCar/10.png" />
+
+    <file src="images/referals/a_button.png" />
+    <file src="images/referals/a_button_alpha.png" />
+    <file src="images/referals/EditBox.png" />
+    <file src="images/referals/EditRef.png" />
+    <file src="images/referals/main.png" />
+    <file src="images/referals/progress.png" />
+    <file src="images/referals/v_button.png" />
+    <file src="images/referals/v_button_alpha.png" />
+
+    <file src="images/settings/Box.png" />
+    <file src="images/settings/CheksBoxes.png" />
+    <file src="images/settings/Rectengle.png" />
+    <file src="images/settings/SelectionSettings.png" />
+    <file src="images/settings/buttonSetting.png" />
+
+    <file src="images/gps/1.png" />
+    <file src="images/gps/2.png" />
+    <file src="images/gps/3.png" />
+    <file src="images/gps/4.png" />
+    <file src="images/gps/5.png" />
+    <file src="images/gps/6.png" />
+    <file src="images/gps/7.png" />
+    <file src="images/gps/8.png" />
+    <file src="images/gps/9.png" />
+    <file src="images/gps/10.png" />
+    <file src="images/gps/11.png" />
+    <file src="images/gps/12.png" />
+    <file src="images/gps/13.png" />
+    <file src="images/gps/14.png" />
+    <file src="images/gps/15.png" />
+    <file src="images/gps/16.png" />
+    <file src="images/gps/17.png" />
+    <file src="images/gps/18.png" />
+    <file src="images/gps/19.png" />
+    <file src="images/gps/20.png" />
+    <file src="images/gps/21.png" />
+    <file src="images/gps/22.png" />
+    <file src="images/gps/23.png" />
+    <file src="images/gps/24.png" />
+    <file src="images/gps/25.png" />
+    <file src="images/gps/26.png" />
+
+
+    <file src="images/promo/ApplyPromo.png" />
+    <file src="images/promo/EditeBoxPromo.png" />
+    <file src="images/promo/PlusForApply.png" />
+    <file src="images/promo/recteglePromo.png" />
+	
+	<file src="images/exclusive/1.png" />
+	<file src="images/exclusive/2.png" />
+	<file src="images/exclusive/3.png" />
+	<file src="images/exclusive/4.png" />
+	<file src="images/exclusive/5.png" />
+	<file src="images/exclusive/6.png" />
+	<file src="images/exclusive/7.png" />
+	<file src="images/exclusive/8.png" />
+	<file src="images/exclusive/9.png" />
+	<file src="images/exclusive/10.png" />
+
+   <file src="images/exclusive/22.png" />
+	
+	
+	<file src="images/exclusive/vip1.png" />
+	<file src="images/exclusive/vip2.png" />
+	<file src="images/exclusive/vip3.png" />
+	
+	<file src="images/exclusive/ran1.png" />
+	<file src="images/exclusive/ran2.png" />
+	<file src="images/exclusive/ran3.png" />
+   <file src="images/exclusive/ran4.png" />
+
+   <file src="images/exclusive/conv1.png" />
+   <file src="images/exclusive/conv2.png" />
+   <file src="images/exclusive/conv3.png" />
+   <file src="images/exclusive/conv4.png" />
+
+   <file src="images/magazin/button/Adm.png" />
+   <file src="images/magazin/button/Cars.png" />
+   <file src="images/magazin/button/Keysi.png" />
+   <file src="images/magazin/button/Konvert.png" />
+   <file src="images/magazin/button/Ocoboe.png" />
+   <file src="images/magazin/button/VIP.png" />
+
+   <file src="images/magazin/bg2car.png" />
+   <file src="images/magazin/bg3car.png" />
+   <file src="images/magazin/bgcar.png" />
+   <file src="images/magazin/bg4car.png" />
+   <file src="images/magazin/bg5car.png" />
+   <file src="images/magazin/bgpokypka.png" />
+
+   <file src="images/magazin/bgvip.png" />
+   <file src="images/magazin/bg1vip.png" />
+
+   <file src="images/magazin/bgkonv.png" />
+   <file src="images/magazin/bg1konv.png" />
+	
+
+   <file src="images/admins/admin1.png" />
+   <file src="images/admins/admin2.png" />
+   <file src="images/admins/admin3.png" />
+   <file src="images/admins/admin4.png" />
+   <file src="images/admins/admin5.png" />
+   <file src="images/admins/admin6.png" />
+   <file src="images/admins/admin7.png" />
+
+	
+
+
+</meta>

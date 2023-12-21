@@ -1,0 +1,6 @@
+{
+	money_top = {},
+	session_top = {},
+	total_sum = 0,
+	total_time_hours = 0
+}

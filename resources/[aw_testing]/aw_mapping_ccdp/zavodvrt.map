@@ -1,0 +1,5 @@
+﻿<map edf:definitions="editor_main">
+    <removeWorldObject id="removeWorldObject (drivingschlgrg_SFS) (1)" radius="31.869303" interior="0" model="11014" lodModel="11372" posX="-2076.4375" posY="-107.92969" posZ="36.96875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (gate_autoR) (1)" radius="7.3802581" interior="0" model="985" lodModel="0" posX="2497.2419" posY="2773.4248" posZ="11.97578" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (gate_autoL) (1)" radius="7.4280729" interior="0" model="986" lodModel="0" posX="2497.2119" posY="2772.718" posZ="12.0775" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+</map>

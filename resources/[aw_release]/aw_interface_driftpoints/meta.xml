@@ -1,0 +1,23 @@
+<meta>
+	<script src="shared/config.lua" type="shared" cache="false"/>
+	<script src="shared/shared.lua" type="shared" cache="false"/>
+
+	<script src="server/sources.lua" type="server" cache="false"/>
+	<script src="server/server.lua" type="server" cache="false"/>
+	<script src="server/save.lua" type="server" cache="false"/>
+
+	<script src="client/sources.lua" type="client" cache="false"/>
+	<script src="client/drift.lua" type="client" cache="false"/>
+	<script src="client/gui.lua" type="client" cache="false"/>
+
+	<file src="assets/images/drift_bg.png"/>
+	<file src="assets/images/drift_bg1.png"/>
+	<file src="assets/images/dirt_texture.png"/>
+	<file src="assets/images/mul_bg.png"/>
+	<file src="assets/images/time_progress.png"/>
+
+	<file src="assets/shaders/blend.fx"/>
+
+	<oop>true</oop>
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+</meta>

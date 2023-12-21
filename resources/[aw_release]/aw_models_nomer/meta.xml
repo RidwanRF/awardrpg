@@ -1,0 +1,5 @@
+<meta>
+	<info author="Lightning!" type="script" version="1.0" name="Custom licence frame ON" />
+	<script src="client.lua" type="client" cache="false"/>
+	<file src="nomer.png" />
+</meta>

@@ -1,0 +1,23 @@
+<meta>
+    <info author="Daeman, Wherry" version="18-01-04" name="Car Fuel System" type="script" />
+    <oop>true</oop>
+    
+    
+    <script src="data_cars.lua" type="shared" />
+    <script src="data_stations.lua" type="shared" />
+    <script src="client.lua" type="client" />
+    <script src="client_gui.lua" type="client" />
+    <script src="client_job.lua" type="client" />
+
+    
+    <script src="server.lua" type="server" />
+    <script src="server_job.lua" type="server" />
+    
+    <export function="getCarFuel" type="server" />
+    <export function="getCarFuel" type="client" />
+    <export function="getCarOdometer" type="client" />
+    <export function="setOctaneDependentParameters" type="server" />
+    <export function="getFuelTable" type="client" />
+    <export function="setRandomFuelAndOdometer" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

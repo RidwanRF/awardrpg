@@ -1,0 +1,10 @@
+<meta>
+	<oop>true</oop>
+	<info author="MOTH3RS_BL3ND3R and Strix" description="Resource for handling photo mode" />
+	<script src="photo_mode.lua" type="client" cache="false"/>
+	<script src="photo_mode_help.lua" type="client" cache="false"/>
+
+	<file src="sound.wav"/>
+    <file src="assets/aw_ui_camhack.png"/>
+	<file src="Roboto-Regular.ttf"/>
+</meta>

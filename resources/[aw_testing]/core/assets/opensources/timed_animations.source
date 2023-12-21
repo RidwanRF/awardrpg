@@ -1,0 +1,57 @@
+local timed_targetAnimData = {}
+local timed_curAnimData = {}
+
+function timed_setAnimData(key, time)
+    timed_targetAnimData[key] = {0, time}
+    timed_curAnimData[key] = 0
+end
+
+function timed_animate(key, flag, callback)
+    local to = 0
+    if flag then to = 1 end
+    
+    if not timed_targetAnimData[key] then return end
+    if timed_targetAnimData[key] and timed_targetAnimData[key][1] == to then return end
+
+    timed_targetAnimData[key][1] = to
+    timed_targetAnimData[key][3] = getTickCount()
+    timed_targetAnimData[key].callback = callback
+end
+
+function timed_removeAnimData(key)
+    timed_targetAnimData[key] = nil
+    timed_curAnimData[key] = nil
+end
+
+function timed_getAnimData(key)
+    return timed_curAnimData[key], (timed_targetAnimData[key] or {})[1]
+end
+
+function timed_updateAnimationValues()
+    local tk = getTickCount()
+    for k,v in pairs(timed_targetAnimData) do
+        if v[1] and v[2] and v[3] then
+            if v[1] == 1 then
+                timed_curAnimData[k] = (tk - v[3])/v[2]
+                if timed_curAnimData[k] > 1 then
+                    timed_curAnimData[k] = 1 
+                end
+            else
+                timed_curAnimData[k] = 1 - (tk - v[3])/v[2]
+                if timed_curAnimData[k] < 0 then
+                    timed_curAnimData[k] = 0 
+                end
+            end
+
+            if math.abs( timed_curAnimData[k] - v[1] ) < 0.1 and v.callback then
+                v.callback()
+                v.callback = nil
+            end
+            
+        end
+    end
+end
+
+addEventHandler('onClientRender', root, function()
+    timed_updateAnimationValues()
+end)

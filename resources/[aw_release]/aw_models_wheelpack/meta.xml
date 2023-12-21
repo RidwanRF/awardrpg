@@ -1,0 +1,191 @@
+<meta>
+    <oop>true</oop>
+    <min_mta_version client="1.5" server="1.5" />
+   
+
+    <script src="client/cWheels.lua" type="client" cache="false"/>
+
+
+   
+    <file src="assets/wheel1.dff" type="client"/>
+    <file src="assets/wheel2.dff" type="client"/>
+    <file src="assets/wheel3.dff" type="client"/>
+    <file src="assets/wheel4.dff" type="client"/>
+    <file src="assets/wheel5.dff" type="client"/>
+    <file src="assets/wheel6.dff" type="client"/>
+    <file src="assets/wheel7.dff" type="client"/>
+    <file src="assets/wheel8.dff" type="client"/>
+    <file src="assets/wheel9.dff" type="client"/>
+    <file src="assets/wheel10.dff" type="client"/>
+    <file src="assets/wheel11.dff" type="client"/>
+    <file src="assets/wheel11.txd" type="client"/>
+    <file src="assets/wheel12.dff" type="client"/>
+    <file src="assets/wheel13.dff" type="client"/>
+    <file src="assets/wheel14.dff" type="client"/>
+    <file src="assets/wheel15.dff" type="client"/>
+    <file src="assets/wheel16.dff" type="client"/>
+    <file src="assets/wheel17.dff" type="client"/>
+    <file src="assets/wheel18.dff" type="client"/>
+    <file src="assets/wheel19.dff" type="client"/>
+    <file src="assets/wheel20.dff" type="client"/>
+    <file src="assets/wheel21.dff" type="client"/>
+    <file src="assets/wheel22.dff" type="client"/>
+    <file src="assets/wheel23.dff" type="client"/>
+    <file src="assets/wheel24.dff" type="client"/>
+    <file src="assets/wheel27.dff" type="client"/>	
+
+    <file src="assets/wheel0.txd" type="client"/>
+    <file src="assets/wheel27.txd" type="client"/>	
+
+    <file src="assets/wheel1.txd" type="client"/>
+    <file src="assets/wheel2.txd" type="client"/>
+    <file src="assets/wheel3.txd" type="client"/>
+    <file src="assets/wheel4.txd" type="client"/>
+    <file src="assets/wheel5.txd" type="client"/>
+    <file src="assets/wheel6.txd" type="client"/>
+    <file src="assets/wheel7.txd" type="client"/>
+    <file src="assets/wheel8.txd" type="client"/>
+    <file src="assets/wheel9.txd" type="client"/>
+    <file src="assets/wheel10.txd" type="client"/>
+    <file src="assets/wheel12.txd" type="client"/>
+    <file src="assets/wheel13.txd" type="client"/>
+    <file src="assets/wheel14.txd" type="client"/>
+    <file src="assets/wheel15.txd" type="client"/>
+    <file src="assets/wheel16.txd" type="client"/>
+    <file src="assets/wheel17.txd" type="client"/>
+    <file src="assets/wheel18.txd" type="client"/>
+    <file src="assets/wheel19.txd" type="client"/>
+    <file src="assets/wheel20.txd" type="client"/>
+    <file src="assets/wheel21.txd" type="client"/>
+    <file src="assets/wheel22.txd" type="client"/>
+    <file src="assets/wheel23.txd" type="client"/>
+    <file src="assets/wheel24.txd" type="client"/>
+
+    <file src="assets/wheel25.dff" type="client"/>
+    <file src="assets/wheel26.dff" type="client"/>
+    <file src="assets/wheel28.dff" type="client"/>
+    <file src="assets/wheel29.dff" type="client"/>
+    <file src="assets/wheel30.dff" type="client"/>
+    <file src="assets/wheel31.dff" type="client"/>
+    <file src="assets/wheel32.dff" type="client"/>
+    <file src="assets/wheel33.dff" type="client"/>
+    <file src="assets/wheel34.dff" type="client"/>
+    <file src="assets/wheel35.dff" type="client"/>
+    <file src="assets/wheel36.dff" type="client"/>
+
+    <file src="assets/wheel25.txd" type="client"/>
+    <file src="assets/wheel26.txd" type="client"/>
+    <file src="assets/wheel28.txd" type="client"/>
+    <file src="assets/wheel29.txd" type="client"/>
+    <file src="assets/wheel30.txd" type="client"/>
+    <file src="assets/wheel31.txd" type="client"/>
+    <file src="assets/wheel32.txd" type="client"/>
+    <file src="assets/wheel33.txd" type="client"/>
+    <file src="assets/wheel34.txd" type="client"/>
+    <file src="assets/wheel35.txd" type="client"/>
+    <file src="assets/wheel36.txd" type="client"/>
+
+    <file src="assets/wheel37.dff" type="client"/>
+    <file src="assets/wheel38.dff" type="client"/>
+    <file src="assets/wheel39.dff" type="client"/>
+    <file src="assets/wheel40.dff" type="client"/>
+    <file src="assets/wheel41.dff" type="client"/>
+    <file src="assets/wheel42.dff" type="client"/>
+    <file src="assets/wheel43.dff" type="client"/>
+    <file src="assets/wheel44.dff" type="client"/>
+    <file src="assets/wheel45.dff" type="client"/>
+    <file src="assets/wheel46.dff" type="client"/>
+    <file src="assets/wheel47.dff" type="client"/>
+    <file src="assets/wheel48.dff" type="client"/>
+
+    <file src="assets/wheel37.txd" type="client"/>
+    <file src="assets/wheel38.txd" type="client"/>
+    <file src="assets/wheel39.txd" type="client"/>
+    <file src="assets/wheel40.txd" type="client"/>
+    <file src="assets/wheel41.txd" type="client"/>
+    <file src="assets/wheel42.txd" type="client"/>
+    <file src="assets/wheel43.txd" type="client"/>
+    <file src="assets/wheel44.txd" type="client"/>
+    <file src="assets/wheel45.txd" type="client"/>
+    <file src="assets/wheel46.txd" type="client"/>
+    <file src="assets/wheel47.txd" type="client"/>
+    <file src="assets/wheel48.txd" type="client"/>
+
+    <file src="assets/wheel49.dff" type="client"/>
+    <file src="assets/wheel50.dff" type="client"/>
+    <file src="assets/wheel51.dff" type="client"/>
+    <file src="assets/wheel52.dff" type="client"/>
+    <file src="assets/wheel53.dff" type="client"/>
+    <file src="assets/wheel54.dff" type="client"/>
+    <file src="assets/wheel55.dff" type="client"/>
+    <file src="assets/wheel56.dff" type="client"/>
+    <file src="assets/wheel57.dff" type="client"/>
+    <file src="assets/wheel58.dff" type="client"/>
+    <file src="assets/wheel59.dff" type="client"/>
+    <file src="assets/wheel60.dff" type="client"/>
+
+    <file src="assets/wheel49.txd" type="client"/>
+    <file src="assets/wheel50.txd" type="client"/>
+    <file src="assets/wheel51.txd" type="client"/>
+    <file src="assets/wheel52.txd" type="client"/>
+    <file src="assets/wheel53.txd" type="client"/>
+    <file src="assets/wheel54.txd" type="client"/>
+    <file src="assets/wheel55.txd" type="client"/>
+    <file src="assets/wheel56.txd" type="client"/>
+    <file src="assets/wheel57.txd" type="client"/>
+    <file src="assets/wheel58.txd" type="client"/>
+    <file src="assets/wheel59.txd" type="client"/>
+    <file src="assets/wheel60.txd" type="client"/>
+
+    <file src="assets/wheel61.dff" type="client"/>
+    <file src="assets/wheel62.dff" type="client"/>
+    <file src="assets/wheel63.dff" type="client"/>
+    <file src="assets/wheel64.dff" type="client"/>
+    <file src="assets/wheel65.dff" type="client"/>
+    <file src="assets/wheel66.dff" type="client"/>
+    <file src="assets/wheel67.dff" type="client"/>
+    <file src="assets/wheel68.dff" type="client"/>
+    <file src="assets/wheel69.dff" type="client"/>
+    <file src="assets/wheel70.dff" type="client"/>
+    <file src="assets/wheel71.dff" type="client"/>
+    <file src="assets/wheel72.dff" type="client"/>
+
+    <file src="assets/wheel61.txd" type="client"/>
+    <file src="assets/wheel62.txd" type="client"/>
+    <file src="assets/wheel63.txd" type="client"/>
+    <file src="assets/wheel64.txd" type="client"/>
+    <file src="assets/wheel65.txd" type="client"/>
+    <file src="assets/wheel66.txd" type="client"/>
+    <file src="assets/wheel67.txd" type="client"/>
+    <file src="assets/wheel68.txd" type="client"/>
+    <file src="assets/wheel69.txd" type="client"/>
+    <file src="assets/wheel70.txd" type="client"/>
+    <file src="assets/wheel71.txd" type="client"/>
+    <file src="assets/wheel72.txd" type="client"/>
+
+    <file src="assets/wheel73.dff" type="client"/>
+    <file src="assets/wheel74.dff" type="client"/>
+    <file src="assets/wheel75.dff" type="client"/>
+    <file src="assets/wheel76.dff" type="client"/>
+    <file src="assets/wheel77.dff" type="client"/>
+    <file src="assets/wheel78.dff" type="client"/>
+    <file src="assets/wheel79.dff" type="client"/>
+    <file src="assets/wheel80.dff" type="client"/>
+
+    <file src="assets/wheel73.txd" type="client"/>
+    <file src="assets/wheel74.txd" type="client"/>
+    <file src="assets/wheel75.txd" type="client"/>
+    <file src="assets/wheel76.txd" type="client"/>
+    <file src="assets/wheel77.txd" type="client"/>
+    <file src="assets/wheel78.txd" type="client"/>
+    <file src="assets/wheel79.txd" type="client"/>
+    <file src="assets/wheel80.txd" type="client"/>
+
+
+	<file src="assets/texture_replace.fx"/>
+	<file src="assets/wheels.fx"/>
+	
+	
+
+
+</meta>

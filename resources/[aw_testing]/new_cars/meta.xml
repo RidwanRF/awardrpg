@@ -1,0 +1,48 @@
+<meta>
+<script src="client.lua" type="client"/>
+
+
+
+<file src="g65.dff" type="client"/>
+<file src="g65.txd" type="client"/>
+
+<file src="c63.dff" type="client"/>
+<file src="c63.txd" type="client"/>
+
+<file src="camry70.dff" type="client"/>
+<file src="camry70.txd" type="client"/>
+
+<file src="enzo.dff" type="client"/>
+<file src="enzo.txd" type="client"/>
+
+
+<file src="car3.dff" type="client"/>
+<file src="car3.txd" type="client"/>
+
+<file src="e34.dff" type="client"/>
+<file src="e34.txd" type="client"/>
+
+<file src="lx570.dff" type="client"/>
+<file src="lx570.txd" type="client"/>  
+
+<file src="f80.dff" type="client"/>
+<file src="f80.txd" type="client"/>
+
+<file src="m4_G82.dff" type="client"/>
+<file src="m4_G82.txd" type="client"/>
+
+<file src="750.dff" type="client"/>
+<file src="750.txd" type="client"/>
+
+
+<file src="gls.dff" type="client"/>
+<file src="gls.txd" type="client"/>
+
+
+<file src="isf.dff" type="client"/>
+<file src="isf.txd" type="client"/>
+
+
+
+
+</meta>

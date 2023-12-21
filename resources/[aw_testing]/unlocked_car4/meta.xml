@@ -1,0 +1,14 @@
+<meta>
+<info author="www.mta-resource" description="MTA Resource Repalce Master PRO" version="1.3" type="script" />
+<script src="client.lua" type="client"/>
+<file src="w126.txd" type="client"/>
+<file src="w126.dff" type="client"/>
+<file src="w140.txd" type="client"/>
+<file src="w140.dff" type="client"/>
+<file src="w213.txd" type="client"/>
+<file src="w213.dff" type="client"/>
+<file src="w222.txd" type="client"/>
+<file src="w222.dff" type="client"/>
+<file src="r33.txd" type="client"/>
+<file src="r33.dff" type="client"/>
+</meta> 

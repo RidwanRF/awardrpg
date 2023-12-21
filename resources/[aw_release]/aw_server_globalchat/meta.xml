@@ -1,0 +1,12 @@
+﻿<meta>
+	
+	<!--Client Core-->
+	<script src="client/client.lua" type="client"/>
+	
+	<!--Server Core-->
+	<script src="server/server.lua" type="server" />
+	
+	<!--Export Core-->
+	<export function="giveMessageInRadius" type="server"/>
+	
+</meta>

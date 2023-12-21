@@ -1,0 +1,28 @@
+﻿<meta>
+    <info name="Small CCDPlanet Mappings" author="Daeman, Chuba, Autoligenda, Qwertyo" version="17-12-29" type="script" />
+    
+    
+    <script src="files/client.lua" type="client" />
+    <!-- <script src="files/client.lua" type="client" cache="false"/> -->
+    
+    
+    <script src="files/mapEditorScriptingExtension_c.lua" type="client" />
+    <script src="files/mapEditorScriptingExtension_s.lua" type="server" />
+    <script src="server.lua" type="server" />
+    
+
+    <map src="autorepair.map" dimension="0" />
+    <!--	Автомастерские в 3 городах, плюс их открывание/закрывание	-->
+    <script src="autorepair_client.lua" type="client" />
+    <!-- <script src="autorepair_client.lua" type="client" cache="false"/> -->
+    <script src="autorepair_server.lua" type="server" />
+ 
+    <map src="benzin.map" />
+    <!--	Объекты, связанные с бензом Заправки и т.п.	-->
+    
+    
+    
+    
+
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

@@ -1,0 +1,12 @@
+<meta>
+	<oop>true</oop>
+
+	<script src="client/sources.lua" type="client" cache="false" />
+	<script src="client/main.lua" type="client"cache="false" />
+
+	<file src="assets/ifp/anim.ifp"/>
+
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+	<download_priority_group>-100</download_priority_group>
+	
+</meta>>

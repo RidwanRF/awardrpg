@@ -1,0 +1,30 @@
+<meta>
+<info author="www.mta-resource" description="MTA Resource Repalce Master PRO" version="1.3" type="script" />
+<script src="client.lua" type="client"/>
+<file src="a8s8.txd" type="client"/>
+<file src="a8s8.dff" type="client"/>
+<file src="amg_one.txd" type="client"/>
+<file src="amg_one.dff" type="client"/>
+<file src="avtr.txd" type="client"/>
+<file src="avtr.dff" type="client"/>
+<file src="ben_cont.txd" type="client"/>
+<file src="ben_cont.dff" type="client"/>
+<file src="camryv55.txd" type="client"/>
+<file src="camryv55.dff" type="client"/>
+<file src="chiron.txd" type="client"/>
+<file src="chiron.dff" type="client"/>
+<file src="e38.txd" type="client"/>
+<file src="e38.dff" type="client"/>
+<file src="e39.txd" type="client"/>
+<file src="e39.dff" type="client"/>
+<file src="aventador.txd" type="client"/>
+<file src="aventador.dff" type="client"/>
+<file src="huracan.txd" type="client"/>
+<file src="huracan.dff" type="client"/>
+<file src="m2.txd" type="client"/>
+<file src="m2.dff" type="client"/>
+<file src="x72023.txd" type="client"/>
+<file src="x72023.dff" type="client"/>
+<file src="divo.txd" type="client"/>
+<file src="divo.dff" type="client"/>
+</meta> 

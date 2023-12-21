@@ -1,0 +1,7 @@
+{
+	accounts = {},
+	average = -nan,
+	groups = {},
+	sum = {},
+	total = 0
+}

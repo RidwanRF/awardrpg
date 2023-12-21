@@ -1,0 +1,10 @@
+{
+	bought = {},
+	delta = {},
+	sold = {},
+	sum = {
+		bought = 0,
+		delta = 0,
+		sold = 0
+	}
+}

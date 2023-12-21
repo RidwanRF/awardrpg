@@ -1,0 +1,55 @@
+<meta>
+	<download_priority_group>99999999</download_priority_group>
+	<script src="client/main.lua" type="client" cache="false"/>
+
+    <file src="assets/fonts/gotham.ttf"/>
+    <file src="assets/fonts/gotham_regular.ttf"/>
+    <file src="assets/fonts/gotham_medium.ttf"/>
+    <file src="assets/fonts/manrope_bold.ttf"/>
+    <file src="assets/fonts/gotham_black.ttf"/>
+    <file src="assets/fonts/gotham_bold.ttf"/>
+    <file src="assets/fonts/proximanova.ttf"/>
+    <file src="assets/fonts/proximanova_bold.ttf"/>
+    <file src="assets/fonts/proximanova_extrabold.ttf"/>
+    <file src="assets/fonts/proximanova_semibold_italic.ttf"/>
+    <file src="assets/fonts/proximanova_bold_italic.ttf"/>
+    <file src="assets/fonts/proximanova_semibold.ttf"/>
+    <file src="assets/fonts/proximanova_light.ttf"/>
+    <file src="assets/fonts/ttnorms_bold.ttf"/>
+    <file src="assets/fonts/ttnorms_medium.ttf"/>
+    <file src="assets/fonts/manrope_medium.ttf"/>
+    <file src="assets/fonts/manrope_semibold.ttf"/>
+    <file src="assets/fonts/myriad_pro.ttf"/>
+    <file src="assets/fonts/jellee_roman.ttf"/>
+    <file src="assets/fonts/armadura.ttf"/>
+
+    <file src="assets/fonts/montserrat.ttf"/>
+    <file src="assets/fonts/montserrat_black.ttf"/>
+    <file src="assets/fonts/montserrat_black_italic.ttf"/>
+    <file src="assets/fonts/montserrat_bold.ttf"/>
+    <file src="assets/fonts/montserrat_bold_italic.ttf"/>
+    <file src="assets/fonts/montserrat_extrabold.ttf"/>
+    <file src="assets/fonts/montserrat_extrabold_italic.ttf"/>
+    <file src="assets/fonts/montserrat_italic.ttf"/>
+    <file src="assets/fonts/montserrat_light.ttf"/>
+    <file src="assets/fonts/montserrat_light_italic.ttf"/>
+    <file src="assets/fonts/montserrat_medium.ttf"/>
+    <file src="assets/fonts/montserrat_medium_italic.ttf"/>
+    <file src="assets/fonts/montserrat_semibold.ttf"/>
+    <file src="assets/fonts/montserrat_semibold_italic.ttf"/>
+    <file src="assets/fonts/montserrat_thin.ttf"/>
+    <file src="assets/fonts/montserrat_thin_italic.ttf"/>
+
+    <file src="assets/fonts/hb.ttf"/>
+    <file src="assets/fonts/hb_bold.ttf"/>
+    <file src="assets/fonts/hb_bold_italic.ttf"/>
+    <file src="assets/fonts/hb_extrabold.ttf"/>
+    <file src="assets/fonts/hb_extrabold_italic.ttf"/>
+    <file src="assets/fonts/hb_italic.ttf"/>
+    <file src="assets/fonts/hb_medium.ttf"/>
+    <file src="assets/fonts/hb_medium_italic.ttf"/>
+	
+    <export function="getFonts" type="client"/>
+	<export function="getFont" type="client"/>
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+</meta>

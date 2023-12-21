@@ -1,0 +1,18 @@
+<meta>
+
+<script src="script.lua" type="client" />
+
+<file src="jdun.dff" />
+<file src="jdun.col" />
+<file src="jdun.txd" />
+
+<file src="pc.dff" />
+<file src="pc.txd" />
+
+<file src="beer.dff" />
+<file src="beer.txd" />
+
+<file src="campfire.dff" />
+<file src="campfire.txd" />
+
+</meta>

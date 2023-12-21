@@ -1,0 +1,204 @@
+<car>
+	<data id="-1" tank="35" /><!-- Player entry -->
+	<data id="0" tank="100" consumption="0" price="0"  /><!-- Default entry -->
+	
+	<!-- 4-дверки -->
+	<data id="400" tank="96" consumption="22" price="43.1" />
+	<data id="404" tank="39" consumption="10" price="36.5" />
+	<data id="405" tank="60" consumption="19" price="43.1" />
+	<data id="409" tank="70" consumption="20" price="39" />
+	<data id="418" tank="70" consumption="25" price="43.1" />
+	<data id="420" tank="52" consumption="20" price="43.1" />
+	<data id="421" tank="43" consumption="9" price="36.5" />
+	<data id="426" tank="110" consumption="12" price="36.5" />
+	<data id="438" tank="85" consumption="15" price="39" />
+	<data id="445" tank="55" consumption="12" price="39.0" />
+	<data id="458" tank="80" consumption="20" price="43.1" />
+	<data id="466" tank="60" consumption="17" price="43.1" />
+	<data id="467" tank="70" consumption="14" price="39" />
+	<data id="470" tank="96" consumption="25" price="43.1" />
+	<data id="479" tank="70" consumption="14" price="36.5" />
+	<data id="490" tank="71" consumption="12" price="43.1" />
+	<data id="492" tank="80" consumption="14" price="39" />
+	<data id="507" tank="80" consumption="13" price="39" />
+	<data id="516" tank="100" consumption="22" price="39" />
+	<data id="529" tank="70" consumption="14" price="43.1" />
+	<data id="540" tank="90" consumption="20" price="39" />
+	<data id="546" tank="60" consumption="12" price="36.5" />
+	<data id="547" tank="43" consumption="10" price="39" />
+	<data id="550" tank="70" consumption="20" price="43.1" />
+	<data id="551" tank="55" consumption="18" price="43.1" />
+	<data id="560" tank="50" consumption="17" price="39" />
+	<data id="561" tank="55" consumption="18" price="60.1" />
+	<data id="566" tank="70" consumption="17" price="43.1" />
+	<data id="567" tank="64" consumption="12" price="36.5" />
+	<data id="579" tank="98" consumption="18" price="39" />
+	<data id="580" tank="85" consumption="20" price="60.1" />
+	<data id="585" tank="55" consumption="15" price="36.5" />
+	<data id="596" tank="45" consumption="2.4" price="43.1" />
+	<data id="597" tank="66" consumption="25" price="43.1" />
+	<data id="598" tank="66" consumption="25" price="43.1" />
+	<data id="604" />
+	
+	<!-- 2-дверки -->
+	<data id="401" tank="85" consumption="16" price="36.5" />
+	<data id="402" tank="75" consumption="25" price="43.1" />
+	<data id="410" tank="39" consumption="10" price="36.5" />
+	<data id="411" tank="65" consumption="20" price="43.1" />
+	<data id="412" />
+	<data id="415" tank="90" consumption="32" price="43.1" />
+	<data id="419" tank="43" consumption="8.6" price="36.5" />
+	<data id="422" />
+	<data id="424" />
+	<data id="429" tank="55" consumption="12" price="39" />
+	<data id="434" />
+	<data id="436" tank="90" consumption="24" price="43.1" />
+	<data id="439" tank="60" consumption="23" price="36.5" />
+	<data id="442" />
+	<data id="444" />
+	<data id="451" tank="90" consumption="25" price="43.1" />
+	<data id="457" tank="30" consumption="6" price="36.5" />
+	<data id="474" />
+	<data id="475" />
+	<data id="477" tank="61" consumption="19" price="43.1" />
+	<data id="478" />
+	<data id="480" tank="64" consumption="17" price="43.1" />
+	<data id="489" tank="105" consumption="25" price="43.1" />
+	<data id="491" />
+	<data id="494" tank="74" consumption="19" price="60.1" />
+	<data id="495" tank="100" consumption="25" price="43.1" />
+	<data id="496" tank="45" consumption="10" price="39.0" />
+	<data id="500" tank="61" consumption="23" price="43.1" />
+	<data id="502" />
+	<data id="503" tank="85" consumption="23" price="43.1" />
+	<data id="504" />
+	<data id="505" />
+	<data id="506" tank="90" consumption="28" price="60.1" />
+	<data id="517" tank="64" consumption="18" price="43.1" />
+	<data id="518" tank="43" consumption="13" price="36.5" />
+	<data id="526" tank="90" consumption="20" price="39" />
+	<data id="527" />
+	<data id="533" tank="50" consumption="17" price="43.1" />
+	<data id="534" tank="70" consumption="27" price="36.5" />
+	<data id="535" tank="92" consumption="20" price="39" />
+	<data id="536" tank="82" consumption="28" price="60.10" />
+	<data id="541" tank="64" consumption="18" price="43.1" />
+	<data id="542" tank="60" consumption="17" price="39" />
+	<data id="543" tank="65" consumption="15" price="39" />
+	<data id="545" />
+	<data id="549" />
+	<data id="554" tank="100" consumption="18" price="43.1" />
+	<data id="555" />
+	<data id="556" />
+	<data id="557" />
+	<data id="558" tank="65" consumption="19" price="39" />
+	<data id="559" tank="50" consumption="16" price="43.1" />
+	<data id="562" tank="65" consumption="16" price="39" />
+	<data id="565" tank="50" consumption="17" price="39" />
+	<data id="575" />
+	<data id="576" />
+	<data id="587" tank="50" consumption="10" price="36.5" />
+	<data id="589" tank="70" consumption="27" price="36.5" />
+	<data id="599" tank="93" consumption="25" price="43.1" />
+	<data id="600" />
+	<data id="602" tank="90" consumption="20" price="39.0" />
+	<data id="603" tank="114" consumption="17" price="43.1" />
+	<data id="605" />
+	
+	<!-- Грузовики -->
+	<data id="403" tank="350" consumption="28" price="36.5" />
+	<data id="407" />
+	<data id="408" />
+	<data id="413" />
+	<data id="414" tank="100" consumption="18" price="36.5" />
+	<data id="416" tank="83" consumption="15" price="43.1" />
+	<data id="423" />
+	<data id="427" />
+	<data id="428" />
+	<data id="431" tank="180" consumption="22" price="38.8" />
+	<data id="433" />
+	<data id="437" tank="450" consumption="45" price="36.5" />
+	<data id="440" />
+	<data id="443" />
+	<data id="455" />
+	<data id="456" />
+	<data id="459" />
+	<data id="482" />
+	<data id="483" />
+	<data id="498" />
+	<data id="499" />
+	<data id="508" tank="75" consumption="19" price="43.1" />
+	<data id="514" />
+	<data id="515" tank="400" consumption="25" price="36.5" />
+	<data id="524" />
+	<data id="525" tank="70" consumption="23" price="36.5" />
+	<data id="528" />
+	<data id="544" />
+	<data id="552" />
+	<data id="573" />
+	<data id="578" />
+	<data id="582" tank="75" consumption="15" price="38.8" />
+	<data id="588" />
+	<data id="601" />
+	<data id="609" />
+	
+	<!-- Мотоциклы -->
+	<data id="461" tank="16" consumption="10" price="39" />
+	<data id="462" tank="10" consumption="4" price="36.5" />
+	<data id="468" tank="18" consumption="6" price="36.5" />
+	<data id="521" tank="17" consumption="10" price="39" />
+	<data id="522" tank="21" consumption="10" price="39" />
+	<data id="586" tank="17" consumption="10" price="39" />
+	
+	<!-- Вертолеты -->
+	<data id="417" tank="11600" consumption="1462" price="31.6" />
+	<data id="425" />
+	<data id="447" />
+	<data id="469" tank="136" consumption="20.5" price="31.6" />
+	<data id="487" tank="570" consumption="160" price="31.6" />
+	<data id="488" />
+	<data id="497" tank="710" consumption="100" price="31.6" />
+	<data id="548" />
+	<data id="563" tank="540" consumption="85" price="31.6" />
+	
+	<!-- Лодки -->
+	<data id="430" />
+	<data id="446" tank="770" consumption="35" price="39" />
+	<data id="452" />
+	<data id="453" tank="450" consumption="25" price="36.5" />
+	<data id="454" tank="2275" consumption="65" price="39" />
+	<data id="472" tank="230" consumption="20" price="39" />
+	<data id="473" tank="12" consumption="3" price="36.5" />
+	<data id="484" />
+	<data id="493" tank="370" consumption="25" price="39" />
+	<data id="595" tank="550" consumption="30" price="39" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <data id="000" tank="000" consumption="000" price="000" /> -->
+</car>

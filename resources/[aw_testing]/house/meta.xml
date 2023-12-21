@@ -1,0 +1,94 @@
+<meta>
+	<info author="Daeman" type="script" version="17-12-05" name="House system" />
+
+	
+	<script src="script/shared_interiors.lua"		type="shared" />
+	<script src="script/client_core.lua"			type="client" />
+	<script src="script/client_creation.lua"		type="client" />
+	<script src="script/client_mainpanel.lua"		type="client" />
+	<script src="script/client_adminActions.lua"	type="client" />
+	<script src="script/client_playerActions.lua"	type="client" />
+	<script src="script/client_transHouse.lua"		type="client" />
+	<script src="script/client_render.lua"			type="client" />
+	<!-- <script src="script/shared_interiors.lua"		type="shared" cache="false" /> -->
+	<!-- <script src="script/client_core.lua"			type="client" cache="false" /> -->
+	<!-- <script src="script/client_creation.lua"		type="client" cache="false" /> -->
+	<!-- <script src="script/client_mainpanel.lua"		type="client" cache="false" /> -->
+	<!-- <script src="script/client_adminActions.lua"	type="client" cache="false" /> -->
+	<!-- <script src="script/client_playerActions.lua"	type="client" cache="false" /> -->
+	<!-- <script src="script/client_transHouse.lua"		type="client" cache="false" /> -->
+	<!-- <script src="script/client_render.lua"			type="client" cache="false" /> -->
+	
+	
+	<script src="script/server_core.lua"			type="server" />
+	<script src="script/server_creation.lua"		type="server" />
+	<script src="script/server_adminActions.lua"	type="server" />
+	<script src="script/server_playerActions.lua"	type="server" />
+	<script src="script/server_transHouse.lua" 		type="server" />
+	<script src="script/server_SQL.lua" 			type="server" />
+	<script src="script/server_inventories.lua" 	type="server" />
+	
+	<export function="getMyHouses"			type="client" /> 
+	<export function="getPlayerParkingLots"	type="server" /> 
+	<export function="getAllHouseMarkers"	type="client" /> 
+	<export function="getFreeDimension"		type="server" /> 
+	<export function="getHousesCount"		type="server" /> 
+	<export function="wipeAccount"			type="server" />
+	<export function="endOfWipe"			type="server" />
+	<export function="getAllInteriorPositions" type="server" />
+
+	<file src="sounds/click_confirm.wav" />
+	<file src="sounds/click_question.wav" />
+
+	<file src="images/house_icon.png" />
+	<file src="images/icon_buy.png" />
+	<file src="images/icon_edit.png" />
+	<file src="images/icon_enter.png" />
+	<file src="images/icon_key.png" />
+	<file src="images/icon_newowner.png" />
+	<file src="images/icon_sale.png" />
+
+	<file src="images/choose.jpg" />
+	<file src="images/nopicture.jpg" />
+	<file src="images/01.jpg" />
+	<file src="images/02.jpg" />
+	<file src="images/03.jpg" />
+	<file src="images/04.jpg" />
+	<file src="images/05.jpg" />
+	<file src="images/06.jpg" />
+	<file src="images/07.jpg" />
+	<file src="images/08.jpg" />
+	<file src="images/09.jpg" />
+	<file src="images/10.jpg" />
+	<file src="images/11.jpg" />
+	<file src="images/12.jpg" />
+	<file src="images/13.jpg" />
+	<file src="images/14.jpg" />
+	<file src="images/15.jpg" />
+	<file src="images/16.jpg" />
+	<file src="images/17.jpg" />
+	<file src="images/18.jpg" />
+	<file src="images/19.jpg" />
+	<file src="images/20.jpg" />
+	<file src="images/21.jpg" />
+	<file src="images/22.jpg" />
+	<file src="images/23.jpg" />
+	<file src="images/24.jpg" />
+	<file src="images/25.jpg" />
+	<file src="images/26.jpg" />
+	<file src="images/27.jpg" />
+	<file src="images/28.jpg" />
+	<file src="images/29.jpg" />
+	<file src="images/30.jpg" />
+	<file src="images/31.jpg" />
+	<file src="images/32.jpg" />
+	<file src="images/33.jpg" />
+	<file src="images/34.jpg" />
+	<file src="images/35.jpg" />
+	<file src="images/36.jpg" />
+	<file src="images/37.jpg" />
+	<file src="images/38.jpg" />
+	<file src="images/39.jpg" />
+	<file src="images/40.jpg" />
+	<file src="images/41.jpg" />
+</meta>

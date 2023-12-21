@@ -1,0 +1,18 @@
+{
+	bestsellers = {},
+	bought = 0,
+	database_total = { {
+			count = 8,
+			name = " Скутер"
+		}, {
+			count = 4,
+			name = "Nissan Silvia S15"
+		}, {
+			count = 1,
+			name = "Lada VAZ 2106"
+		}, {
+			count = 1,
+			name = false
+		} },
+	total = 0
+}

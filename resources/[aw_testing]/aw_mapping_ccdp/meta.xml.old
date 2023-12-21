@@ -1,0 +1,49 @@
+﻿<meta>
+    <info name="Small CCDPlanet Mappings" author="Daeman, Chuba, Autoligenda, Qwertyo" version="17-12-29" type="script" />
+	
+	
+    <script src="files/client.luac" type="client"/>
+    <!-- <script src="files/client.lua" type="client" cache="false"/> -->
+	
+	
+    <script src="files/mapEditorScriptingExtension_c.lua" type="client" />
+    <script src="files/mapEditorScriptingExtension_s.lua" type="server" />
+	<script src="server.lua" type="server" />
+	
+	
+    <map src="Aero_LS.map" />						<!--	Заправка в аэропорту ЛС, некоторые объекты для соревнований     -->
+	
+	<map src="redring_box.map" />					<!--	Автомастерская на красном кольце	-->
+	<script src="redring_box_server.lua" type="server" />
+	
+    <map src="ograd.map" dimension="0" />			<!--	Заборчики в разных местах по карте, ограждения на работе бенза	-->
+	
+    <map src="fencesEKX.map" dimension="0" />		<!--	Заборы в разных местах, чтобы бензовозы не срезали, облагораживание ЕКХ	-->
+	
+	<map src="autorepair.map" dimension="0" />		<!--	Автомастерские в 3 городах, плюс их открывание/закрывание	-->
+	<script src="autorepair_client.luac" type="client" />
+	<!-- <script src="autorepair_client.lua" type="client" cache="false"/> -->
+	<script src="autorepair_server.lua" type="server" />
+	
+    <map src="BCE.map" dimension="0" />				<!--	Заграждения и пр.	-->
+	
+    <map src="benzin.map" />						<!--	Объекты, связанные с бензом Заправки и т.п.	-->
+	
+	
+    <map src="clearmap.map" dimension="0" />		<!--	Очистка карты от некоторых мешающих объектов	-->
+	
+    <map src="doma_trailer.map" dimension="0" />	<!--	Немного домов-трейлеров возле заброшенного аэропорта ЛВ	-->
+	
+	
+	
+	
+    <map src="police_parking.map" dimension="0" />	<!--	Парковки возле пунктов оплаты штрафов	-->
+	
+    <map src="rayon.map" dimension="0" />			<!--	Небольшой райончик, достройка пустой улицы в левой части ЛВ	-->
+	
+	/>
+	<!-- <script src="sfstroyka.lua" type="client" cache="false"/> -->
+	
+    <map src="zavodvrt.map" dimension="0" />		<!--	Ворота на заводе на северо-востоке ЛВ	-->
+	<script src="zavodvrt.lua" type="server" />
+</meta>

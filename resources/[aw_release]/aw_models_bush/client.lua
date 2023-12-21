@@ -1,0 +1,6 @@
+col_floors = engineLoadCOL ( "test.col" )
+engineReplaceCOL ( col_floors, 2914 )
+txd_floors = engineLoadTXD ( "test.txd" )
+engineImportTXD ( txd_floors, 2914 )
+dff_floors = engineLoadDFF ( "test.dff")
+engineReplaceModel ( dff_floors, 2914 )

@@ -1,0 +1,23 @@
+<meta>
+	<script src="shader.lua" type="client" cache="false"/>
+	<file src="shader.fx" />	
+	<file src="img/cos_hiwaymid_256.png" />	
+	<file src="img/crossing_law.png" />	
+	<file src="img/crossing2_law.png" />	
+	<file src="img/des_oldrunway.png" />
+	<file src="img/desert_1line256.png" />
+	<file src="img/dt_road_stoplinea.png" />
+	<file src="img/hiwayend_256.png" />
+	<file src="img/roadnew4_256.png" />
+	<file src="img/sf_junction1.png" />
+	<file src="img/sf_junction2.png" />
+	<file src="img/sl_freew2road1.png" />
+	<file src="img/snpedtest1BLND.png" />
+	<file src="img/Tar_1line256HV.png" />
+	<file src="img/Tar_1line256HVblend2.png" />
+	<file src="img/Tar_freewyleft.png" />
+	<file src="img/Tar_freewyright.png" />
+	<file src="img/vegasdirtyroad3_256.png" />
+	<file src="img/vegastriproad1_256.png" />
+	
+</meta>

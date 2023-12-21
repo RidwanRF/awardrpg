@@ -1,0 +1,10 @@
+<meta>
+	<oop>true</oop>
+	<script src="utils.lua" type="client" />
+	<script src="client.lua" type="client" />
+	<script src="server.lua" type="server" />
+	
+	<aclrequest>
+        <right name="general.ModifyOtherObjects" access="true" />
+    </aclrequest>
+</meta>

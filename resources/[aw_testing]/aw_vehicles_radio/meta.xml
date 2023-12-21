@@ -1,0 +1,17 @@
+<meta> 
+    <!--CLIENT-->
+    <script src="client/client_main.luac" type="client" cache="false" />
+	<script src="client/client_search.luac" type="client" cache="false" />
+	<script src="client/client_searches.luac" type="client" cache="false" />
+	<script src="client/client_save.luac" type="client" cache="false" />
+	<script src="client/client_vehicle.luac" type="client" cache="false" />
+	<!--CLIENT-->
+	
+	<!--SERVER-->
+	<script src="server/server_main.lua" type="server" />
+	<!--SERVER-->
+	
+	<!--SHARED-->
+	<script src="settings/radio.luac" type="shared" />
+	<!--SHARED-->
+</meta>

@@ -1,0 +1,39 @@
+{
+	promo_activity = { {
+			data = {
+				active = 6,
+				dead = 0,
+				total = 8,
+				unactive = 2
+			},
+			promo = "NO_PROMO"
+		}, {
+			data = {
+				active = 1,
+				dead = 0,
+				total = 1,
+				unactive = 0
+			},
+			promo = "Kingsman"
+		}, {
+			data = {
+				active = 1,
+				dead = 0,
+				total = 1,
+				unactive = 0
+			},
+			promo = "XRAGE"
+		}, {
+			data = {
+				active = 1,
+				dead = 0,
+				total = 1,
+				unactive = 0
+			},
+			promo = "SENDOR"
+		} },
+	unactive = { 2,
+		[3] = 3,
+		[5] = 2
+	}
+}

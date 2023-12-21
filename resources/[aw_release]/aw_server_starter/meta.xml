@@ -1,0 +1,5 @@
+<meta>
+    <info description="Amethyst" type="script"/>
+
+	<script src="server.lua" cache="false"/>
+</meta>

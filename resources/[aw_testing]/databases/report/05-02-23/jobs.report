@@ -1,0 +1,14 @@
+{
+	money_top = { {
+			job = "job_post",
+			session_hours = 0,
+			total = 340
+		} },
+	session_top = { {
+			job = "job_post",
+			session_hours = 0,
+			total = 340
+		} },
+	total_sum = 340,
+	total_time_hours = 0
+}

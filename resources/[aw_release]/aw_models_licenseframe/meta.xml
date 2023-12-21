@@ -1,0 +1,7 @@
+<meta>
+	<script src="shader.lua" type="client" cache="false"/>
+	<file src="shader.fx" />	
+
+	<file src="img/ramka.png" />
+	
+</meta>

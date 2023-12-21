@@ -1,0 +1,15 @@
+<meta>
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728" />
+    
+    <script src="glynec.luac" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+    <script src="paintfx.lua" type="client" cache="false" />
+    
+    <file src="mta-helper.fx" />
+    <file src="shader_frent.ttfc" cache="false" />
+    <file src="remap.png" />
+    <file src="CarNoise.png" />
+    <file src="reflx.dds" />
+    <file src="env_1.dat" />
+    <file src="radmir.fx" />
+</meta>

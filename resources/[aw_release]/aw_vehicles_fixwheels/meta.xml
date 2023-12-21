@@ -1,0 +1,6 @@
+<meta>
+
+    <info author="Amethyst" type="script"/>
+    <script src="client/cMain.lua" type="client" cache="false"/>
+    
+</meta> 

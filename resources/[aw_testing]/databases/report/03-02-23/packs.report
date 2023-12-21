@@ -1,0 +1,9 @@
+{
+	bestsellers = { {
+			pack_id = "Новичок",
+			total = 0,
+			uses = 0
+		} },
+	total = 0,
+	uses = 0
+}

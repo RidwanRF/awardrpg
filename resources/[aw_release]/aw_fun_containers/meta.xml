@@ -1,0 +1,66 @@
+<meta>
+
+    <info author="Amethyst" type="script" />
+
+    <script src="client/utils.lua" type="client" cache="false"/>
+    <script src="client/main.lua" type="client" cache="false"/>
+    <script src="client/replace.lua" type="client" cache="false"/>
+    <script src="server/main.lua" type="server" cache="false"/>
+
+
+    <file src="assets/aw_ui_containers_blackout.png" />
+    <file src="assets/aw_ui_containers_medium.png" />
+    <file src="assets/aw_ui_containers_leader.png" />
+    <file src="assets/aw_ui_containers_timer.png" />
+    <file src="assets/aw_ui_containers_noicon.png" />
+    <file src="assets/aw_ui_containers_button_close1.png" />
+    <file src="assets/aw_ui_containers_button_close2.png" />
+    <file src="assets/aw_ui_containers_button_editbox1.png" />
+    <file src="assets/aw_ui_containers_button_editbox2.png" />
+    <file src="assets/aw_ui_containers_button_place1.png" />
+    <file src="assets/aw_ui_containers_button_place2.png" />
+    <file src="assets/aw_ui_containers_prize.png" />
+    <file src="assets/BMW E31 850 CSI.png" />
+    <file src="assets/BMW M2 Competition.png" />
+    <file src="assets/Ferrari 812 Superfast.png" />
+    <file src="assets/Ferrari SF90 Stradale.png" />
+    <file src="assets/McLaren SpeedTail.png" />
+    <file src="assets/Mercedes-Benz GLS63 Maybach.png" />
+    <file src="assets/aw_ui_containers_button_sell1.png" />
+    <file src="assets/aw_ui_containers_button_sell2.png" />
+    <file src="assets/aw_ui_containers_button_take1.png" />
+    <file src="assets/aw_ui_containers_button_take2.png" />
+
+
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+    <file src="assets/models/containers.txd" />
+    <file src="assets/models/container_body.col" />
+    <file src="assets/models/container_body.dff" />
+    <file src="assets/models/container_gate1.col" />
+    <file src="assets/models/container_gate1.dff" />
+    <file src="assets/models/container_gate2.col" />
+    <file src="assets/models/container_gate2.dff" />
+    <file src="assets/textures/Dubai/con_floar.png" />
+    <file src="assets/textures/Dubai/con_gate.png" />
+    <file src="assets/textures/Dubai/con_wall.png" />
+    <file src="assets/textures/Dubai/con_wall_dop.png" />
+    <file src="assets/textures/Russia/con_floor.png" />
+    <file src="assets/textures/Russia/con_gate.png" />
+    <file src="assets/textures/Russia/con_wall.png" />
+    <file src="assets/textures/Russia/con_wall_dop.png" />
+    <file src="assets/textures/USA/con_floor.png" />
+    <file src="assets/textures/USA/con_gate.png" />
+    <file src="assets/textures/USA/con_wall.png" />
+    <file src="assets/textures/USA/con_wall_dop.png" />
+
+	
+
+	<file src="assets/texture_replace.fx" />
+
+</meta>

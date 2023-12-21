@@ -1,0 +1,34 @@
+{
+	bestsellers = { {
+			bought = 1,
+			car_name = "Lada VAZ 2106",
+			total = 13000
+		} },
+	bought = 1,
+	database_total = { {
+			count = 19,
+			name = " Скутер"
+		}, {
+			count = 7,
+			name = "Nissan Silvia S15"
+		}, {
+			count = 2,
+			name = "Lada VAZ 2106"
+		}, {
+			count = 1,
+			name = "Mercedes CLS 63"
+		}, {
+			count = 1,
+			name = "VAZ 2107"
+		}, {
+			count = 1,
+			name = "Skoda Octavia"
+		}, {
+			count = 1,
+			name = false
+		}, {
+			count = 1,
+			name = "BMW M5 E34"
+		} },
+	total = 13000
+}

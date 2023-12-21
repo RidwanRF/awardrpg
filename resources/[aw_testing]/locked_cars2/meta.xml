@@ -1,0 +1,19 @@
+<meta>
+
+<script src="client.lua" type="client" cache="false"/>
+
+<file src="m4f83.dffrw" type="client"/>
+<file src="m4f83.txdrw" type="client"/>
+
+<file src="f-150.dffrw" type="client"/>
+<file src="f-150.txdrw" type="client"/>
+
+<file src="m5f90.txdrw" type="client"/>
+<file src="m5f90.dffrw" type="client"/>
+
+
+<file src="rs7.txdrw" type="client"/>
+<file src="rs7.dffrw" type="client"/>
+
+
+</meta>

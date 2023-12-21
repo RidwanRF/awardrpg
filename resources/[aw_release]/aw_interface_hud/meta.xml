@@ -1,0 +1,44 @@
+<meta>
+	<info author="Amethyst" type="script" />
+	
+    <script src="client/cMain.lua" type="client" cache="false"/>
+	<script src="client/hou_circle.lua" type="client" cache="false" />
+
+    <file src="assets/aw_ui_hud_blackout.png" />
+    <file src="assets/aw_ui_hud_logotype.png" />
+    <file src="assets/aw_ui_hud_star1.png" />
+    <file src="assets/aw_ui_hud_star2.png" />
+    <file src="assets/aw_ui_hud_ammo.png" />
+    <file src="assets/aw_ui_hud_hungry.png" />
+    <file src="assets/aw_ui_hud_health.png" />
+    <file src="assets/aw_ui_hud_armor.png" />
+    <file src="assets/aw_ui_hud_circle.png" />
+    <file src="assets/aw_ui_hud_circle2.png" />
+
+    <file src="assets/aw_ui_hud_money.png" />
+    <file src="assets/aw_ui_hud_x2site.png" />
+
+
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+	<file src="assets/mask3d.fx" />
+    <file src="assets/tex_matrix.fx" />
+    <file src="assets/hud_mask.fx" />
+    <file src="assets/hou_circle.fx" />
+    <file src="assets/circle.fx" />
+
+    <export function='newmessages' type='client' />
+    <export function='anim_true' type='client' />
+    <export function='anim_false' type='client' />
+	<min_mta_version client="1.5" server="1.5" />
+</meta>
+
+
+
+
+

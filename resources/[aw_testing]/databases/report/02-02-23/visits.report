@@ -1,0 +1,11 @@
+{
+	average_session_minutes = 0,
+	miss_registrations = 1,
+	played_more = {},
+	registrations = 1,
+	total = 5,
+	total_accounts = 8,
+	tutorial_canceled = 0,
+	tutorial_finished = 0,
+	unique = 0
+}

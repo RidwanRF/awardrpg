@@ -1,0 +1,18 @@
+<meta>
+
+	<script type="client" src="client/sources.lua" cache="false"/>
+	<script type="client" src="client/main.lua" cache="false"/>
+	<script type="client" src="client/gui.lua" cache="false"/>
+	<script type="client" src="client/typing.lua" cache="false"/>
+
+	<script type="server" src="server/typing.lua" cache="false"/>
+
+	<file src="assets/images/triangle.png"/>
+	<file src="assets/images/vip.png"/>
+
+	<oop>true</oop>
+
+	<download_priority_group>10</download_priority_group>
+	
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+</meta>

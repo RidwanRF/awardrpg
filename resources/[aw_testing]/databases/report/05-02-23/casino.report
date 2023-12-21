@@ -1,0 +1,22 @@
+{
+	bought = { {
+			name = "andriy777",
+			total = 14000
+		} },
+	delta = { {
+			name = "andriy777",
+			total = 14000
+		}, {
+			name = "Vlad123",
+			total = -54000
+		} },
+	sold = { {
+			name = "Vlad123",
+			total = 54000
+		} },
+	sum = {
+		bought = 14000,
+		delta = -40000,
+		sold = 54000
+	}
+}

@@ -1,0 +1,113 @@
+﻿<meta>
+	<oop>true</oop>
+	<min_mta_version server="1.3.0-9.04570" client="1.5.2-9.07903" />
+
+	<script src="client/clear.lua" type="client"/>
+	<script src="client/settings.lua" type="client"/>
+	<script src="client/client.lua" type="client" cache="false"/>
+	<script src="assets/shader/hou_circle.lua" type="client" cache="false"/>
+	<script src="server/server.lua" type="server" cache="false"/>
+	
+	<export function="renewRadarBorder" type="server" />
+	<export function="getRadarCoords" type="client" />
+	
+	<file src="assets/shader/mask3d.fx" />
+	<file src="assets/shader/tex_matrix.fx" />
+	<file src="assets/shader/hud_mask.fx" />
+	<file src="assets/shader/hou_circle.fx" />
+	<file src="assets/mask3d.fx" />
+    <file src="assets/tex_matrix.fx" />
+    <file src="assets/hud_mask.fx" />
+    <file src="assets/hou_circle.fx" />
+    <file src="assets/circle.fx" />
+	<script src="client/hou_circle.lua" type="client" cache="false" />
+
+	
+	<file src="assets/GothamPro.ttf" />
+	
+	<file src="assets/aw_ui_radar_map.png" />
+	<file src="assets/aw_ui_radar_mask.png"/>
+	<file src="assets/aw_ui_radar_border.png"/>
+	<file src="assets/aw_ui_radar_bordermask.png"/>
+	<file src="assets/aw_ui_radar_player.png"/>
+	<file src="assets/aw_ui_radar_health.png"/>
+
+	<file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+	<file src="assets/images/blip/nosingal.png" />
+
+	<file src="assets/images/blip/up.png" />
+	<file src="assets/images/blip/down.png" />
+	<file src="assets/images/blip/alpha.png" />
+	<file src="assets/images/blip/water.png" />
+	<file src="assets/images/blip/localPlayer.png" />
+	<file src="assets/images/blip/0.png" />
+	<file src="assets/images/blip/1.png" />
+	<file src="assets/images/blip/2.png" />
+	<file src="assets/images/blip/3.png" />
+	<file src="assets/images/blip/4.png" />
+	<file src="assets/images/blip/5.png" />
+	<file src="assets/images/blip/6.png" />
+	<file src="assets/images/blip/7.png" />
+	<file src="assets/images/blip/8.png" />
+	<file src="assets/images/blip/9.png" />
+	<file src="assets/images/blip/10.png" />
+	<file src="assets/images/blip/11.png" />
+	<file src="assets/images/blip/12.png" />
+	<file src="assets/images/blip/13.png" />
+	<file src="assets/images/blip/14.png" />
+	<file src="assets/images/blip/15.png" />
+	<file src="assets/images/blip/16.png" />
+	<file src="assets/images/blip/17.png" />
+	<file src="assets/images/blip/18.png" />
+	<file src="assets/images/blip/19.png" />
+	<file src="assets/images/blip/20.png" />
+	<file src="assets/images/blip/21.png" />
+	<file src="assets/images/blip/22.png" />
+	<file src="assets/images/blip/23.png" />
+	<file src="assets/images/blip/24.png" />
+	<file src="assets/images/blip/25.png" />
+	<file src="assets/images/blip/26.png" />
+	<file src="assets/images/blip/27.png" />
+	<file src="assets/images/blip/28.png" />
+	<file src="assets/images/blip/29.png" />
+	<file src="assets/images/blip/30.png" />
+	<file src="assets/images/blip/31.png" />
+	<file src="assets/images/blip/32.png" />
+	<file src="assets/images/blip/33.png" />
+	<file src="assets/images/blip/34.png" />
+	<file src="assets/images/blip/35.png" />
+	<file src="assets/images/blip/36.png" />
+	<file src="assets/images/blip/37.png" />
+	<file src="assets/images/blip/38.png" />
+	<file src="assets/images/blip/39.png" />
+	<file src="assets/images/blip/40.png" />
+	<file src="assets/images/blip/41.png" />
+	<file src="assets/images/blip/42.png" />
+	<file src="assets/images/blip/43.png" />
+	<file src="assets/images/blip/44.png" />
+	<file src="assets/images/blip/45.png" />
+	<file src="assets/images/blip/46.png" />
+	<file src="assets/images/blip/47.png" />
+	<file src="assets/images/blip/48.png" />
+	<file src="assets/images/blip/49.png" />
+	<file src="assets/images/blip/50.png" />
+	<file src="assets/images/blip/51.png" />
+	<file src="assets/images/blip/52.png" />
+	<file src="assets/images/blip/53.png" />
+	<file src="assets/images/blip/54.png" />
+	<file src="assets/images/blip/55.png" />
+	<file src="assets/images/blip/56.png" />
+	<file src="assets/images/blip/57.png" />
+	<file src="assets/images/blip/58.png" />
+	<file src="assets/images/blip/59.png" />
+	<file src="assets/images/blip/60.png" />
+	<file src="assets/images/blip/61.png" />
+	<file src="assets/images/blip/62.png" />
+	<file src="assets/images/blip/63.png" />
+	<file src="assets/images/blip/64.png" />
+
+	<export function='anim_true' type='client' />
+    <export function='anim_false' type='client' />
+</meta>

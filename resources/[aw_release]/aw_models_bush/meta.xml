@@ -1,0 +1,9 @@
+<meta>
+
+    <info author="Kovalskiy" type="script"/>
+    <script src="client.lua" type="client"/>
+    <file src="test.txd" type="client"/>
+    <file src="test.col" type="client"/>
+    <file src="test.dff" type="client"/>
+
+</meta> 

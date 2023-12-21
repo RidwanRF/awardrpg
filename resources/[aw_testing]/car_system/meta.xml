@@ -1,0 +1,132 @@
+﻿<meta>
+    <info author="Daeman" version="18-03-27" name="Vehicle System" type="script" />
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728" />
+    <include resource="mysql" />
+    
+    <script src="shared_main.lua" type="shared" cache="false"/>
+    <script src="shared_carnames.lua" type="shared" cache="false"/>
+    <script src="shared_shopTable.lua" type="shared" cache="false"/>
+    
+    <script src="client_main.lua" type="client" cache="false"/>
+    <script src="client_interchange.lua" type="client" cache="false"/>
+    <script src="util.lua" type="client" cache="false"/>
+    
+    <script src="server_tables.lua" type="server" cache="false"/>
+    <script src="server_main.lua" type="server" cache="false"/>
+    <script src="server_paintjobs.lua" type="server" cache="false"/>
+    <script src="server_mysql.lua" type="server" cache="false"/>
+    <script src="server_interchange.lua" type="server" cache="false"/>
+ 
+    <export type="shared" function="createVehicle" />
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+    <file src="assets/yes.png" />
+    <file src="assets/no.png" />
+
+    <file src="images/main.png" />
+    <file src="images/main_car2.png" />
+    <file src="images/main_car.png" />
+
+    <file src="images/buttons.png" />
+    <file src="images/sell.png" />
+    <file src="images/spawn.png" />
+    <file src="images/tpVeh.png" />
+    <file src="images/removeVeh.png" />
+    <file src="images/replaceHend.png" />
+
+    <file src="images/spawnd.png" />
+
+    <file src="images/obmens.png" />
+    <file src="images/bgpok.png" />
+
+    <export function="convertPlateIDtoLicensep" type="shared" /> 
+    <export function="getVehicleModName"        type="shared" />
+    <export function="getCarPrice"              type="shared" />
+    <export function="getShopTable"             type="shared" />
+    <export function="getCarPrivod"             type="shared" />
+    <export function="getCarIconImg"            type="shared" />
+    <export function="getCarFuelScale"          type="shared" />
+
+	<export function="getCarCountry"				type="shared" />
+	<export function="getMaxCar"				type="shared" />
+    <export function="getMaxText"                type="shared" />
+    <export function="getCarBoost"                type="shared" />
+    <export function="getCarTuning"                type="shared" />
+    <export function="getCarRecFuel"                type="shared" />
+    <export function="getBrakingText"                type="shared" />
+    <export function="getBrakingLine"                type="shared" />
+    <export function="getFuelText"                type="shared" />
+    <export function="getFuelLine"                type="shared" />
+    <export function="getCarClutch"                type="shared" />
+    <export function="getCarBrake"                type="shared" />
+
+    <export function="getNameText"                type="shared" />
+    <export function="getCountryName"                type="shared" />
+
+    <export function="getCarYear"                type="shared" />
+    <export function="getCarClass"                type="shared" />
+    
+    <export function="convertPlateIDtoLicensep" type="shared" /> 
+    <export function="getVehicleModName"        type="shared" />
+    <export function="getCarPrice"              type="shared" />
+    <export function="getShopTable"             type="shared" />
+    <export function="getCarPrivod"             type="shared" />
+    <export function="getCarIconImg"            type="shared" />
+    <export function="getCarFuelScale"          type="shared" />
+
+    <export function="getCarMas"                type="shared" />
+    <export function="getCarSpeedCount"         type="shared" />
+    <export function="getCarPlayers"            type="shared" />
+    <export function="getCarTune"               type="shared" /> 
+    <export function="getCarMaxSpeed"           type="shared" /> 
+    <export function="getCarStoped"             type="shared" /> 
+    <export function="getCarSpeedLux"           type="shared" /> 
+    <export function="convertPlateIDtoLicensep" type="shared" /> 
+    <export function="getVehicleModName"        type="shared" />
+    <export function="getCarPrice"              type="shared" />
+    <export function="getShopTable"             type="shared" />
+    <export function="getMaxTex"                type="shared" />
+    <export function="getCarMaxSpeedText"               type="shared" />
+    
+    
+    <export function="convertPlateIDtoLicensep" type="shared" />
+    <export function="getVehicleModName" type="shared" />
+    <export function="getCarPrice" type="shared" />
+    <export function="getShopTable" type="shared" />
+    
+    <export function="buyVehicleForPlayer" type="server" />
+    <export function="giveVehicleForPlayer" type="server" />
+    <export function="BuyVehicleByUsed" type="server" />
+    <export function="changeNomer" type="server" />
+    <export function="checkNomerExistance" type="server" />
+    <!-- checkNomerExistance(nomer) -->
+    <export function="destroyVehicle" type="server" />
+    <export function="generateNumberplate" type="server" />
+    <export function="saveCarData" type="server" />
+    <export function="updateVehicleInfo" type="server" />
+    <export function="wipeAccount" type="server" />
+    <export function="addPoliceCar" type="server" />
+    <!-- addPoliceCar(player) -->
+    <export function="removePoliceCar" type="server" />
+    <!-- removePoliceCar(player, accName) -->
+    <export function="destroyPoliceCar" type="server" />
+    <!-- destroyPoliceCar(accName) -->
+    <export function="getPoliceCarOwners" type="server" />
+    <!-- getPoliceCarOwners() -->
+    <export function="DonateAuto" type="server" />
+ 
+	<export function="delCarAuction"		type="server" />	<!-- delCarAuction() -->
+	<export function="giveVehicleAccForID"	type="server" />	<!-- giveVehicleAccForID() -->
+	<export function="delCar"				type="server" />	<!-- delCar() -->
+	<export function="spawnVehicle"			type="server" />	<!-- spawnVehicle() -->
+    <export function="getUsedParkLots"	type="server" />
+
+ 
+    <!-- Obsolete -->
+    <export function="policeRemoveCar" type="server" />
+    <export function="addBase" type="server" />
+</meta>

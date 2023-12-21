@@ -1,0 +1,29 @@
+<meta>
+
+<script src="client.lua" type="client" cache="false"/>
+
+<file src="cls63.dffrw" type="client"/>
+<file src="cls63.txdrw" type="client"/>
+
+<file src="vision.dffrw" type="client"/>
+<file src="vision.txdrw" type="client"/>
+
+<file src="850csi.txdrw" type="client"/>
+<file src="850csi.dffrw" type="client"/>
+
+
+
+<file src="c63w204.txdrw" type="client"/>
+<file src="c63w204.dffrw" type="client"/>
+
+<file src="x5e53.txdrw" type="client"/>
+<file src="x5e53.dffrw" type="client"/>
+
+<file src="m4g82.txdrw" type="client"/>
+<file src="m4g82.dffrw" type="client"/>
+
+<file src="m5e34.txdrw" type="client"/>
+<file src="m5e34.dffrw" type="client"/>
+
+
+</meta>

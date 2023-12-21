@@ -1,0 +1,14 @@
+<meta>
+<info author="www.mta-resource" description="MTA Resource Repalce Master PRO" version="1.3" type="script" />
+<script src="client.lua" type="client"/>
+<file src="rs6.txd" type="client"/>
+<file src="rs6.dff" type="client"/>
+<file src="s5.txd" type="client"/>
+<file src="s5.dff" type="client"/>
+<file src="taycan.txd" type="client"/>
+<file src="taycan.dff" type="client"/>
+<file src="2109.txd" type="client"/>
+<file src="2109.dff" type="client"/>
+<file src="g80.txd" type="client"/>
+<file src="g80.dff" type="client"/>
+</meta> 

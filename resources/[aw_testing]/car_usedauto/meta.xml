@@ -1,0 +1,18 @@
+﻿<meta>
+    <info name="Used cars showroom" author="Daeman" version="17-12-29" type="script" />
+	<min_mta_version client="1.5.2-9.07903" server="1.3.4-0.00000" />
+	
+	
+	<script src="client.lua" type="client" cache="false"/>
+	<!-- <script src="client.lua" type="client" cache="false"/> -->
+	
+	
+	<script src="positions.lua" type="server" />
+	<script src="server.lua" type="server" />
+	
+	<export function="addCarToUsedShop" type="server" />
+	<export function="checkNomerExistance" type="server" />
+	<export function="wipeAccount" type="server" />
+	<export function="endOfWipe" type="server" />
+	
+</meta>

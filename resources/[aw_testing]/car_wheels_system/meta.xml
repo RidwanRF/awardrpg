@@ -1,0 +1,17 @@
+ <meta>
+    <oop>true</oop>
+	
+    <script type="client" src="client/config.lua" cache="false"/>
+    <script type="client" src="client/wheels_position.lua" cache="false"/>
+    <script type="client" src="client/wheels_replace.lua" cache="false"/>
+    <script type="client" src="client/wheels_color.lua" cache="false"/>
+    <script type="client" src="client/main.lua" cache="false"/>
+
+	
+    <export type="client" function="updateVehicleWheels"/>
+    <export type="client" function="getVehicleDefaultWheelsRadius"/>
+    <export type="client" function="getVehicleDefaultWheelPosition"/>
+
+    <file src="assets/shaders/texture_replace.fx"/>
+    <file src="assets/shaders/replace.fx"/>
+</meta>

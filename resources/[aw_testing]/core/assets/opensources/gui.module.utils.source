@@ -1,0 +1,203 @@
+
+
+GUI_MODULE_UTILS = true
+clearGuiTextures = true
+
+sx,sy = 1920, 1080
+real_sx,real_sy = guiGetScreenSize()
+
+function px(value)
+	return math.floor(value*(real_sx/sx)*drawScale)
+end
+
+function px_y(value)
+	return math.floor(value*(real_sy/sy)*drawScale)
+end
+
+function px_noround(value)
+	return value*(real_sx/sx)*drawScale
+end
+
+------------------------------------------------------------------------------------------
+
+addCommandHandler('res', function(_, w,h)
+	w,h = tonumber(w), tonumber(h)
+	if w and h then
+		real_sx, real_sy = w,h
+	end
+end)
+
+------------------------------------------------------------------------------------------
+
+curDrawingTextures = {}
+
+function destroyRenderTargets(element)
+
+	if isElement(element.renderTarget) then
+		destroyElement(element.renderTarget)
+		element.renderTarget = nil
+	end
+
+	for _, c_element in pairs( element.elements or {} ) do
+		destroyRenderTargets(c_element)
+	end
+
+end
+
+function destroyAllDrawingTextures()
+
+	
+
+	-- if not getElementData(localPlayer, 'settings.textures_cache') then return end
+
+	if not clearGuiTextures then return end
+
+	for path, texture in pairs(curDrawingTextures) do
+		if isElement(texture) then
+			destroyElement(texture)
+			curDrawingTextures[path] = nil
+		end
+	end
+
+	if windowModel then
+		for _, section in pairs(windowModel) do
+			for elementId, element in pairs(section) do
+				destroyRenderTargets(element)
+			end
+		end
+	end
+
+	clearFonts()
+
+end
+
+function createDrawingTexture(path)
+	if not fileExists(path) then return false end
+	if isElement(curDrawingTextures[path]) then return curDrawingTextures[path] end
+	curDrawingTextures[path] = dxCreateTexture(path, 'argb', true, 'clamp')
+
+	return curDrawingTextures[path]
+end
+
+function getDrawingTexture(path)
+	return isElement(path) and path
+		or (curDrawingTextures[path] or createDrawingTexture(path))
+end
+
+------------------------------------------------------------------------------------------
+
+function setDrawScale(value)
+	drawScale = value
+	xCenter,yCenter = sx/2/drawScale, sy/2/drawScale
+end
+
+setDrawScale(1)
+
+mta_dxDrawImage = dxDrawImage
+mta_dxDrawImageSection = dxDrawImageSection
+mta_dxDrawImage1 = mta_dxDrawImage
+
+
+function mta_dxDrawImage(x,y,w,h, image, r,ro1,ro2,c, pgui)
+	mta_dxDrawImage1(
+		x,y,
+		math.floor(w),
+		math.floor(h),
+		getDrawingTexture(image), r,ro1,ro2,c, pgui
+	)
+end
+
+function dxDrawImageSection(x,y,w,h,u,v,us,vs, image, r,ro1,ro2,c, pgui)
+	mta_dxDrawImageSection(
+		px(x),px(y),
+		px(w),px(h),
+		u, v,
+		us, vs,
+		getDrawingTexture(image), r,ro1,ro2,c, pgui
+	)
+end
+
+function dxDrawImage(x,y,w,h, image, r,ro1,ro2,c, pgui)
+	mta_dxDrawImage(
+		px(x),px(y),
+		px(w),
+		px(h),
+		image, r,ro1,ro2,c, pgui
+	)
+end
+
+mta_dxDrawRectangle = dxDrawRectangle
+function dxDrawRectangle(x,y,w,h, color, pgui)
+	mta_dxDrawRectangle(
+		px(x),px(y),px(w),px(h),
+		color, pgui
+	)
+end
+
+mta_dxDrawText = dxDrawText
+mta_dxDrawText1 = mta_dxDrawText
+
+function mta_dxDrawText(text, x1,y1,x2,y2, color, scalex, scaley, font, ax,ay,clip,wb, ...)
+	mta_dxDrawText1(text,
+		x1,y1,x2,y2,
+		color, scalex, scaley, getFontElement(font), ax,ay,clip,wb,...
+	)
+end
+
+function dxDrawText(text, x1,y1,x2,y2, color, scalex, scaley, font, ax,ay,clip,wb, ...)
+	mta_dxDrawText(text,
+		px(x1),px(y1),px(x2),px(y2),
+		color, scalex, scaley, font, ax,ay,clip,wb,...
+	)
+end
+
+mta_dxDrawLine = dxDrawLine
+function dxDrawLine( startx, starty, endx, endy, color, w, ... )
+	mta_dxDrawLine(
+		px(startx),px(starty),px(endx),px(endy),
+		color, px_noround(w), ...
+	)
+end
+
+
+function isMouseInPosition ( x, y, width, height )
+	if ( not isCursorShowing( ) ) then
+		return false
+	end
+    local cx, cy = getCursorPosition ( )
+    cx, cy = cx * real_sx, cy * real_sy
+
+	x, y, width, height = px(x), px(y), px(width), px(height)
+    
+    if ( cx >= x ) and ( cx <= x + width )
+	and ( cy >= y ) and ( cy <= y + height ) then
+        return true
+    else
+        return false
+    end
+end
+function mta_isMouseInPosition ( x, y, width, height )
+	if ( not isCursorShowing( ) ) then
+		return false
+	end
+    local cx, cy = getCursorPosition ( )
+    cx, cy = cx * real_sx, cy * real_sy
+    
+    if ( cx >= x ) and ( cx <= x + width )
+	and ( cy >= y ) and ( cy <= y + height ) then
+        return true
+    else
+        return false
+    end
+end
+
+function RGBToHex(red, green, blue, alpha)
+	if( ( red < 0 or red > 255 or green < 0 or green > 255 or blue < 0 or blue > 255 ) or ( alpha and ( alpha < 0 or alpha > 255 ) ) ) then
+		return nil
+	end
+	if alpha then
+		return string.format("#%.2X%.2X%.2X%.2X", red, green, blue, alpha)
+	else
+		return string.format("#%.2X%.2X%.2X", red, green, blue)
+	end
+end

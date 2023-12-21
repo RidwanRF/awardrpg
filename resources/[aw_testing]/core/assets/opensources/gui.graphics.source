@@ -1,0 +1,470 @@
+--------------------------------------------------------------------------------------------
+
+	loadstring( exports.core:include('timed_animations') )()
+
+--------------------------------------------------------------------------------------------
+
+	function convertColorToHLSL( color )
+		return { color[1]/255, color[2]/255, color[3]/255, (color[4] or 255)/255 }
+	end
+
+--------------------------------------------------------------------------------------------
+
+	local shaders = {}
+
+	local function getShader(shader_name)
+
+		shaders[shader_name] = isElement(shaders[shader_name])
+			and shaders[shader_name]
+			or exports.core:getGraphicsElement(shader_name)
+
+		return isElement(shaders[shader_name]) and shaders[shader_name]
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	local defaultBlurLevel = 2
+
+	function getBlurTexture(texture, blurLevel, alpha)
+
+		local blurShader = getShader('shader_blur')
+
+		dxSetShaderValue(blurShader, 'gTexture', texture)
+		dxSetShaderValue(blurShader, 'gTextureSize', { dxGetMaterialSize(texture) })
+		dxSetShaderValue(blurShader, 'blurLevel', blurLevel or defaultBlurLevel)
+		dxSetShaderValue(blurShader, 'alpha', alpha)
+
+		return blurShader
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	function cutTextureByMask(texture, settings)
+
+		local maskShader = getShader('shader_mask')
+
+		dxSetShaderValue(maskShader, 'gTexture', texture)
+		dxSetShaderValue(maskShader, 'gMaskTexture', settings.mask)
+		dxSetShaderValue(maskShader, 'gMode', settings.mode or 0)
+		dxSetShaderValue(maskShader, 'gAlpha', settings.alpha or 1)
+
+		return maskShader
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	local roundMaskShader = exports.core:getGraphicsElement('shader_round_mask')
+
+	function getRoundMask(texture, settings)
+
+		local roundMaskShader = getShader('shader_round_mask')
+
+		dxSetShaderValue(roundMaskShader, 'gTexture', texture)
+		dxSetShaderValue(roundMaskShader, 'color', convertColorToHLSL( settings.color or {255,255,255,255} ))
+
+		dxSetShaderValue(roundMaskShader, 'alpha', settings.alpha or 1)
+
+		dxSetShaderValue(roundMaskShader, 'minAngle', settings.angle[1] or 0)
+		dxSetShaderValue(roundMaskShader, 'maxAngle', settings.angle[2] or 360)
+
+		return roundMaskShader
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	function getScreenSource()
+		return exports.core:getGraphicsElement('screen_source')
+	end
+
+--------------------------------------------------------------------------------------------
+
+	function getTextureGradient(texture, settings)
+
+		local gradientShader = getShader('shader_gradient')
+
+		dxSetShaderValue(gradientShader, 'gTexture', texture)
+		dxSetShaderValue(gradientShader, 'gGradientAngle', settings.angle)
+		dxSetShaderValue(gradientShader, 'gStartColor', convertColorToHLSL(settings.color[1]))
+		dxSetShaderValue(gradientShader, 'gEndColor', convertColorToHLSL(settings.color[2]))
+		dxSetShaderValue(gradientShader, 'gAlpha', settings.alpha or 1)
+
+		return gradientShader
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	function getGrayTexture(texture, settings)
+
+		local grayShader = getShader('shader_gray')
+
+		dxSetShaderValue(grayShader, 'gTexture', texture)
+		dxSetShaderValue(grayShader, 'gAlpha', settings.alpha or 1)
+
+		return grayShader
+
+	end
+
+
+--------------------------------------------------------------------------------------------
+
+	function dxDrawTextShadow(text, l,t,r,b,c,s,f,ax,ay,tsW,color,ct,func)
+		local dFunc = func or dxDrawText
+		if tsW > 0 then
+			dFunc(ct or text,
+				l + tsW, t + tsW, r + tsW, b + tsW,
+				color or black, s, s, f, ax, ay)
+			dFunc(ct or text,
+				l - tsW, t + tsW, r - tsW, b + tsW,
+				color or black, s, s, f, ax, ay)
+			dFunc(ct or text,
+				l + tsW, t - tsW, r + tsW, b - tsW,
+				color or black, s, s, f, ax, ay)
+			dFunc(ct or text,
+				l - tsW, t - tsW, r - tsW, b - tsW,
+				color or black, s, s, f, ax, ay)
+		end
+
+		if ct then
+			dFunc(text,
+				l, t, r, b,
+				c, s, s, f, ax, ay, false, false, false, true)
+		else
+			dFunc(text,
+				l, t, r, b,
+				c, s, s, f, ax, ay)
+		end
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	local Loading_class = {
+
+		init = function( self, data )
+
+			data = data or {}
+
+			timed_setAnimData( self, data.time or 1000 )
+			setAnimData( self, 0.05 )
+
+			return true
+
+		end,
+
+		destroy = function( self )
+
+			timed_removeAnimData( self )
+			removeAnimData( self )
+			return true
+
+		end,
+
+		animate = function( self, time, callback )
+
+			if time then
+				timed_setAnimData( self, time )
+			end
+
+			animate(self, 1)
+
+			timed_animate( self, true, function()
+
+				setTimer(function()
+					animate(self, 0)
+
+					if callback then
+						callback()
+					end
+
+				end, 500, 1)
+
+			end )
+
+			return true
+
+		end,
+
+		draw = function( self, x,y,w,h, color )
+
+			local anim_data = timed_getAnimData(self)
+			if not anim_data then return end
+
+			local alpha_anim = getAnimData(self)
+
+			local r_texture = getDrawingTexture(':core/assets/images/round_empty.png')
+
+			dxDrawImage(
+				x,y,w,h, r_texture, 360*anim_data,
+				0, 0, tocolor(20, 20, 20, 255*alpha_anim)
+			)
+
+			local progress_texture = getRoundMask( r_texture, {
+				color = color,
+				alpha = 1*alpha_anim,
+				angle = { 0, 360*anim_data },
+			} )
+
+			dxDrawImage(
+				x+1,y+1,w-2,h-2, progress_texture, 360*anim_data
+			)
+
+			return true
+
+		end,
+
+	}
+
+	function Loading( data )
+
+		local obj = {}
+		setmetatable(obj, {__index = Loading_class})
+
+		obj:init()
+
+		return obj
+
+	end
+
+--------------------------------------------------------------------------------------------
+
+	local Loading_links = {}
+	function displayLoading( coords, color, time, callback )
+
+		local loading = Loading()
+
+		Loading_links[loading] = loading
+
+		loading.coords = coords
+		loading.color = color
+		loading.callback = callback
+
+		loading:animate( time, function()
+
+			if loading.callback then
+				loading.callback()
+			end
+
+			loading:destroy()
+			Loading_links[loading] = nil
+
+		end )
+
+	end
+
+
+	addEventHandler('onClientRender', root, function()
+
+		for loading in pairs( Loading_links ) do
+			local x,y,w,h = unpack(loading.coords)
+			loading:draw( x,y,w,h, loading.color )
+		end
+
+	end, true, 'low-1000')
+
+--------------------------------------------------------------------------------------------
+
+	function drawImageSection( x,y, w,h, _texture, progress, color, direction, mta_draw )
+
+		local texture, mw,mh
+
+		if getDrawingTexture then
+			texture = getDrawingTexture( _texture )
+			mw,mh = dxGetMaterialSize(texture)
+		else
+			texture = _texture
+			mw,mh = w,h
+		end
+
+		local func = mta_draw and mta_dxDrawImageSection or dxDrawImageSection
+
+		if direction == 1 then
+
+			progress.x = 1 - progress.x
+			progress.y = 1 - progress.y
+
+			func(
+				x + w * progress.x, y + h * progress.y,
+				w - w * progress.x, h - h * progress.y,
+				w * progress.x, h * progress.y,
+				w - w * progress.x, h - h * progress.y,
+				texture,
+				0,0,0, color
+			)
+
+		else
+			func(
+				x, y,
+				w * progress.x, h * progress.y,
+				0, 0,
+				mw * progress.x, mh * progress.y,
+				texture,
+				0,0,0, color
+			)
+		end
+
+
+	end
+
+	function mta_drawImageSection( x,y, w,h, _texture, progress, color, direction )
+		drawImageSection( x,y, w,h, _texture, progress, color, direction, true )
+	end
+
+--------------------------------------------------------------------------------------------
+
+	function drawSmartText(text, x1,x2, y, c, ic, s, f, ax, ics, icp, ic_add)
+
+		local imgSize = ics or 30
+		local padding = icp or 5
+		local splitted = splitString(text, '<img>')
+		ax = ax or 'left'
+
+		if ax == 'left' then
+
+			local startX = x1
+
+
+			if #splitted == 1 then
+
+				dxDrawText(splitted[1],
+					x1,y,x2,y,
+					c, s, s, f,
+					'left', 'center', false, false, false, true
+				)
+
+			else
+
+				for _, row in pairs( splitted ) do
+
+					local sRow = splitString(row, '</img>')
+
+					if #sRow == 1 then
+
+						local textWidth = dxGetTextWidth(sRow[1], s, f, true)
+
+						dxDrawText(sRow[1],
+							startX,
+							y,
+							startX,
+							y,
+							c,
+							s, s, f,
+							'left', 'center', false, false, false, true
+						)
+
+						startX = startX + textWidth/real_sx*sx + padding
+
+					else
+
+						dxDrawImage(
+							startX, y - imgSize/2+(ic_add or 0),
+							imgSize, imgSize, sRow[1], 0, 0, 0,
+							ic
+						)
+
+						startX = startX + imgSize + padding
+
+						local textWidth = dxGetTextWidth(sRow[2], s, f, true)
+
+							dxDrawText(sRow[2],
+							startX,
+							y,
+							startX,
+							y,
+							c,
+							s, s, f,
+							'left', 'center', false, false, false, true
+						)
+
+						startX = startX + textWidth/real_sx*sx + padding
+
+					end
+
+
+
+				end
+
+			end
+
+		elseif ax == 'center' then
+
+			if #splitted == 1 then
+
+				dxDrawText(splitted[1],
+					x1,y,x2,y,
+					c, s, s, f,
+					'center', 'center', false, false, false, true
+				)
+
+			else
+
+				local totalWidth = 0
+				local d_elements = {}
+
+				for _, row in pairs( splitted ) do
+
+					local sRow = splitString(row, '</img>')
+
+					if #sRow == 1 then
+
+						local textWidth = dxGetTextWidth(sRow[1], s, f, true)
+
+						totalWidth = totalWidth + textWidth + padding
+						table.insert(d_elements, { text = sRow[1], width = textWidth + padding } )
+
+					else
+
+						table.insert(d_elements, { image = sRow[1], width = imgSize + padding } )
+
+						local textWidth = dxGetTextWidth(sRow[2], s, f, true)
+
+						table.insert(d_elements, { text = sRow[2], width = textWidth + padding } )
+
+						totalWidth = totalWidth + textWidth + padding + imgSize + padding
+
+					end
+
+				end
+
+				local startX = (x1 + x2)/2 - totalWidth/2
+
+				for _, d_element in pairs( d_elements ) do
+
+					if d_element.text then
+
+						dxDrawText(d_element.text,
+							startX, y,
+							startX, y,
+							c, s, s, f,
+							'left', 'center', false, false, false, true
+						)
+
+
+					elseif d_element.image then
+
+						dxDrawImage(
+							startX, y-imgSize/2+(ic_add or 0),
+							imgSize, imgSize,
+							d_element.image,
+							0, 0, 0, ic
+						)
+
+					end	
+					
+					startX = startX + d_element.width
+
+				end
+
+
+			end
+
+		end
+
+	end
+
+
+--------------------------------------------------------------------------------------------

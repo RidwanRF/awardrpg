@@ -1,0 +1,57 @@
+﻿<meta>
+    <info author="Amethyst" type="script" name="aw_global_auth" />
+    <min_mta_version server="1.5.2"></min_mta_version>
+    
+    <script src="client/cCore.lua" type="client" cache="false"/>
+    <script src="client/cBans.lua" type="client" cache="false"/>
+    <script src="client/cMain.lua" type="client" cache="false"/>
+    <script src="client/cView.lua" type="client" cache="false"/>
+    
+    <script src="server/sBans.lua" type="server" cache="false"/>
+    <script src="server/sMain.lua" type="server" cache="false"/>
+    
+    <script src="shared/shTime.lua" type="server" cache="false"/>
+    <script src="shared/shTime.lua" type="client" cache="false"/>
+
+    <file src="assets/aw-auth-music.mp3" />
+
+    <file src="assets/aw_ui_auth_blackout.png" />
+    <file src="assets/aw_ui_auth_button_editbox1.png" />
+    <file src="assets/aw_ui_auth_button_editbox2.png" />
+    <file src="assets/aw_ui_auth_button_enter1.png" />
+    <file src="assets/aw_ui_auth_button_enter2.png" />
+    <file src="assets/aw_ui_auth_button_create1.png" />
+    <file src="assets/aw_ui_auth_button_create2.png" />
+    <file src="assets/aw_ui_auth_button_remember1.png" />
+    <file src="assets/aw_ui_auth_button_remember2.png" />
+    <file src="assets/aw_ui_auth_button_visible1.png" />
+    <file src="assets/aw_ui_auth_button_visible2.png" />
+    <file src="assets/aw_ui_auth_login.png" />
+    <file src="assets/aw_ui_auth_button_ornew1.png" />
+    <file src="assets/aw_ui_auth_button_ornew2.png" />
+    <file src="assets/aw_ui_auth_button_orenter1.png" />
+    <file src="assets/aw_ui_auth_button_orenter2.png" />
+    <file src="assets/aw_ui_auth_pass.png" />
+    <file src="assets/aw_ui_auth_logotype.png" />
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+    
+    <!-- exports -->
+    <export function="receiveInfoFromNicklogin" type="client" />
+    <export function="dateTimeToString" type="shared" />
+    <export function="timeSegmentToNiceString" type="server" />
+    <export function="getAllBans" type="server" />
+    <export function="deleteBan" type="server" />
+    <export function="deleteSerialBan" type="server" />
+    <export function="deleteAccountBan" type="server" />
+    <export function="deleteEmptyBans" type="server" />
+    <export function="getBannedLoginsFromTable" type="server" />
+    
+    <!-- idle -->
+    <include resource="config" />
+</meta>

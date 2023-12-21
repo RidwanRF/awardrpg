@@ -1,0 +1,33 @@
+<meta>
+	<script src='assets/fx/hou_circle.lua' type='client' cache='false' />
+	<script src='client/cMain.lua' type='client' cache='false' />
+
+	<file src="assets/fx/fuel_circle.fx" type="client"/>
+	<file src="assets/fx/hou_circle.fx" type="client" />
+	<file src="assets/fx/circle.fx" type="client" />
+	<file src="assets/fx/hud_mask.fx" type="client" />
+	<file src="assets/fx/mask3d.fx" type="client" />
+	<file src="assets/fx/tex_matrix.fx" type="client" />
+
+	<file src = "assets/Montserrat-Black.ttf" />
+    <file src = "assets/Montserrat-Bold.ttf" />
+    <file src = "assets/Montserrat-SemiBold.ttf" />
+    <file src = "assets/Montserrat-Medium.ttf" />
+    <file src = "assets/Montserrat-Regular.ttf" />
+	<file src="assets/aw_ui_speedometer_arrow1.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_arrow2.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_engine1.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_engine2.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_lights1.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_lights2.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_door1.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_door2.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_fuel.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_main.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_speedmask.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_speedmask2.png" type="client"/>
+	<file src="assets/aw_ui_speedometer_blackout.png" type="client"/>
+
+	<export function='anim_true' type='client' />
+    <export function='anim_false' type='client' />
+</meta>

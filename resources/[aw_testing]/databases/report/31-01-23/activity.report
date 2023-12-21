@@ -1,0 +1,20 @@
+{
+	promo_activity = { {
+			data = {
+				active = 3,
+				dead = 0,
+				total = 3,
+				unactive = 0
+			},
+			promo = "NO_PROMO"
+		}, {
+			data = {
+				active = 1,
+				dead = 0,
+				total = 1,
+				unactive = 0
+			},
+			promo = "XRAGE"
+		} },
+	unactive = { 2 }
+}

@@ -1,0 +1,8 @@
+<map edf:definitions="editor_main">
+	
+	<!-- Заправка под ваинвудом возле шоссе возле бургера -->
+    <object id="object (washgaspump) (1)" breakable="true" interior="0" alpha="255" model="1676" doublesided="false" scale="1" dimension="0" posX="1009.2" posY="-936.09998" posZ="42.9" rotX="0" rotY="0" rotZ="8"></object>
+    <object id="object (washgaspump) (2)" breakable="true" interior="0" alpha="255" model="1676" doublesided="false" scale="1" dimension="0" posX="1005.6" posY="-936.70001" posZ="42.9" rotX="0" rotY="0" rotZ="7.998"></object>
+    <object id="object (washgaspump) (3)" breakable="true" interior="0" alpha="255" model="1676" doublesided="false" scale="1" dimension="0" posX="1002.2" posY="-937.09998" posZ="42.9" rotX="0" rotY="0" rotZ="7.998"></object>
+    <object id="object (washgaspump) (4)" breakable="true" interior="0" alpha="255" model="1676" doublesided="false" scale="1" dimension="0" posX="998.5" posY="-937.70001" posZ="42.9" rotX="0" rotY="0" rotZ="7.998"></object>
+</map>

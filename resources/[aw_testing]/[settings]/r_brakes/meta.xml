@@ -1,0 +1,21 @@
+<meta>
+	<oop>true</oop>
+	<script src="client/client.lua" type="client" cache="false"/>
+
+	<file src="assets/shader/texreplace.fx"/>
+	
+	<file src="assets/textures/0.dds"/>
+	<file src="assets/textures/1.dds"/>
+	<file src="assets/textures/2.dds"/>
+	<file src="assets/textures/3.dds"/>
+	<file src="assets/textures/4.dds"/>
+	<file src="assets/textures/5.dds"/>
+	<file src="assets/textures/6.dds"/>
+	<file src="assets/textures/7.dds"/>
+	<file src="assets/textures/8.dds"/>
+	<file src="assets/textures/9.dds"/>
+	<file src="assets/textures/10.dds"/>
+	<file src="assets/textures/11.dds"/>
+	<file src="assets/textures/12.dds"/>
+
+</meta>

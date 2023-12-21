@@ -1,0 +1,10 @@
+<meta>
+	<script src="setting.lua" type="client" cache="false"/>
+	<script src="client.lua" type="client" cache="false"/>
+	<script src="util.lua" type="client" cache="false"/>
+	<script src="server.lua" type="server" cache="false"/>
+	<script src="setting_acl.lua" type="server" cache="false"/>
+	<file src="image/gps.png" type="client" />
+	
+	
+</meta>

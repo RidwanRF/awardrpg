@@ -1,0 +1,10 @@
+<meta>
+	<min_mta_version client="1.5.2-0.00000" server="1.5.2-0.00000" />
+	<oop>true</oop>
+
+	<script src="client/sources.lua" type="client"  cache="false"  />
+	<script src="client/stream.lua" type="client"  cache="false"  />
+	
+	<download_priority_group>1000</download_priority_group>
+
+</meta>

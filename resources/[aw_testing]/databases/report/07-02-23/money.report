@@ -1,0 +1,171 @@
+{
+	accounts = { {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 27000,
+			level = 5,
+			money = 234643,
+			name = "tunder",
+			total = 261643
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 164000,
+			name = "Melson",
+			total = 164000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 157000,
+			name = "10kaxa10",
+			total = 157000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 22500,
+			level = 0,
+			money = 76412,
+			name = "ThePower",
+			total = 98912
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 4,
+			money = 83630,
+			name = "Vlad123",
+			total = 83630
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 12,
+			money = 77288,
+			name = "andriy777",
+			total = 77288
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 1,
+			money = 52700,
+			name = "slava",
+			total = 52700
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 26400,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 22000,
+			name = "radex",
+			total = 48400
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 30370,
+			name = "Storees",
+			total = 30370
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 12737,
+			name = "vova2k01",
+			total = 12737
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 11576,
+			name = "sunwind",
+			total = 11576
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 10000,
+			name = "Pypok",
+			total = 10000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 10000,
+			name = "k1r1k",
+			total = 10000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 10000,
+			name = "woron",
+			total = 10000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 10000,
+			name = "theraid",
+			total = 10000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 10000,
+			name = "sendor",
+			total = 10000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 8000,
+			name = "difuz_",
+			total = 8000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 1,
+			money = 4000,
+			name = "streeX",
+			total = 4000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 0,
+			name = "white",
+			total = 0
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 0,
+			name = "trademc",
+			total = 0
+		} },
+	average = 53012,
+	sum = {
+		["bank.deposits"] = 0,
+		["bank.rub"] = 26400,
+		["casino.chips"] = 49500,
+		money = 984356
+	},
+	total = 1060256
+}

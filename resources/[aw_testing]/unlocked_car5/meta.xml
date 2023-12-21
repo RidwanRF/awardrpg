@@ -1,0 +1,24 @@
+<meta>
+<info author="www.mta-resource" description="MTA Resource Repalce Master PRO" version="1.3" type="script" />
+<script src="client.lua" type="client"/>
+<file src="superfast.txd" type="client"/>
+<file src="superfast.dff" type="client"/>
+<file src="F40.txd" type="client"/>
+<file src="F40.dff" type="client"/>
+<file src="jeep.txd" type="client"/>
+<file src="jeep.dff" type="client"/>
+<file src="clk.txd" type="client"/>
+<file src="clk.dff" type="client"/>
+<file src="laferrari.txd" type="client"/>
+<file src="laferrari.dff" type="client"/>
+<file src="720s.txd" type="client"/>
+<file src="720s.dff" type="client"/>
+<file src="mustang.txd" type="client"/>
+<file src="mustang.dff" type="client"/>
+<file src="teslaX.txd" type="client"/>
+<file src="teslaX.dff" type="client"/>
+<file src="x5f95.txd" type="client"/>
+<file src="x5f95.dff" type="client"/>
+
+
+</meta> 

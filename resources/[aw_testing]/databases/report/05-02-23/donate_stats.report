@@ -1,0 +1,69 @@
+{
+	accounts = { {
+			["bank.donate"] = 40,
+			level = 4,
+			name = "Vlad123",
+			total = 40
+		}, {
+			["bank.donate"] = 10,
+			level = 3,
+			name = "andriy777",
+			total = 10
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "white",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "Storees",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "theraid",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 1,
+			name = "streeX",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "sendor",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "slava",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "difuz_",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "Melson",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "ThePower",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "trademc",
+			total = 0
+		} },
+	average = 4,
+	groups = {},
+	sum = {
+		["bank.donate"] = 50
+	},
+	total = 50
+}

@@ -1,0 +1,18 @@
+<meta>
+    <info author="Daeman" name="Nick, login and serial search" version="18-03-25" type="script" />
+    <min_mta_version client="1.5.6-9.18728" server="1.3.4-0.00000" />
+    
+    
+    <script src="client.lua" type="client" />
+    <!-- <script src="client.lua" type="client" cache="false"/> -->
+    
+    
+    <script src="server.lua" type="server" cache="true" />
+    
+    <export function="searchInNicklogin" type="client" />
+    <!-- searchInNicklogin(searchType, value) -->
+    <export function="addFailedLogin" type="server" />
+    <!-- addFailedLogin(player, login, reason) -->
+    
+    <file src="dot.png" />
+</meta>

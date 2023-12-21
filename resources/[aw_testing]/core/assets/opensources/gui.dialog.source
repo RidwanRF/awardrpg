@@ -1,0 +1,712 @@
+
+	local dialogWindow = {
+
+		{'image',
+
+			'center', 0,
+			416, 183,
+			':core/assets/images/gui_dialog/bg.png',
+
+			id = 'dialog_element',
+
+			color = {24, 30, 66, 255},
+
+			onRender = function(element)
+
+				local alpha = element:alpha()
+				local x,y,w,h = element:abs()
+
+				if not element.current_data then return end
+
+				local texture = getDrawingTexture(element[6])
+				local gradient = getTextureGradient(texture, {
+					angle = 150,
+					color = {
+						{ 0, 0, 0, 0, },
+						{ 180, 70, 70, 50 },
+						alpha = alpha,
+					},	
+				})
+
+				dxDrawImage(
+					x,y,w,h, gradient
+				)
+
+				dxDrawText(element.current_data.name,
+					x, y + 35,
+					x+w, y + 35,
+					tocolor(255,255,255,255*alpha),
+					0.5, 0.5, getFont('montserrat_semibold', 30, 'light'),
+					'center', 'top'
+				)
+
+				dxDrawText(element.current_data.text,
+					x, y + 70,
+					x+w, y + 70,
+					tocolor(255,255,255,255*alpha),
+					0.5, 0.5, getFont('montserrat_medium', 24, 'light'),
+					'center', 'top', false, false, false, true
+				)
+
+			end,
+
+			onPreRender = function(element)
+
+				local alpha = element:alpha()
+				local x,y,w,h = element:abs()
+
+				local sw,sh = 434, 201
+
+				dxDrawImage(
+					x+w/2-sw/2, y+h/2-sh/2+5+(element.y_add or 0)/2, sw,sh,
+					':core/assets/images/gui_dialog/bg_shadow.png',
+					0, 0, 0, tocolor(0, 0, 0, 255*alpha)
+				)
+
+			end,
+
+			elements = {
+
+				{'element',
+					'center', 'bottom',
+					316, 70,
+					color = {255,255,255,255},
+
+					onRender = function(element)
+						element[3] = element.parent[5] - element[5]
+					end,
+
+					elements = {
+
+						{'button',
+
+							'left', 0,
+							153, 41,
+
+							color = {180, 70, 70, 255},
+							activeColor = {180, 70, 70, 255},
+							'Продолжить',
+
+							define_from = false,
+
+							bg = ':core/assets/images/gui_dialog/btn_empty.png',
+							activeBg = ':core/assets/images/gui_dialog/btn.png',
+
+							font = getFont('montserrat_semibold', 21, 'light'),
+							scale = 0.5,
+
+							onPreRender = function(element)
+
+								local alpha = element:alpha()
+								local x,y,w,h = element:abs()
+
+								local shx,shy,shw,shh = x + w/2 - 197/2, y + h/2 - 91/2, 197, 91
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_empty_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*(1-element.animData))
+								)
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*element.animData)
+								)
+
+							end,
+
+							onInit = function(element)
+								element.x0 = element[2]
+							end,
+
+							onRender = function(element)
+
+								if element.parent.parent.current_data.callback then
+									element[2] = element.x0
+								else
+									element[2] = element.parent[4]/2 - element[4]/2
+								end
+
+							end,
+
+							onClick = function(element)
+
+								local data = element.parent.parent.current_data
+
+								if data.prev_section then
+									currentWindowSection = data.prev_section
+								else
+									closeWindow()
+								end
+
+								if data.callback then
+									data.callback(true)
+								end
+
+							end,
+
+						},
+
+						{'button',
+
+							'right', 0,
+							153, 41,
+
+							color = {180, 70, 70, 255},
+							activeColor = {180, 70, 70, 255},
+							'Отмена',
+
+							define_from = false,
+
+							bg = ':core/assets/images/gui_dialog/btn_empty.png',
+							activeBg = ':core/assets/images/gui_dialog/btn.png',
+
+							font = getFont('montserrat_semibold', 21, 'light'),
+							scale = 0.5,
+
+							onPreRender = function(element)
+
+								local alpha = element:alpha()
+								local x,y,w,h = element:abs()
+
+								local shx,shy,shw,shh = x + w/2 - 197/2, y + h/2 - 91/2, 197, 91
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_empty_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*(1-element.animData))
+								)
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*element.animData)
+								)
+
+							end,
+
+							onClick = function(element)
+
+								local data = element.parent.parent.current_data
+
+								if data.prev_section then
+									currentWindowSection = data.prev_section
+								else
+									closeWindow()
+								end
+
+								if data.callback then
+									data.callback(false)
+								end
+
+							end,
+
+							noDraw = function(element)
+								return not element.parent.parent.current_data.callback
+							end,
+
+						},
+
+					},
+
+				},
+
+			},
+
+		},
+
+
+	}
+
+	local inputDialogWindow = {
+
+		{'image',
+
+			'center', 0,
+			416, 216,
+			':core/assets/images/gui_dialog/ibg.png',
+
+			id = 'dialog_element',
+
+			color = {24, 30, 66, 255},
+
+			onRender = function(element)
+
+				local alpha = element:alpha()
+				local x,y,w,h = element:abs()
+
+				if not element.current_data then return end
+
+				local texture = getDrawingTexture(element[6])
+				local gradient = getTextureGradient(texture, {
+					angle = 150,
+					color = {
+						{ 0, 0, 0, 0, },
+						{ 180, 70, 70, 50 },
+						alpha = alpha,
+					},	
+				})
+
+				dxDrawImage(
+					x,y,w,h, gradient
+				)
+
+				dxDrawText(element.current_data.name,
+					x, y + 35,
+					x+w, y + 35,
+					tocolor(255,255,255,255*alpha),
+					0.5, 0.5, getFont('montserrat_semibold', 30, 'light'),
+					'center', 'top'
+				)
+
+				dxDrawText(element.current_data.text,
+					x, y + 70,
+					x+w, y + 70,
+					tocolor(255,255,255,255*alpha),
+					0.5, 0.5, getFont('montserrat_medium', 24, 'light'),
+					'center', 'top', false, false, false, true
+				)
+
+			end,
+
+			onPreRender = function(element)
+
+				local alpha = element:alpha()
+				local x,y,w,h = element:abs()
+
+				local sw,sh = 434, 201
+
+				dxDrawImage(
+					x+w/2-sw/2, y+h/2-sh/2+5+(element.y_add or 0)/2, sw,sh,
+					':core/assets/images/gui_dialog/bg_shadow.png',
+					0, 0, 0, tocolor(0, 0, 0, 255*alpha)
+				)
+
+			end,
+
+			elements = {
+
+				{'element',
+					'center', 'bottom',
+					316, 70,
+					color = {255,255,255,255},
+
+					onRender = function(element)
+						element[3] = element.parent[5] - element[5]
+					end,
+
+					elements = {
+
+						{'button',
+
+							'left', 0,
+							153, 41,
+
+							color = {180, 70, 70, 255},
+							activeColor = {180, 70, 70, 255},
+							'Продолжить',
+
+							define_from = false,
+
+							bg = ':core/assets/images/gui_dialog/btn_empty.png',
+							activeBg = ':core/assets/images/gui_dialog/btn.png',
+
+							font = getFont('montserrat_semibold', 21, 'light'),
+							scale = 0.5,
+
+							onPreRender = function(element)
+
+								local alpha = element:alpha()
+								local x,y,w,h = element:abs()
+
+								local shx,shy,shw,shh = x + w/2 - 197/2, y + h/2 - 91/2, 197, 91
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_empty_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*(1-element.animData))
+								)
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*element.animData)
+								)
+
+							end,
+
+							onClick = function(element)
+
+								local data = element.parent.parent.current_data
+								local callback_data = {}
+
+								local input_elements = gui_get('input_elements')
+
+								for _, _element in pairs( input_elements.elements ) do
+									table.insert( callback_data, _element:getValue() )
+								end
+
+								if data.prev_section then
+									currentWindowSection = data.prev_section
+								else
+									closeWindow()
+								end
+
+								if data.callback then
+									data.callback(callback_data)
+								end
+
+							end,
+
+						},
+
+						{'button',
+
+							'right', 0,
+							153, 41,
+
+							color = {180, 70, 70, 255},
+							activeColor = {180, 70, 70, 255},
+							'Отмена',
+
+							define_from = false,
+
+							bg = ':core/assets/images/gui_dialog/btn_empty.png',
+							activeBg = ':core/assets/images/gui_dialog/btn.png',
+
+							font = getFont('montserrat_semibold', 21, 'light'),
+							scale = 0.5,
+
+							onPreRender = function(element)
+
+								local alpha = element:alpha()
+								local x,y,w,h = element:abs()
+
+								local shx,shy,shw,shh = x + w/2 - 197/2, y + h/2 - 91/2, 197, 91
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_empty_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*(1-element.animData))
+								)
+
+								dxDrawImage(
+									shx,shy,shw,shh, ':core/assets/images/gui_dialog/btn_shadow.png',
+									0, 0, 0, tocolor(180, 70, 70, 255*alpha*element.animData)
+								)
+
+							end,
+
+							onClick = function(element)
+
+								local data = element.parent.parent.current_data
+
+								if data.prev_section then
+									currentWindowSection = data.prev_section
+								else
+									closeWindow()
+								end
+
+								if data.callback then
+									data.callback(false)
+								end
+
+							end,
+
+						},
+
+					},
+
+				},
+
+				{'element',
+
+					'center', 110,
+					316, 0,
+					color = {255,255,255,255},
+					id = 'input_elements',
+
+					elements = {
+
+
+
+					},
+
+				},
+
+			},
+
+		},
+
+
+	}
+
+---------------------------------------------------------------------------------------------
+
+	_loadGuiModule = loadGuiModule
+	function loadGuiModule()
+		windowModel.gui_dialog = dialogWindow
+		windowModel.gui_input_dialog = inputDialogWindow
+		_loadGuiModule()
+	end
+
+---------------------------------------------------------------------------------------------
+
+	function dialog(name, text, callback)
+
+		local prev_section = windowOpened and currentWindowSection or false
+
+		openWindow('gui_dialog')
+
+		local element = gui_get('dialog_element')
+
+		local h = 183
+		local add = 0
+
+		local scale, font = 0.5, getFont('montserrat_medium', 24, 'light')
+		local fontHeight = dxGetFontHeight( scale, font )
+
+		if type(text) == 'table' then
+			add = fontHeight*(#text-1)
+			h = h + add
+		end
+
+		element.y_add = add
+		element[3] = sy/2 - h/2
+		element[5] = h
+		element[6] = createTextureSource('bordered_rectangle', ':core/assets/images/gui_dialog/bg.png', 22, element[4], element[5])
+
+		if type(text) == 'table' then
+			text = table.concat(text, '\n')
+		end
+
+		element.current_data = {
+			name = name,
+			text = text,
+			callback = callback,
+			prev_section = prev_section,
+		}
+
+
+	end
+
+	function dialog_input(name, text, data, callback)
+
+		local prev_section = windowOpened and currentWindowSection or false
+
+		openWindow('gui_input_dialog')
+
+		local element = gui_get('dialog_element')
+
+		local h = 190
+		local add = 0
+
+		local scale, font = 0.5, getFont('montserrat_medium', 24, 'light')
+		local fontHeight = dxGetFontHeight( scale, font )
+
+		local input_elements = gui_get('input_elements')
+
+		for _, _element in pairs(input_elements.elements) do
+			_element:destroy()
+		end
+
+		if type(text) == 'table' then
+			add = add + fontHeight*(#text-1)
+		end
+
+		input_elements.elements = {}
+
+		local startY = add
+		local element_w, element_h = 317, 41
+		local padding = 10
+
+		local lbg_source = createTextureSource('bordered_rectangle', ':core/assets/images/gui_dialog/lbg.png', 40, 280, 40)
+
+		for _, input_data in pairs( data ) do
+
+			local _element
+
+			if input_data.type == 'text' then
+
+				_element = {'input',
+					'center', startY,
+					element_w, element_h,
+
+					define_from = false,
+
+					color = {29, 37, 73, 255},
+					placeholderColor = {73,77,100,255},
+					bg = ':core/assets/images/gui_dialog/input.png',
+					placeholder = input_data.name,
+
+					'',
+
+					scale = 0.5,
+					font = getFont('montserrat_semibold', 22, 'light'),
+					alignX = 'center',
+
+					getValue = function(element)
+						return element[6]
+					end,
+
+				}
+
+			elseif input_data.type == 'number' then
+
+				_element = {'input',
+					'center', startY,
+					element_w, element_h,
+
+					define_from = false,
+
+					color = {29, 37, 73, 255},
+					placeholderColor = {85, 89, 111, 255},
+					placeholder = input_data.name,
+
+					bg = ':core/assets/images/gui_dialog/input.png',
+					'',
+
+					type = 'number',
+
+					scale = 0.5,
+					font = getFont('montserrat_semibold', 22, 'light'),
+					alignX = 'center',
+
+					getValue = function(element)
+						return tonumber(element[6])
+					end,
+
+				}
+
+			elseif input_data.type == 'select' then
+
+				_element = {'select',
+
+					'center', startY,
+					element_w, element_h,
+					bg = ':core/assets/images/gui_dialog/input.png',
+					color = {29, 37, 73, 255},
+					textColor = {255,255,255,255},
+
+					define_from = false,
+
+					selectElements = {},
+					animSpeed = 0.1,
+
+					placeholderColor = {85, 89, 111, 255},
+
+					placeholder = input_data.name or '',
+					alignX = 'center',
+
+					listElementHeight = 50,
+
+					lbg = lbg_source,
+
+					additionalElementDrawing = function(lElement, x,y,w,ey, element, animData)
+
+						local alpha = element:alpha()
+						alpha = math.clamp(alpha, 0, 1)
+
+						local x,y,w,h = x,y, element[4], element.listElementHeight
+
+						local bw,bh = 280, 40
+
+						local bx,by = x+w/2-bw/2, y+h/2-bh/2
+
+						local r,g,b = interpolateBetween(24,30,66, 180,70,70, animData, 'InOutQuad')
+
+						dxDrawImage(
+							bx,by,bw,bh, element.parent.lbg,
+							0, 0, 0, tocolor(r,g,b,255*alpha)
+						)
+
+
+						for i = 1,2 do
+							dxDrawText(lElement.name,
+								x,y,x+w,y+h,
+								tocolor(255,255,255,255*alpha),
+								0.5, 0.5, getFont('montserrat_semibold', 23, 'light'),
+								'center', 'center'
+							)
+						end
+
+					end,
+
+					getSelectedText = function(element)
+						return element.selectList.lastSelectedItem.name
+					end,
+
+					onPostInit = function(element)
+
+						if element.selectList[5] > 0 then
+							element.list_bg = createTextureSource('bordered_rectangle',
+								':core/assets/images/gui_dialog/lst_bg.png', 20,
+								element[4], element.selectList[5]
+							)
+						else
+							element.list_bg = transparentTexture
+						end
+
+					end,
+
+					onRender = function(element)
+
+						local x,y,w,h = element:abs()
+						local alpha = element:alpha()
+
+						local bw,bh = 25, 25
+						local bx,by = x+w-bw-10, y+h/2-bh/2
+
+						local animData = getAnimData(element.select_animData)
+						animData = getEasingValue(animData, 'InOutQuad')
+
+						dxDrawImage(
+							bx,by,bw,bh, ':core/assets/images/gui_dialog/select_btn.png',
+							0, 0, 0, tocolor(180, 70, 70, 255*alpha)
+						)
+						dxDrawImage(
+							bx+bw/2-20/2,by+bh/2-20/2,20,20, ':core/assets/images/gui_dialog/select_arrow.png',
+							180*animData, 0, 0, tocolor(255, 255, 255, 255*alpha)
+						)
+
+
+					end,
+
+					getValue = function( element )
+						return element.selectList.lastSelectedItem.data
+					end,
+
+					scale = 0.5,
+					font = getFont('montserrat_semibold', 25, 'light'),
+
+				}
+
+			end
+
+			for key, value in pairs( input_data.params or {} ) do
+				_element[key] = value
+			end
+
+			input_elements:addElement(_element)
+
+			startY = startY + element_h + padding
+			add = add + element_h + padding
+
+		end
+
+		h = h + add
+
+		element.y_add = add
+		element[3] = sy/2 - h/2
+		iprint("element[5]", h, "3", sy/2-h/2)
+		element[5] = h
+		element[6] = createTextureSource('bordered_rectangle', ':core/assets/images/gui_dialog/ibg.png', 22, element[4], element[5])
+
+		if type(text) == 'table' then
+			text = table.concat(text, '\n')
+		end
+
+		element.current_data = {
+			name = name,
+			text = text,
+			callback = callback,
+			prev_section = prev_section,
+		}
+
+	end
+
+---------------------------------------------------------------------------------------------

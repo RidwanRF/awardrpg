@@ -1,0 +1,16 @@
+{
+	average_session_minutes = 26,
+	miss_registrations = 2,
+	played_more = {
+		[20] = 3,
+		[30] = 1,
+		[60] = 1,
+		[120] = 1
+	},
+	registrations = 2,
+	total = 16,
+	total_accounts = 15,
+	tutorial_canceled = 0,
+	tutorial_finished = 0,
+	unique = 5
+}

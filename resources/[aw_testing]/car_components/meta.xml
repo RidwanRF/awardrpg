@@ -1,0 +1,95 @@
+<meta>
+    <info author="Wherry, Daeman" version="17-12-13" name="Car components system" type="script"/>
+    <oop>true</oop>
+
+
+    <script type="shared" src="shared/config.lua" cache="false"/>
+    <script type="shared" src="shared/exports.lua" cache="false"/>
+    <script type="shared" src="shared/paintjobs.lua" cache="false"/>
+    <script type="client" src="client/utils.lua" cache="false"/>
+    <script type="client" src="client/components.lua" cache="false"/>
+    <script type="client" src="client/opening.lua" cache="false"/>
+    <script type="client" src="client/debug.lua" cache="false"/>
+    <script type="client" src="client/tires.lua" cache="false"/>
+    <script type="client" src="client/licence_frame.lua" cache="false"/>
+    <script type="client" src="client/animation_params.lua" cache="false"/>
+    <script type="client" src="client/activeparts.lua" cache="false"/>
+    <script type="client" src="client/shaders.lua" cache="false"/>
+	<script type="client" src="client/client.lua" cache="false"/>
+
+    <file src="textures/tires/tire0.png" cache="false"/>
+    <file src="textures/tires/tire1.png" cache="false"/>
+    <file src="textures/tires/tire2.png" cache="false"/>
+    <file src="textures/tires/tire3.png" cache="false"/>
+    <file src="textures/tires/tire4.png" cache="false"/>
+    <file src="textures/tires/tire5.png" cache="false"/>
+    <file src="textures/tires/tire6.png" cache="false"/>
+    <file src="textures/tires/tire7.png" cache="false"/>
+    <file src="textures/tires/tire8.png" cache="false"/>
+    <file src="textures/tires/tire9.png" cache="false"/>
+    <file src="textures/tires/tire10.png" cache="false"/>
+    <file src="textures/tires/tire11.png" cache="false"/>
+    <file src="textures/tires/tire12.png" cache="false"/>
+    <file src="textures/tires/tire13.png" cache="false"/>
+    <file src="textures/tires/tire14.png" cache="false"/>
+    <file src="textures/tires/tire15.png" cache="false"/>
+    <file src="textures/tires/tire16.png" cache="false"/>
+    <file src="textures/tires/tire17.png" cache="false"/> 
+
+	<file src="shaders/texture_replace.fx" cache="false"/>
+
+
+    <file src="textures/frame1.png" cache="false"/>
+    <file src="textures/frame2.png" cache="false"/>
+    <file src="textures/frame3.png" cache="false"/>
+    <file src="textures/frame4.png" cache="false"/>
+    <file src="textures/frame5.png" cache="false"/>
+    <file src="textures/frame6.png" cache="false"/>
+    <file src="textures/frame7.png" cache="false"/>
+    <file src="textures/frame8.png" cache="false"/>
+    <file src="textures/frame9.png" cache="false"/>
+    <file src="textures/frame10.png" cache="false"/>
+    <file src="textures/frame11.png" cache="false"/>
+    <file src="textures/frame12.png" cache="false"/>
+    <file src="textures/frame13.png" cache="false"/>
+    <file src="textures/frame14.png" cache="false"/>
+    <file src="textures/frame15.png" cache="false"/>
+    <file src="textures/frame16.png" cache="false"/>
+    <file src="textures/frame17.png" cache="false"/>
+    <file src="textures/frame18.png" cache="false"/>
+    <file src="textures/frame19.png" cache="false"/>
+    <file src="textures/frame20.png" cache="false"/>
+    <file src="textures/frame21.png" cache="false"/>    
+    <file src="textures/frame22.png" cache="false"/>    
+    <file src="textures/frame23.png" cache="false"/>    
+    <file src="textures/frame24.png" cache="false"/>
+    <file src="textures/frame25.png" cache="false"/>
+    <file src="textures/frame26.png" cache="false"/>
+    <file src="textures/frame27.png" cache="false"/>
+    <file src="textures/frame28.png" cache="false"/>
+    <file src="textures/frame29.png" cache="false"/>
+    <file src="textures/frame31.png" cache="false"/> 
+    <file src="textures/frame100.png" cache="false"/>
+    <file src="textures/frame101.png" cache="false"/>
+    <file src="textures/frame102.png" cache="false"/>
+    <file src="textures/frame103.png" cache="false"/>
+    <file src="textures/frame104.png" cache="false"/>
+    <file src="textures/frame105.png" cache="false"/>
+    <file src="textures/frame106.png" cache="false"/>
+    <file src="textures/frame107.png" cache="false"/>
+    <file src="textures/frame108.png" cache="false"/>
+    <file src="textures/frame109.png" cache="false"/>  
+
+    <!-- Обновить отображение компонентов на автомобиле -->
+    <export type="client" function="updateVehicleComponents"/>
+    <!-- Получить список всех названий компонентов тюнинга -->
+    <export type="client" function="getComponentNames"/>
+    <!-- Разрешена ли смена рамок номеров для модели -->
+    <export type="client" function="isLicenseFrameChangeAllowed"/>
+    <!-- Получить список всех винилов для автомобиля -->
+    <export type="shared" function="getVehiclePaintjobs"/>
+    <!-- Разрешена ли установка винила на автомобиль -->
+    <export type="shared" function="isVehiclePaintjobAllowed"/>
+    <!-- Возвращает список цветов ксенона -->
+    <export type="shared" function="getXenonColors"/>
+</meta>

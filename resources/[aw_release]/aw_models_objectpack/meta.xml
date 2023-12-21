@@ -1,0 +1,6 @@
+<meta>
+	<script src="client.lua" type="client" cache="false"/>
+    <script src="cmodels/bridge.txd" type="client"/>
+    <script src="cmodels/bridge.dff" type="client"/>
+    <script src="cmodels/bridge.col" type="client"/>
+</meta>	

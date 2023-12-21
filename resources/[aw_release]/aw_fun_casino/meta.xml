@@ -1,0 +1,204 @@
+<meta>
+
+	<!-- <script src="client/dynamic_lighting/c_main.lua" type="client" cache="false" />
+	<script src="client/dynamic_lighting/c_helper_functions.lua" type="client" cache="false" />
+	<script src="client/dynamic_lighting/c_exported_functions.lua" type="client" cache="false" />
+	<file src="client/dynamic_lighting/shaders/light1.txt" type="client" />
+	<file src="client/dynamic_lighting/shaders/light0.txt" type="client" />
+	<file src="client/dynamic_lighting/shaders/common.txt" type="client" /> -->
+
+	<script type="shared" src="shared/config.lua" cache="false"/>
+	<script type="shared" src="shared/shared.lua" cache="false"/>
+	<script type="shared" src="shared/games.lua" cache="false"/>
+
+	<script type="server" src="server/sources.lua" cache="false"/>
+	<script type="server" src="server/main.lua" cache="false"/>
+	<script type="server" src="server/enter.lua" cache="false"/>
+	<script type="server" src="server/gui.lua" cache="false"/>
+	<script type="server" src="server/save.lua" cache="false"/>
+	<script type="server" src="server/afk.lua" cache="false"/>
+
+	<script type="server" src="server/games/fortune.lua" cache="false"/>
+	<script type="server" src="server/games/roulette.lua" cache="false"/>
+
+	<!-- <script type="server" src="server/games/russian.lua" cache="false"/> -->
+
+	<script type="client" src="client/sources.lua" cache="false"/>
+	<script type="client" src="client/gui.lua" cache="false"/>
+	<script type="client" src="client/main.lua" cache="false"/>
+	<script type="client" src="client/interior.lua" cache="false"/>
+
+	<script type="client" src="client/games/fortune.lua" cache="false"/>
+	<!-- <script type="client" src="client/games/russian.lua" cache="false"/> -->
+
+
+	<file src="assets/shadow.png"/>
+	<file src="assets/images/close_icon.png"/>
+	<file src="assets/images/close_active.png"/>
+	<file src="assets/images/close.png"/>
+
+	<file src="assets/images/roulette/bg1.png"/>
+	
+	<file src="assets/images/fortune/default.png"/>
+	<file src="assets/images/fortune/vip.png"/>
+
+	<file src="assets/images/vip_tickets.png"/>
+	<file src="assets/images/money.png"/>
+	<file src="assets/images/bank.donate.png"/>
+	<file src="assets/images/chips.png"/>
+
+	<file src="assets/images/exchange/bg1.png"/>
+	<file src="assets/images/exchange/bg1_shadow.png"/>
+	<file src="assets/images/exchange/bg2.png"/>
+	<file src="assets/images/exchange/bg2_shadow.png"/>
+	<file src="assets/images/exchange/bg2a.png"/>
+	<file src="assets/images/exchange/btn.png"/>
+	<file src="assets/images/exchange/btn_empty.png"/>
+	<file src="assets/images/exchange/btn_empty_shadow.png"/>
+	<file src="assets/images/exchange/btn_shadow.png"/>
+	<file src="assets/images/exchange/icon.png"/>
+	<file src="assets/images/exchange/icon_bg.png"/>
+	<file src="assets/images/exchange/input.png"/>
+	<file src="assets/images/exchange/input2.png"/>
+	<file src="assets/images/exchange/tab.png"/>
+	<file src="assets/images/exchange/tab_empty.png"/>
+	<file src="assets/images/exchange/tab_shadow.png"/>
+
+
+	<file src="assets/images/slots/bg.png"/>
+	<file src="assets/images/slots/bg_shadow.png"/>
+	<file src="assets/images/slots/btn1.png"/>
+	<file src="assets/images/slots/btn1_empty.png"/>
+	<file src="assets/images/slots/btn1_empty_shadow.png"/>
+	<file src="assets/images/slots/btn1_shadow.png"/>
+	<file src="assets/images/slots/btn2.png"/>
+	<file src="assets/images/slots/btn2_empty.png"/>
+	<file src="assets/images/slots/btn2_empty_shadow.png"/>
+	<file src="assets/images/slots/btn2_shadow.png"/>
+	<file src="assets/images/slots/hline.png"/>
+	<file src="assets/images/slots/input.png"/>
+	<file src="assets/images/slots/slot_tex.png"/>
+	<file src="assets/images/slots/slot_lights.png"/>
+	<file src="assets/images/slots/cbg.png"/>
+	<file src="assets/images/slots/cbg_shadow.png"/>
+	<file src="assets/images/slots/hline2.png"/>
+	<file src="assets/images/slots/crow.png"/>
+	<file src="assets/images/slots/logo.png"/>
+	<file src="assets/images/slots/jackpot.png"/>
+
+	<file src="assets/images/slots/icons/1.png"/>
+	<file src="assets/images/slots/icons/2.png"/>
+	<file src="assets/images/slots/icons/3.png"/>
+	<file src="assets/images/slots/icons/4.png"/>
+	<file src="assets/images/slots/icons/5.png"/>
+
+	<file src="assets/images/bones/bg.png"/>
+	<file src="assets/images/bones/bg_shadow.png"/>
+	<file src="assets/images/bones/bg1.png"/>
+	<file src="assets/images/bones/btn.png"/>
+	<file src="assets/images/bones/btn_shadow.png"/>
+	<file src="assets/images/bones/input.png"/>
+	<file src="assets/images/bones/game_bg.png"/>
+	<file src="assets/images/bones/game_bg_shadow.png"/>
+	<file src="assets/images/bones/winner.png"/>
+
+	<file src="assets/images/russian/bg.png"/>
+	<file src="assets/images/russian/bg_shadow.png"/>
+	<file src="assets/images/russian/bg1.png"/>
+	<file src="assets/images/russian/btn.png"/>
+	<file src="assets/images/russian/btn_shadow.png"/>
+	<file src="assets/images/russian/input.png"/>
+	<file src="assets/images/russian/game_bg.png"/>
+	<file src="assets/images/russian/game_bg_shadow.png"/>
+	<file src="assets/images/russian/winner.png"/>
+
+	<file src="assets/images/blackjack/bet/bg.png"/>
+	<file src="assets/images/blackjack/bet/bg_shadow.png"/>
+	<file src="assets/images/blackjack/bet/btn.png"/>
+	<file src="assets/images/blackjack/bet/btn_empty.png"/>
+	<file src="assets/images/blackjack/bet/btn_empty_shadow.png"/>
+	<file src="assets/images/blackjack/bet/btn_shadow.png"/>
+	<file src="assets/images/blackjack/bet/input.png"/>
+	<file src="assets/images/blackjack/bet/logo.png"/>
+
+	<file src="assets/images/blackjack/game/bg.png"/>
+	<file src="assets/images/blackjack/game/bg_shadow.png"/>
+	<file src="assets/images/blackjack/game/bg1.png"/>
+	<file src="assets/images/blackjack/game/bg2.png"/>
+	<file src="assets/images/blackjack/game/btn.png"/>
+	<file src="assets/images/blackjack/game/btn_empty.png"/>
+	<file src="assets/images/blackjack/game/btn_empty_shadow.png"/>
+	<file src="assets/images/blackjack/game/btn_shadow.png"/>
+	<file src="assets/images/blackjack/game/croupier.png"/>
+
+
+	<file src="assets/images/blackjack/cards/empty.png"/>
+
+	<file src="assets/images/blackjack/cards/spades/2.png"/>
+	<file src="assets/images/blackjack/cards/spades/3.png"/>
+	<file src="assets/images/blackjack/cards/spades/4.png"/>
+	<file src="assets/images/blackjack/cards/spades/5.png"/>
+	<file src="assets/images/blackjack/cards/spades/6.png"/>
+	<file src="assets/images/blackjack/cards/spades/7.png"/>
+	<file src="assets/images/blackjack/cards/spades/8.png"/>
+	<file src="assets/images/blackjack/cards/spades/9.png"/>
+	<file src="assets/images/blackjack/cards/spades/10.png"/>
+	<file src="assets/images/blackjack/cards/spades/j.png"/>
+	<file src="assets/images/blackjack/cards/spades/q.png"/>
+	<file src="assets/images/blackjack/cards/spades/k.png"/>
+	<file src="assets/images/blackjack/cards/spades/a.png"/>
+
+	<file src="assets/images/blackjack/cards/cluds/2.png"/>
+	<file src="assets/images/blackjack/cards/cluds/3.png"/>
+	<file src="assets/images/blackjack/cards/cluds/4.png"/>
+	<file src="assets/images/blackjack/cards/cluds/5.png"/>
+	<file src="assets/images/blackjack/cards/cluds/6.png"/>
+	<file src="assets/images/blackjack/cards/cluds/7.png"/>
+	<file src="assets/images/blackjack/cards/cluds/8.png"/>
+	<file src="assets/images/blackjack/cards/cluds/9.png"/>
+	<file src="assets/images/blackjack/cards/cluds/10.png"/>
+	<file src="assets/images/blackjack/cards/cluds/j.png"/>
+	<file src="assets/images/blackjack/cards/cluds/q.png"/>
+	<file src="assets/images/blackjack/cards/cluds/k.png"/>
+	<file src="assets/images/blackjack/cards/cluds/a.png"/>
+
+	<file src="assets/images/blackjack/cards/heats/2.png"/>
+	<file src="assets/images/blackjack/cards/heats/3.png"/>
+	<file src="assets/images/blackjack/cards/heats/4.png"/>
+	<file src="assets/images/blackjack/cards/heats/5.png"/>
+	<file src="assets/images/blackjack/cards/heats/6.png"/>
+	<file src="assets/images/blackjack/cards/heats/7.png"/>
+	<file src="assets/images/blackjack/cards/heats/8.png"/>
+	<file src="assets/images/blackjack/cards/heats/9.png"/>
+	<file src="assets/images/blackjack/cards/heats/10.png"/>
+	<file src="assets/images/blackjack/cards/heats/j.png"/>
+	<file src="assets/images/blackjack/cards/heats/q.png"/>
+	<file src="assets/images/blackjack/cards/heats/k.png"/>
+	<file src="assets/images/blackjack/cards/heats/a.png"/>
+
+	<file src="assets/images/blackjack/cards/diamonds/2.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/3.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/4.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/5.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/6.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/7.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/8.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/9.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/10.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/j.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/q.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/k.png"/>
+	<file src="assets/images/blackjack/cards/diamonds/a.png"/>
+
+	<file src="assets/animations/roll.ifp"/>
+
+
+	<file src="assets/shaders/texreplace.fx"/>
+
+	
+	<export function="setConfigSetting" type="server"/>
+	<export function="getConfigSetting" type="server"/>
+
+	<oop>true</oop>
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+</meta>

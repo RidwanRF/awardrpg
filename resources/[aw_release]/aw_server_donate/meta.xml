@@ -1,0 +1,23 @@
+<meta>
+	<info author="brago" name="Donate_System" version="1.2" />
+
+	<script src="client.lua" type="client" cache="false" />
+	<script src="server.lua" type="server" cache="false" />
+
+	<file src="files/font/font.ttf" />
+
+	<file src="files/img/dx.png" />
+	<file src="files/img/info.png" />
+	<file src="files/img/warning.png" />
+	<file src="files/img/succes.png" />
+	<file src="files/img/error.png" />
+    <file src="files/img/money.png" />
+	<file src="files/sound/alert.mp3" />
+   
+   	<export function="outputClientDx" type="client" />
+	<export function="outputDx" type="server" />
+   
+    <export function="givePlayerDonateMoney" type="server" http="true" /> <!--Эта команда для выдачи донат-валюты в банк-->
+    <export function="givePlayerDonateAuto" type="server" http="true" /> 	<!--Эта команда для выдачи донат-рублей в банк-->
+
+</meta>

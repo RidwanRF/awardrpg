@@ -1,0 +1,37 @@
+﻿<meta>
+	<info author="Daeman" type="script" name="Car Nomer Changing" version="18-03-24" />
+	<min_mta_version client="1.5.2-9.07903" server="1.3.4-0.00000" />
+	
+	
+	<script src="shared.lua"				type="shared" cache="false"/>
+	<script src="client.lua"				type="client" cache="false"/>
+	<script src="client_storage.lua"		type="client" cache="false"/>
+	<script src="client_moderation.lua"	type="client" cache="false"/>
+	
+	
+	<script src="server.lua" 				type="server" cache="false"/>
+	<script src="server_storage.lua"		type="server" cache="false"/>
+	<script src="server_moderation.lua"		type="server" cache="false"/>
+	<script src="server_markersObjects.lua"	type="server" cache="false"/>
+	
+	<export function="nomerIsCorrect"		type="shared" />	<!-- nomerIsCorrect(nomer) -->
+	<export function="addNomerToBase"		type="server" />	<!-- addNomerToBase(nomer, accName) -->
+	<export function="checkNomerExistance"	type="server" />	<!-- checkNomerExistance(nomer) -->
+	<export function="wipeAccount"			type="server" />
+	<export function="endOfWipe"			type="server" />
+	
+    <file src="files/arialbd.ttf"/>
+    <file src="files/no.png"/>
+    <file src="files/yes.png"/>
+    <file src="files/blank.png"/>
+    <file src="files/yes128.png"/>
+    <file src="files/no128.png"/>
+    <file src="files/EKX_notify.png"/>
+
+    <file src="files/nm/plate_b.png"/>
+    <file src="files/nm/plate_h.png"/>
+    <file src="files/nm/plate_j.png"/>
+    <file src="files/nm/plate_k.png"/>
+    <file src="files/nm/plate_l.png"/>
+    <file src="files/nm/plate_x.png"/>
+</meta>

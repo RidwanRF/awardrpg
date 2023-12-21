@@ -1,0 +1,8 @@
+<meta>
+      <info author="Skynet (vk.com/studioskynet)" version="04/11/22"/>
+ 	<oop>true</oop>
+
+      <script src="shared/shared.lua" type="shared" cache="false"/>
+      <script src="client/client.lua" type="client" cache="false"/>
+	<script src="server/server.lua" type="server"/>
+</meta>

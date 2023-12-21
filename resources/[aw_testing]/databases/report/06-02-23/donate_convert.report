@@ -1,0 +1,10 @@
+{
+	average = 150,
+	top = { {
+			amount = 150,
+			converts = 1,
+			player = "andriy777"
+		} },
+	total = 150,
+	total_players = 1
+}

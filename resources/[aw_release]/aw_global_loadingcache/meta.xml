@@ -1,0 +1,30 @@
+<meta>
+    <info author="Amethyst" type="script" />
+
+    <download_priority_group>99999</download_priority_group>
+    <script src="client/client.lua" type="client" cache="false" />
+    
+
+    <file src="assets/aw-ui-loading-blackout1.png" />
+    <file src="assets/aw-ui-loading-speed.png" />
+    <file src="assets/aw-ui-loading-cache.png" />
+
+    <file src="assets/aw_ui_loadingcache_blackout.png" />
+    <file src="assets/aw_ui_loadingcache_logotype.png" />
+    <file src="assets/aw_ui_loadingcache_bg1.png" />
+    <file src="assets/aw_ui_loadingcache_bg2.png" />
+    <file src="assets/aw_ui_loadingcache_bg3.png" />
+    <file src="assets/aw_ui_loadingcache_bg4.png" />
+    <file src="assets/aw_ui_loadingcache_bg5.png" />
+    <file src="assets/aw_ui_loadingcache_bg6.png" />
+
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+    
+	<export function="showLoading" type="client" cache="true" />
+	<export function="hideLoading" type="client" cache="true" />
+    
+</meta>

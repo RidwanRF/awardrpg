@@ -1,0 +1,314 @@
+﻿<map edf:definitions="editor_main">
+	<!--	Объекты снаружи	-->
+    <object id="object (des_ngassta) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="16107" doublesided="false" scale="1" dimension="0" posX="1748.1" posY="-1139.5" posZ="23.1" rotX="0" rotY="0" rotZ="0"></object>
+    <removeWorldObject id="removeWorldObject (sm_bevhiltreepv) (1)" radius="9.8711147" interior="0" model="717" lodModel="0" posX="1739.0697" posY="-1150.3556" posZ="23.06895" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (DYN_DUMPSTER) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="1415" doublesided="false" scale="1" dimension="0" posX="1753.7" posY="-1139" posZ="23.1" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (garage_sfn01) (2)" breakable="true" interior="0" collisions="true" alpha="255" model="9321" doublesided="false" scale="1" dimension="0" posX="1712" posY="-1129" posZ="23.5" rotX="180" rotY="0" rotZ="270"></object>
+    <object id="object (garage_sfn01) (3)" breakable="true" interior="0" collisions="true" alpha="255" model="9321" doublesided="false" scale="1" dimension="0" posX="1712" posY="-1129" posZ="26.4" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cr_door_02) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="2948" doublesided="false" scale="1" dimension="0" posX="1716.8" posY="-1128.9" posZ="23.1" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (cr_door_02) (2)" breakable="true" interior="0" collisions="true" alpha="255" model="2948" doublesided="false" scale="1" dimension="0" posX="1718.7" posY="-1128.9" posZ="23.1" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (fenceshit2) (2)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="1719.9" posY="-1135.4" posZ="23.7" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (fenceshit2) (3)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="1698.5" posY="-1142.5" posZ="23.7" rotX="0" rotY="0" rotZ="270.75"></object>
+    <object id="object (fenceshit2) (4)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="1692.1" posY="-1136.2" posZ="23.7" rotX="0" rotY="0" rotZ="179.997"></object>
+    <object id="object (fenceshit2) (5)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="1692.1" posY="-1123.4" posZ="23.7" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (fenceshit2) (6)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="1698.5" posY="-1117" posZ="23.7" rotX="0" rotY="0" rotZ="89.995"></object>
+    <object id="object (bar_gatebar01) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="966" doublesided="false" scale="1" dimension="0" posX="1703.8" posY="-1138.3" posZ="23.1" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (barrierturn) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="968" doublesided="false" scale="1" dimension="0" posX="1703.8" posY="-1138.3" posZ="23.8" rotX="0" rotY="0" rotZ="272"></object>
+    <object id="object (paypark_lan03) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="4640" doublesided="false" scale="1" dimension="0" posX="1701.8" posY="-1140" posZ="24.8" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (vegspetrolpump) (1)" breakable="true" interior="0" alpha="255" model="3465" doublesided="false" scale="1" dimension="0" posX="1744.2" posY="-1145.8" posZ="24.3" rotX="0" rotY="0" rotZ="269.25"></object>
+
+	<!--	Этаж 1	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="1" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="1" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="1" posX="1783.7" posY="-1126.3" posZ="-35.4" rotX="0" rotY="0" rotZ="180"></object>
+	
+    <object id="object (sfse_hub_grgdoor02) (7)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="1" posX="1787.5" posY="-1084" posZ="-33.1" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (18)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="1" posX="1787.5" posY="-1073.9" posZ="-33.1" rotX="0" rotY="0" rotZ="0.5"></object>
+    <object id="object (tunnelentrance) (14)" breakable="true" interior="1" collisions="true" alpha="255" model="972" doublesided="false" scale="1" dimension="1" posX="1806.5" posY="-1143.9" posZ="-38.3" rotX="0" rotY="0" rotZ="269.236"></object>	
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="1" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+	
+	<!--	Этаж 2	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="2" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="2" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (3)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="2" posX="1783.7" posY="-1126.3" posZ="-31.1" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (sfse_hub_grgdoor02) (6)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="2" posX="1787.5" posY="-1084" posZ="-28.8" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (17)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="2" posX="1787.5" posY="-1073.9" posZ="-28.8" rotX="0" rotY="0" rotZ="0.5"></object>
+    <object id="object (sfse_hub_grgdoor02) (27)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="2" posX="1762.8" posY="-1083.9" posZ="-28.8" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (36)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="2" posX="1762.8" posY="-1073.8" posZ="-28.8" rotX="0" rotY="0" rotZ="0"></object>
+	
+	<!--	Этаж 3	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="3" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="3" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (5)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="3" posX="1783.7" posY="-1126.3" posZ="-26.8" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (sfse_hub_grgdoor02) (26)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="3" posX="1762.8" posY="-1083.9" posZ="-24.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (35)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="3" posX="1762.8" posY="-1073.8" posZ="-24.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (14)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="3" posX="1787.5" posY="-1084" posZ="-24.4" rotX="0" rotY="0" rotZ="0.247"></object>
+    <object id="object (sfse_hub_grgdoor02) (16)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="3" posX="1787.5" posY="-1073.9" posZ="-24.4" rotX="0" rotY="0" rotZ="0.5"></object>
+	
+	<!--	Этаж 4	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="4" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="4" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (6)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="4" posX="1783.7" posY="-1126.3" posZ="-22.5" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (tunnelentrance) (22)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="4" posX="1801.5" posY="-1078.5" posZ="-23.2" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (23)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="4" posX="1763.5" posY="-1079" posZ="-23.2" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (sfse_hub_grgdoor02) (25)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="4" posX="1762.8" posY="-1083.9" posZ="-20.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (34)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="4" posX="1762.8" posY="-1073.8" posZ="-20.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (5)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="4" posX="1787.5" posY="-1084" posZ="-20.1" rotX="0" rotY="0" rotZ="0.25"></object>
+    <object id="object (sfse_hub_grgdoor02) (13)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="4" posX="1787.5" posY="-1073.9" posZ="-20.1" rotX="0" rotY="0" rotZ="0.5"></object>
+	
+	<!--	Этаж 5	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="5" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="5" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (7)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="5" posX="1783.7002" posY="-1126.2998" posZ="-18.2" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="25" dimension="5" posX="1746.3" posY="-1029.7" posZ="-40.5" rotX="0" rotY="0" rotZ="0"></object>	
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="5" posX="1747.1" posY="-1184.7" posZ="-17" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="5" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cn2_savgardr2_) (4)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="5" posX="1797.6" posY="-1074.5" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (tunnelentrance) (22)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1801.5" posY="-1078.5" posZ="-23.2" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (23)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1763.5" posY="-1079" posZ="-23.2" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (25)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1759" posY="-1143.8" posZ="-21" rotX="0" rotY="0" rotZ="269.241"></object>
+    <object id="object (tunnelentrance) (26)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1784.1" posY="-1143.8" posZ="-21" rotX="0" rotY="0" rotZ="269.486"></object>
+    <object id="object (tunnelentrance) (1)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1751.8" posY="-1086.9" posZ="-18.2" rotX="0" rotY="0" rotZ="180"></object>
+    <object id="object (tunnelentrance) (2)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1751.5" posY="-1109" posZ="-18.2" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (3)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1751.5" posY="-1137.9" posZ="-18.2" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (13)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="5" posX="1763.6" posY="-1078.9" posZ="-18.2" rotX="0" rotY="0" rotZ="91.245"></object>
+    <object id="object (sfse_hub_grgdoor02) (12)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="5" posX="1787.5" posY="-1073.9" posZ="-15.9" rotX="0" rotY="0" rotZ="0.5"></object>
+    <object id="object (sfse_hub_grgdoor02) (15)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="5" posX="1787.5" posY="-1084" posZ="-15.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (24)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="5" posX="1762.8" posY="-1083.9" posZ="-15.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (33)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="5" posX="1762.8" posY="-1073.8" posZ="-15.9" rotX="0" rotY="0" rotZ="0"></object>
+	
+	<!--	Этаж 6	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="6" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="6" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (8)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="6" posX="1783.7" posY="-1126.3" posZ="-13.9" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="25" dimension="6" posX="1746.3" posY="-1029.7" posZ="-40.5" rotX="0" rotY="0" rotZ="0"></object>	
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="6" posX="1747.1" posY="-1184.7" posZ="-17" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="6" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cn2_savgardr2_) (4)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="6" posX="1797.6" posY="-1074.5" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (tunnelentrance) (1)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1751.8" posY="-1086.9" posZ="-18.2" rotX="0" rotY="0" rotZ="180"></object>
+    <object id="object (tunnelentrance) (2)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1751.5" posY="-1109" posZ="-18.2" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (3)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1751.5" posY="-1137.9" posZ="-18.2" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (13)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1763.6" posY="-1078.9" posZ="-18.2" rotX="0" rotY="0" rotZ="91.245"></object>	
+    <object id="object (sfse_hub_grgdoor02) (23)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="6" posX="1762.8" posY="-1083.9" posZ="-11.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (32)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="6" posX="1762.8" posY="-1073.8" posZ="-11.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (4)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="6" posX="1787.5" posY="-1084" posZ="-11.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (11)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="6" posX="1787.5" posY="-1073.9" posZ="-11.5" rotX="0" rotY="0" rotZ="0.5"></object>
+    <object id="object (tunnelentrance) (18)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1801.5" posY="-1078.4" posZ="-16.2" rotX="0" rotY="0" rotZ="91.241"></object>	
+    <object id="object (tunnelentrance) (27)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1784.1" posY="-1143.8" posZ="-14" rotX="0" rotY="0" rotZ="269.484"></object>
+    <object id="object (tunnelentrance) (30)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="6" posX="1759" posY="-1143.8" posZ="-13.8" rotX="0" rotY="0" rotZ="269.236"></object>
+	
+	<!--	Этаж 7	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="7" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="7" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (9)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="7" posX="1783.7002" posY="-1126.2998" posZ="-9.6" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="25" dimension="7" posX="1746.3" posY="-1029.7" posZ="-40.5" rotX="0" rotY="0" rotZ="0"></object>	
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="7" posX="1747.1" posY="-1184.7" posZ="-17" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="7" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cn2_savgardr2_) (4)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="7" posX="1797.6" posY="-1074.5" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (tunnelentrance) (27)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1784.1" posY="-1143.8" posZ="-14" rotX="0" rotY="0" rotZ="269.484"></object>
+    <object id="object (tunnelentrance) (30)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1759" posY="-1143.8" posZ="-13.8" rotX="0" rotY="0" rotZ="269.236"></object>
+    <object id="object (sfse_hub_grgdoor02) (3)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="7" posX="1787.5" posY="-1084" posZ="-7.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (10)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="7" posX="1787.5" posY="-1073.9" posZ="-7.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (21)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="7" posX="1762.8" posY="-1083.9" posZ="-7.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (31)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="7" posX="1762.8" posY="-1073.8" posZ="-7.3" rotX="0" rotY="0" rotZ="0"></object>
+	<object id="object (tunnelentrance) (15)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1763.6" posY="-1078.9" posZ="-11.2" rotX="0" rotY="0" rotZ="91.241"></object>	
+    <object id="object (tunnelentrance) (4)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1751.5" posY="-1137.8" posZ="-10.9" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (5)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1751.7" posY="-1109" posZ="-10.9" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (6)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1751.8" posY="-1086.9" posZ="-10.9" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (19)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="7" posX="1801.5" posY="-1078.5" posZ="-8.9" rotX="0" rotY="0" rotZ="91.241"></object>
+	
+	<!--	Этаж 8	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="8" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="8" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (10)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="8" posX="1783.7" posY="-1126.3" posZ="-5.3" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="25" dimension="8" posX="1746.3" posY="-1029.7" posZ="-40.5" rotX="0" rotY="0" rotZ="0"></object>	
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="8" posX="1747.1" posY="-1184.7" posZ="-17" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="8" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cn2_savgardr2_) (4)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="8" posX="1797.6" posY="-1074.5" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (tunnelentrance) (19)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1801.5" posY="-1078.5" posZ="-8.9" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (sfse_hub_grgdoor02) (1)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="8" posX="1787.5" posY="-1084" posZ="-3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (9)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="8" posX="1787.5" posY="-1073.9" posZ="-3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (29)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="8" posX="1762.8" posY="-1073.9" posZ="-3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (30)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="8" posX="1762.8" posY="-1084" posZ="-3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (tunnelentrance) (28)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1784.1" posY="-1143.8" posZ="-7.3" rotX="0" rotY="0" rotZ="269.484"></object>
+    <object id="object (tunnelentrance) (31)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1759" posY="-1143.8" posZ="-6.8" rotX="0" rotY="0" rotZ="269.236"></object>	
+    <object id="object (tunnelentrance) (16)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1763.6" posY="-1078.9" posZ="-4.2" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (7)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1751.7" posY="-1086.9" posZ="-3.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (8)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1751.6" posY="-1109" posZ="-3.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (9)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1751.5" posY="-1137.8" posZ="-3.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (4)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1751.5" posY="-1137.8" posZ="-10.9" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (5)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1751.7" posY="-1109" posZ="-10.9" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (6)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="8" posX="1751.8" posY="-1086.9" posZ="-10.9" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+	<!--	Этаж 9	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="9" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="9" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (11)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="9" posX="1783.7002" posY="-1126.2998" posZ="-1" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="25" dimension="9" posX="1746.3" posY="-1029.7" posZ="-40.5" rotX="0" rotY="0" rotZ="0"></object>	
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="9" posX="1747.1" posY="-1184.7" posZ="-17" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="9" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cn2_savgardr2_) (4)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="9" posX="1797.6" posY="-1074.5" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (tunnelentrance) (20)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1801.5" posY="-1078.6" posZ="-2.2" rotX="0" rotY="0" rotZ="91.241"></object>	
+    <object id="object (tunnelentrance) (29)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1784.1" posY="-1143.8" posZ="-0.6" rotX="0" rotY="0" rotZ="269.484"></object>	
+    <object id="object (tunnelentrance) (32)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1759" posY="-1143.8" posZ="-0.1" rotX="0" rotY="0" rotZ="269.236"></object>	
+    <object id="object (sfse_hub_grgdoor02) (2)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="9" posX="1787.5" posY="-1073.9" posZ="1.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (8)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="9" posX="1787.5" posY="-1084" posZ="1.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (19)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="9" posX="1762.8" posY="-1084" posZ="1.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (28)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="9" posX="1762.8" posY="-1073.9" posZ="1.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (tunnelentrance) (7)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1751.7" posY="-1086.9" posZ="-3.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (8)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1751.6" posY="-1109" posZ="-3.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (9)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1751.5" posY="-1137.8" posZ="-3.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (31)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1759" posY="-1143.8" posZ="-6.8" rotX="0" rotY="0" rotZ="269.236"></object>	
+    <object id="object (tunnelentrance) (16)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="9" posX="1763.6" posY="-1078.9" posZ="-4.2" rotX="0" rotY="0" rotZ="91.241"></object>	
+	
+	<!--	Этаж 10	-->
+    <object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="10" posX="1749.5" posY="-1119.5" posZ="-14.3" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="10" posX="1767.0205" posY="-1111.5" posZ="-35.5" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (этаж стоянки) (12)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="10" posX="1783.7" posY="-1126.3" posZ="3.3" rotX="0" rotY="0" rotZ="179.995"></object>
+    
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="25" dimension="10" posX="1746.3" posY="-1029.7" posZ="-40.5" rotX="0" rotY="0" rotZ="0"></object>	
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="10" posX="1747.1" posY="-1184.7" posZ="-17" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="10" posX="1775.3" posY="-1148" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (cn2_savgardr2_) (4)" breakable="true" interior="1" alpha="255" model="16501" doublesided="false" scale="15" dimension="10" posX="1797.6" posY="-1074.5" posZ="-17" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (tunnelentrance) (10)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1751.5" posY="-1137.8" posZ="3.3" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (11)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1751.6" posY="-1109" posZ="3.3" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (12)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1751.7" posY="-1086.9" posZ="3.3" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (tunnelentrance) (21)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1801.4" posY="-1078.7" posZ="0.8" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (17)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1763.6" posY="-1078.9" posZ="0.8" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (24)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1788.3" posY="-1078.8" posZ="0.8" rotX="0" rotY="0" rotZ="91.241"></object>
+    <object id="object (tunnelentrance) (29)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1784.1" posY="-1143.8" posZ="-0.6" rotX="0" rotY="0" rotZ="269.484"></object>	
+    <object id="object (tunnelentrance) (32)" breakable="true" interior="1" alpha="255" model="972" doublesided="false" scale="1" dimension="10" posX="1759" posY="-1143.8" posZ="-0.1" rotX="0" rotY="0" rotZ="269.236"></object>	
+    <object id="object (sfse_hub_grgdoor02) (2)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="10" posX="1787.5" posY="-1073.9" posZ="1.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfse_hub_grgdoor02) (8)" breakable="true" interior="1" alpha="255" model="11327" doublesided="false" scale="1" dimension="10" posX="1787.5" posY="-1084" posZ="1.3" rotX="0" rotY="0" rotZ="0"></object>
+	
+	
+	
+	<!--	Новый маппинг	-->
+<!-- 	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="1" posX="1750" posY="-1050" posZ="1000" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="2" posX="1750" posY="-1050" posZ="1004" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="3" posX="1750" posY="-1050" posZ="1008" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="4" posX="1750" posY="-1050" posZ="1012" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="5" posX="1750" posY="-1050" posZ="1016" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="6" posX="1750" posY="-1050" posZ="1020" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="7" posX="1750" posY="-1050" posZ="1024" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="8" posX="1750" posY="-1050" posZ="1028" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="9" posX="1750" posY="-1050" posZ="1032" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="10" posX="1750" posY="-1050" posZ="1036" rotX="0" rotY="0" rotZ="90"></object> -->
+	
+
+<!--	Все этажи
+	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="0" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="0" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="84.6" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (3)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="88.9" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (5)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="93.2" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (6)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="97.5" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (7)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="101.8" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (8)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="106.1" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (9)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="110.4" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (10)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="114.7" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (11)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="119" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (12)" breakable="true" interior="1" collisions="true" alpha="255" model="3448" doublesided="false" scale="1" dimension="0" posX="1783.7" posY="-1126.3" posZ="123.3" rotX="0" rotY="0" rotZ="179.995"></object>
+-->
+	
+	<!--	Старый маппинг	-->
+	<!--	Этаж 1	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="1" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="1" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="1" posX="1783.7" posY="-1126.3" posZ="84.6" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (3)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="1" posX="1783.7" posY="-1126.3" posZ="88.9" rotX="0" rotY="0" rotZ="179.995"></object> -->
+	<!--	Этаж 2	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="2" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="2" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (2)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="2" posX="1783.7" posY="-1126.3" posZ="84.6" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (3)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="2" posX="1783.7" posY="-1126.3" posZ="88.9" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (5)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="2" posX="1783.7" posY="-1126.3" posZ="93.2" rotX="0" rotY="0" rotZ="179.995"></object> -->		
+	<!--	Этаж 3	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="3" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="3" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (3)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="3" posX="1783.7" posY="-1126.3" posZ="88.9" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (5)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="3" posX="1783.7" posY="-1126.3" posZ="93.2" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (6)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="3" posX="1783.7" posY="-1126.3" posZ="97.5" rotX="0" rotY="0" rotZ="179.995"></object> -->		
+	<!--	Этаж 4	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="4" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="4" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (5)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="4" posX="1783.7" posY="-1126.3" posZ="93.2" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (6)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="4" posX="1783.7" posY="-1126.3" posZ="97.5" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (7)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="4" posX="1783.7" posY="-1126.3" posZ="101.8" rotX="0" rotY="0" rotZ="179.995"></object> -->		
+	<!--	Этаж 5	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="5" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="5" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (6)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="5" posX="1783.7" posY="-1126.3" posZ="97.5" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (7)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="5" posX="1783.7" posY="-1126.3" posZ="101.8" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (8)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="5" posX="1783.7" posY="-1126.3" posZ="106.1" rotX="0" rotY="0" rotZ="179.995"></object> -->		
+	<!--	Этаж 6	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="6" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="6" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (7)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="6" posX="1783.7" posY="-1126.3" posZ="101.8" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (8)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="6" posX="1783.7" posY="-1126.3" posZ="106.1" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (9)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="6" posX="1783.7" posY="-1126.3" posZ="110.4" rotX="0" rotY="0" rotZ="179.995"></object> -->
+	<!--	Этаж 7	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="7" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="7" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (8)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="7" posX="1783.7" posY="-1126.3" posZ="106.1" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (9)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="7" posX="1783.7" posY="-1126.3" posZ="110.4" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (10)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="7" posX="1783.7" posY="-1126.3" posZ="114.7" rotX="0" rotY="0" rotZ="179.995"></object> -->
+	<!--	Этаж 8	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="8" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="8" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (9)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="8" posX="1783.7" posY="-1126.3" posZ="110.4" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (10)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="8" posX="1783.7" posY="-1126.3" posZ="114.7" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (11)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="8" posX="1783.7" posY="-1126.3" posZ="119" rotX="0" rotY="0" rotZ="179.995"></object> -->
+	<!--	Этаж 9	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="9" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="9" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (10)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="9" posX="1783.7" posY="-1126.3" posZ="114.7" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (11)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="9" posX="1783.7" posY="-1126.3" posZ="119" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (12)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="9" posX="1783.7" posY="-1126.3" posZ="123.3" rotX="0" rotY="0" rotZ="179.995"></object> -->
+	<!--	Этаж 10	-->
+<!-- 	<object id="object (shamparklvl1) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6972" doublesided="false" scale="1" dimension="10" posX="1749.5" posY="-1119.5" posZ="105.7" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (vgn_corpbuild31) (1)" breakable="true" interior="1" collisions="true" alpha="255" model="6971" doublesided="false" scale="1" dimension="10" posX="1767.02" posY="-1111.5" posZ="84.5" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (этаж стоянки) (11)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="10" posX="1783.7" posY="-1126.3" posZ="119" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (этаж стоянки) (12)" breakable="true" interior="1" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="10" posX="1783.7" posY="-1126.3" posZ="123.3" rotX="0" rotY="0" rotZ="179.995"></object> -->
+</map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

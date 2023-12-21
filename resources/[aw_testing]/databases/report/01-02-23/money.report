@@ -1,0 +1,59 @@
+{
+	accounts = { {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 164000,
+			name = "Melson",
+			total = 164000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 22500,
+			level = 0,
+			money = 76412,
+			name = "ThePower",
+			total = 98912
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 52700,
+			name = "slava",
+			total = 52700
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 10000,
+			name = "sendor",
+			total = 10000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 8000,
+			name = "difuz_",
+			total = 8000
+		}, {
+			["bank.deposits"] = 0,
+			["bank.rub"] = 0,
+			["casino.chips"] = 0,
+			level = 0,
+			money = 0,
+			name = "trademc",
+			total = 0
+		} },
+	average = 55602,
+	sum = {
+		["bank.deposits"] = 0,
+		["bank.rub"] = 0,
+		["casino.chips"] = 22500,
+		money = 311112
+	},
+	total = 333612
+}

@@ -1,0 +1,7 @@
+{
+	bonuses_used = { {
+			bonus = "XRAGE",
+			uses = 3
+		} },
+	uses = 3
+}

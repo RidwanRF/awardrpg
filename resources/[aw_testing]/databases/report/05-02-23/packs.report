@@ -1,0 +1,17 @@
+{
+	bestsellers = { {
+			pack_id = "XRAGE",
+			total = 100,
+			uses = 1
+		}, {
+			pack_id = "Новичок",
+			total = 0,
+			uses = 0
+		}, {
+			pack_id = "Мажор",
+			total = 0,
+			uses = 0
+		} },
+	total = 100,
+	uses = 1
+}

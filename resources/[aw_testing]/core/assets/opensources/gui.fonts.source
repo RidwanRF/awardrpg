@@ -1,0 +1,55 @@
+local fonts = {}
+
+mta_dxGetTextWidth = dxGetTextWidth
+function dxGetTextWidth(text, scale, font, colored)
+    if real_sx and sx then
+        return mta_dxGetTextWidth( text, scale, getFontElement(font), colored ) * sx/real_sx
+    else
+        return mta_dxGetTextWidth( text, scale, getFontElement(font), colored )
+    end
+end
+
+mta_dxGetFontHeight = dxGetFontHeight
+function dxGetFontHeight(scale, font)
+    if real_sx and sx then
+        return mta_dxGetFontHeight( scale, getFontElement(font) ) * sx/real_sx
+    else
+        return mta_dxGetFontHeight( scale, getFontElement(font) )
+    end
+end
+
+function clearFonts()
+    for index, font in pairs(fonts) do
+        if isElement(font) then
+            destroyElement(font)
+            fonts[index] = nil
+        end
+    end
+end
+
+function getFontElement(tbl)
+
+    if isElement(tbl) or type(tbl) == 'string' then
+        return tbl
+    end
+
+    local font, _scale, type, mtaDraw = unpack(tbl)
+
+    local scale = mtaDraw and _scale or px_noround(_scale)
+    
+    local fontIndex = font..scale..type
+    if fonts[fontIndex] then
+        return fonts[fontIndex]
+    end
+
+    fonts[fontIndex] = exports.fonts:getFont(font, scale, type)
+    return fonts[fontIndex]
+end
+
+function getFont(...)
+    if GUI_MODULE_UTILS then
+        return {...}
+    else
+        return getFontElement({...})
+    end
+end

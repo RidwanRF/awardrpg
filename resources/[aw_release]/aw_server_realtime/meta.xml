@@ -1,0 +1,4 @@
+<meta>
+	<info author="DKong" version="1.0" type="script" />
+	<script src="srt_s.lua" type="server" />
+</meta>

@@ -1,0 +1,4 @@
+<meta>
+	<script src="client/cMain.lua" type="client" cache="false"/>
+	<file src="assets/aw_ui_hideinterface.png" />
+</meta>

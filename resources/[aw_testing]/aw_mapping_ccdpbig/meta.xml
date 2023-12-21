@@ -1,0 +1,9 @@
+﻿<meta>
+    <info name="Big CCDPlanet Mappings" author="Daeman, Chuba, Autoligenda, Qwertyo" version="17-12-28" type="script" />
+    <script src="files/mapEditorScriptingExtension_c.lua" type="client" />
+    <script src="files/mapEditorScriptingExtension_s.lua" type="server" />
+    <script src="server.lua" type="server" />
+				<!--	Рублевка, элитный райончик, которого нет на карте и Объекты для изготовления оружия	-->
+
+	<map src="usedauto.map" />						<!--	Многоэтажная стоянка б/у салона	-->
+</meta>

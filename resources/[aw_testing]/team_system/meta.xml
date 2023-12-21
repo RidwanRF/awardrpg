@@ -1,0 +1,14 @@
+<meta>
+    <info author="Daeman" type="script" name="Team System" version="17-09-03" />
+    
+    
+    <script src="client.lua" type="client" />
+    <!-- <script src="client.lua" type="client" cache="false"/> -->
+    
+    
+    <script src="server.lua" type="server" />
+    
+    <export function="wipeAccount" type="server" />
+    <export function="endOfWipe" type="server" />
+    <min_mta_version client="1.5.6-9.18728"></min_mta_version>
+</meta>

@@ -1,0 +1,15 @@
+<meta>
+	<info author="Daeman, Zyky" description="Save system by Zyky" version="17-12-27" type="script" />
+	
+	<script src="server.lua"			type="server" />
+	<script src="server_utils.lua"		type="server" />
+	<script src="server_service.lua"	type="server" />
+	
+	<export function="overrideCoordsSaving"			type="server" />	<!-- overrideCoordsSaving(player, x, y, z) -->
+	<export function="cancelCoordsSavingOverride"	type="server" />	<!-- cancelCoordsSavingOverride(player) -->
+	<export function="suppressSpawn"				type="server" />	<!-- suppressSpawn(player) -->
+	<export function="cancelSpawnSuppressing"		type="server" />	<!-- cancelSpawnSuppressing(player) -->
+	<export function="overrideSkin"					type="server" />	<!-- overrideSkin(player, skin) -->
+	<!-- <export function="getOverridenSkin"			type="server" /> -->	<!-- getOverridenSkin(player) -->
+	<!-- <export function="cancelSkinOverride"			type="server" /> -->	<!-- cancelSkinOverride(player) -->
+</meta>

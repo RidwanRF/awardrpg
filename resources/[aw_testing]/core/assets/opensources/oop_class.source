@@ -1,0 +1,43 @@
+function initializeObject( object, data, _object )
+
+	if object.__parent then
+		initializeObject( object.__parent, data, _object or object )
+	end
+
+	object.init(_object or object, data)
+
+end
+
+function createClass(class_name, data)
+
+	local class = loadstring( string.format('return _G.%s_class', class_name) )()
+
+	local object = {}
+	setmetatable(object, {__index = class})
+
+	initializeObject(object, data)
+
+	return object
+
+end
+
+function initClasses()
+
+	for var_name in pairs( _G ) do
+
+		if var_name:find('_class') then
+			local func_name = var_name:gsub('_class', '')
+			if not _G[func_name] then
+				loadstring( string.format("%s = function(data) return createClass('%s', data or {}) end", func_name, func_name) )()
+			end
+		end
+
+	end
+
+end
+
+
+function extendClass(tbl, parent)
+	setmetatable(tbl, { __index = parent})
+	tbl.__parent = parent
+end

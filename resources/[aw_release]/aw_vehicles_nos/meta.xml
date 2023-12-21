@@ -1,0 +1,5 @@
+<meta>
+	<info author="kuban." version="1.2" name="nos" description="Freeroam nos+noblur" type="script"/>
+	<script src="nitro.lua" type="client" />
+	<script src="noblur.lua" type="server"/>
+</meta>

@@ -1,0 +1,23 @@
+<meta>
+
+	<script type="client" src="client/sources.lua" cache="false"/>
+	<script type="client" src="client/main.lua" cache="false"/>
+	<script type="client" src="client/gui.lua" cache="false"/>
+	<script type="client" src="client/action_gui.lua" cache="false"/>
+
+	<script type="shared" src="shared/shared.lua" cache="false"/>
+
+	<file src="assets/images/bg.png"/>
+	<file src="assets/images/ac1.png"/>
+	<file src="assets/images/ac2.png"/>
+	<file src="assets/images/ac3.png"/>
+	<file src="assets/images/ac3_shadow.png"/>
+
+	<export function="notify" type="shared"/>
+	<export function="actionNotify" type="shared"/>
+
+	<download_priority_group>10</download_priority_group>
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+	
+	<oop>true</oop>
+</meta>

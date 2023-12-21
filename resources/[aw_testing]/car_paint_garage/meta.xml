@@ -1,0 +1,22 @@
+<meta>
+    <info author="Daeman, Wherry" version="17-02-03" name="Car paint garage" type="script"/>
+    <oop>true</oop>
+
+
+    <script type="shared" cache="false" src="shared/config.lua"/>
+    <script type="shared" cache="false" src="shared/utils.lua"/>
+    <script type="client" cache="false" src="client/camera.lua"/>
+    <script type="client" cache="false" src="client/gui.lua"/>
+    <script type="client" cache="false" src="client/colorpicker.lua"/>
+    <script type="client" cache="false" src="client/enter_exit.lua"/>
+    <script type="client" cache="false" src="client/main.lua"/>
+
+
+    <script type="server" src="server/dimensions.lua"/>
+    <script type="server" src="server/enter_exit.lua"/>
+    <script type="server" src="server/buying.lua"/>
+
+    <file src="assets/images/palette.png"/>
+    <file src="assets/images/cursor.png"/>
+    <file src="assets/images/alpha.png"/>
+</meta>

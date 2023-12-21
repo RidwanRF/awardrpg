@@ -1,0 +1,49 @@
+﻿<meta>
+	<min_mta_version client="1.5.2-9.07903" server="1.3.4-0.00000" />
+	
+	<oop>true</oop>
+
+	<script src="client/client_dx.lua" type="client" cache="false"/>
+	<script src="client/util.lua" type="client" cache="false"/>
+
+	<script src="shared/shared.lua"						type="shared" cache="false" />
+	<script src="client/client_utils.lua"				type="client" cache="false" />
+
+	<script src="client/client_main.lua"				type="client" cache="false" />
+	<script src="client/client_objects.lua"			 	type="client" cache="false" />
+
+	<script src="server/server_main.lua" 				type="server" cache="false" />
+	<script src="server/bank_clearer.lua"				type="server" cache="false" />
+	
+	<export function="convertCurrency" type="client" />			<!-- convertCurrency(amount, curFrom, curTo) -->
+	<export function="getPlayerBankMoney" type="client" />		<!-- getPlayerBankMoney(currency) -->
+	
+	<export function="convertCurrency" type="server" />			<!-- convertCurrency(amount, curFrom, curTo) -->
+	<export function="getAccountBankMoney" type="server" />		<!-- getAccountBankMoney(account, currency) -->
+	<export function="giveAccountBankMoney" type="server" />	<!-- giveAccountBankMoney(account, amount, currency) -->
+	<export function="takeAccountBankMoney" type="server" />	<!-- takeAccountBankMoney(account, amount, currency) -->
+	<export function="getPlayerBankMoney" type="server" />		<!-- getPlayerBankMoney(player, currency) -->
+	<export function="givePlayerBankMoney" type="server" />		<!-- givePlayerBankMoney(player, amount, currency) -->
+	<export function="takePlayerBankMoney" type="server" />		<!-- takePlayerBankMoney(player, amount, currency) -->
+	<export function="payoutAll" type="server" />				<!-- payoutAll() -->	
+
+
+
+
+	<file src="file/Montserrat-Medium.ttf"/>
+	<file src="file/Montserrat-Regular.ttf"/>
+	<file src="file/Montserrat-SemiBold.ttf"/>
+
+	<file src="file/fon.png"/>
+	<file src="file/button.png"/>
+	<file src="file/button2.png"/>
+	<file src="file/type.png"/>
+	<file src="file/typeSelected.png"/>
+	<file src="file/input.png"/>
+	<file src="file/bank.png"/>
+	<file src="file/bankSelected.png"/>
+	<file src="file/tick.png"/>
+	<file src="file/tickSelected.png"/>
+	<file src="file/buttonSec.png"/>
+	<file src="file/tickBack.png"/>
+</meta>

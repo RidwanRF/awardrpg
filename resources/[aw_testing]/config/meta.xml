@@ -1,0 +1,10 @@
+<meta>
+	<info author="Lightning!,Daeman" type="script" version="2017-08-03" name="Server-dependent config" />
+	
+	
+	<script src="shared.lua" cache="false" type="shared"/>
+	
+	
+	<export function="getCCDPlanetNumber" type="shared" />
+	<export function="getCCDPlanetName" type="shared" />
+</meta>

@@ -1,0 +1,64 @@
+<meta>
+	
+	<script src="shared/shared.lua" type="shared" cache="false"/>
+	<script src="shared/include.lua" type="shared" cache="false"/>
+	<script src="shared/includes.lua" type="shared" cache="false"/>
+
+	<script src="server/server.lua" type="server"/>
+	<script src="server/create_includes.lua" type="server"/>
+	<script src="client/client.lua" type="client" cache="false"/>
+	<script src="client/graphics.lua" type="client" cache="false"/>
+
+	<file src="assets/images/white.png"/>
+	<file src="assets/images/close.png"/>
+	<file src="assets/images/scroll.png"/>
+	<file src="assets/images/shadow.png"/>
+	<file src="assets/images/round.png"/>
+	<file src="assets/images/transparent.png"/>
+	<file src="assets/images/round_empty.png"/>
+	<file src="assets/images/checkbox_bg.png"/>
+	<file src="assets/images/checkbox_body.png"/>
+	<file src="assets/images/lround.png"/>
+	<file src="assets/images/progress_polosa.png"/>
+
+	<file src="assets/images/npc_dialog/bg.png"/>
+	<file src="assets/images/npc_dialog/lines.png"/>
+	<file src="assets/images/npc_dialog/npc.png"/>
+	<file src="assets/images/npc_dialog/line.png"/>
+	<file src="assets/images/npc_dialog/button.png"/>
+	<file src="assets/images/npc_dialog/button_shadow.png"/>
+	<file src="assets/images/npc_dialog/bg_shadow.png"/>
+
+	<file src="assets/images/gui_dialog/bg.png"/>
+	<file src="assets/images/gui_dialog/bg_shadow.png"/>
+	<file src="assets/images/gui_dialog/btn.png"/>
+	<file src="assets/images/gui_dialog/btn_shadow.png"/>
+	<file src="assets/images/gui_dialog/btn_empty.png"/>
+	<file src="assets/images/gui_dialog/btn_empty_shadow.png"/>
+	<file src="assets/images/gui_dialog/ibg.png"/>
+	<file src="assets/images/gui_dialog/ibg_shadow.png"/>
+	<file src="assets/images/gui_dialog/input.png"/>
+	<file src="assets/images/gui_dialog/select_btn_shadow.png"/>
+	<file src="assets/images/gui_dialog/select_btn.png"/>
+	<file src="assets/images/gui_dialog/select_arrow.png"/>
+
+	<file src="assets/graphics/shaders/gradient.fx"/>
+	<file src="assets/graphics/shaders/round_mask.fx"/>
+	<file src="assets/graphics/shaders/mask.fx"/>
+	<file src="assets/graphics/shaders/blur.fx"/>
+	<file src="assets/graphics/shaders/gray.fx"/>
+
+	<export function="getTexture" type="client"/>
+	<export function="getGraphicsElement" type="client"/>
+	<export function="_getServerTimestamp" type="client"/>
+	<export function="include" type="shared"/>
+	<export function="getServerIndex" type="shared"/>
+	<export function="getDonateConvertMul" type="shared"/>
+	<export function="getServerIndex" type="shared"/>
+	<export function="getShader" type="client"/>
+
+	<download_priority_group>999999</download_priority_group>
+	<oop>true</oop>
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+
+</meta>

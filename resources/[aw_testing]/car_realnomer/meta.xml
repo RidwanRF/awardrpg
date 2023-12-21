@@ -1,0 +1,37 @@
+﻿<meta>
+    <info name="RealNomera" author="Daeman" version="17-04-09" />
+    <min_mta_version client="1.5.6-9.18728" server="1.3.4-0.00000" />
+    
+    <script src="client.lua" type="client"  cache="false"/>
+    <script src="generation.lua" type="client"  cache="false"/>
+    <!-- <script src="client.lua"		type="client" cache="false" /> -->
+    <!-- <script src="generation.lua"	type="client" cache="false" /> -->
+    
+    
+    <file src="files/plate_a.png" />
+    <file src="files/plate_b.png" />
+    <file src="files/plate_c.png" />
+    <file src="files/plate_d.png" />
+    <file src="files/plate_e.png" />
+    <file src="files/plate_f.png" />
+    <file src="files/plate_g.png" />
+    <file src="files/plate_h.png" />
+    <file src="files/plate_hgold.png" />
+    <file src="files/plate_hblack.png" />
+    <file src="files/plate_i.png" />
+    <file src="files/plate_j.png" />
+    <file src="files/plate_k.png" />
+    <file src="files/plate_l.png" />
+    <file src="files/plate_m.png" />
+	<file src="files/plate_ph.png" />
+    
+    <file src="files/texReplace.fx" />t&#x0A;&#x09;&#x0A;    
+    <file src="files/RoadNumbers2.0.ttf" />
+    <file src="files/arial.ttf" />
+    <file src="files/arial_bolditalicmt.ttf" />
+    <file src="files/gost_bu.ttf" />
+    <file src="files/EuroFont.ttf" />
+    
+    <export function="generatePlate" type="client" />
+    
+</meta>

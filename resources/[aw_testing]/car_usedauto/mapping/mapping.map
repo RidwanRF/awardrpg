@@ -1,0 +1,17 @@
+<map edf:definitions="editor_main">
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1683.1708" posY="-1086.292" posZ="23.80625" rotX="0" rotY="0" rotZ="97.390259"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1699.7401" posY="-1099.2699" posZ="23.80625" rotX="0" rotY="0" rotZ="186.37773"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1729.1481" posY="-1096.5753" posZ="23.80625" rotX="0" rotY="0" rotZ="184.18445"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1758.5295" posY="-1095.6892" posZ="23.860937" rotX="0" rotY="0" rotZ="179.48444"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1788.215" posY="-1095.5415" posZ="23.860937" rotX="0" rotY="0" rotZ="181.05106"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1817.8856" posY="-1094.818" posZ="23.978125" rotX="0" rotY="0" rotZ="181.05099"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1829.4841" posY="-1057.9481" posZ="23.878124" rotX="-1.2" rotY="0.40000001" rotZ="269.38846"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1822.4684" posY="-1030.193" posZ="23.878124" rotX="-1.2" rotY="0.40000001" rotZ="298.21527"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1668.5962" posY="-1023.8765" posZ="23.706249" rotX="-1.6" rotY="-0.40000001" rotZ="102.71683"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1666.0652" posY="-995.05981" posZ="23.706249" rotX="-1.6" rotY="-0.40000001" rotZ="86.42334"></object>
+    <object dimension="0" interior="0" model="8645" owner="autoligenda" posX="1666.3708" posY="-994.9787" posZ="23.706249" rotX="-1.6" rotY="-0.40000001" rotZ="86.42334"></object>
+    <object dimension="0" interior="0" model="5837" owner="autoligenda" posX="1673.6951" posY="-1050.99" posZ="24.588343" rotX="-0.40000001" rotY="-1.110223e-16" rotZ="205.80446"></object>
+    <object dimension="0" interior="0" model="983" owner="autoligenda" posX="1675.0457" posY="-1045.0792" posZ="23.706228" rotX="-0.40000001" rotY="-1.110223e-16" rotZ="197.41679"></object>
+    <object dimension="0" interior="0" model="5837" owner="autoligenda" posX="1676.0142" posY="-1062.0291" posZ="24.598438" rotX="-0.40000001" rotY="-1.110223e-16" rotZ="5.2691345"></object>
+    <object dimension="0" interior="0" model="983" owner="autoligenda" posX="1680.5697" posY="-1065.6606" posZ="23.698437" rotX="-0.40000001" rotY="-1.110223e-16" rotZ="39.422668"></object>
+</map>

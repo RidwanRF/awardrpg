@@ -1,0 +1,15 @@
+client/core.lua
+
+client/gui/guimanager.lua
+client/gui/templates/default.lua
+
+shared/variables/handlingMTA.lua
+shared/wrappers/handling.lua
+
+client/gui/languages/english.lua
+client/gui/languages/russian.lua
+
+server/core.lua
+server/utils.lua
+
+-- ×ÅÍÄÆ

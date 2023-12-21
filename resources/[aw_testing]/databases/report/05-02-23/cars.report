@@ -1,0 +1,32 @@
+{
+	bestsellers = { {
+			bought = 1,
+			car_name = "Mercedes CLS 63",
+			total = 300000
+		}, {
+			bought = 2,
+			car_name = "Lada VAZ 2106",
+			total = 26000
+		} },
+	bought = 3,
+	database_total = { {
+			count = 11,
+			name = " Скутер"
+		}, {
+			count = 4,
+			name = "Nissan Silvia S15"
+		}, {
+			count = 2,
+			name = "Lada VAZ 2106"
+		}, {
+			count = 1,
+			name = "VAZ 2107"
+		}, {
+			count = 1,
+			name = false
+		}, {
+			count = 1,
+			name = "Mercedes CLS 63"
+		} },
+	total = 326000
+}

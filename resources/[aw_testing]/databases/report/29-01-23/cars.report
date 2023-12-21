@@ -1,0 +1,6 @@
+{
+	bestsellers = {},
+	bought = 0,
+	database_total = {},
+	total = 0
+}

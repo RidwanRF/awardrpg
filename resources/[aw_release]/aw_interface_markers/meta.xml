@@ -1,0 +1,8 @@
+<meta>
+    <script src="s_core.lua" type="server" cache="false" validate="true"/>
+    <script src="c_core.lua" type="client" cache="false" validate="true"/>
+
+    <export function="setMarkerTexture" type="shared"/>
+    <file src="files/hexagon.png"/>
+    <file src="files/default.png"/>
+</meta>

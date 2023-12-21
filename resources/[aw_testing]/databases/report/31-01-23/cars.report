@@ -1,0 +1,15 @@
+{
+	bestsellers = {},
+	bought = 0,
+	database_total = { {
+			count = 3,
+			name = "Nissan Silvia S15"
+		}, {
+			count = 3,
+			name = " Скутер"
+		}, {
+			count = 1,
+			name = false
+		} },
+	total = 0
+}

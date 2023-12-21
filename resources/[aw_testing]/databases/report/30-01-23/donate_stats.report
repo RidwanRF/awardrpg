@@ -1,0 +1,19 @@
+{
+	accounts = { {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "trademc",
+			total = 0
+		}, {
+			["bank.donate"] = 0,
+			level = 0,
+			name = "Melson",
+			total = 0
+		} },
+	average = 0,
+	groups = {},
+	sum = {
+		["bank.donate"] = 0
+	},
+	total = 0
+}

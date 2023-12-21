@@ -1,0 +1,50 @@
+<meta>
+	<info author="Amethyst" type="script" />
+	
+	<oop>true</oop>
+
+    <script type="shared" src="shared/config.lua" cache="false"/>
+    <script type="shared" src="shared/utils.lua" cache="false"/>
+    <script type="shared" src="shared/shop_table.lua" cache="false"/>
+    <script type="shared" src="shared/regions.lua" cache="false"/>
+    <script type="client" src="client/camera.lua" cache="false"/>
+    <script type="client" src="client/enter_exit.lua" cache="false"/>
+    <script type="client" src="client/car_preview.lua" cache="false"/>
+    <script type="client" src="client/colorpicker.lua" cache="false"/>
+    <script type="client" src="client/gui.lua" cache="false"/>
+    <script type="client" src="client/main.lua" cache="false"/>
+    <script type="client" src="client/testdrive.lua" cache="false"/>
+
+    <script type="server" src="server/enter_exit.lua" cache="false"/>
+    <script type="server" src="server/testdrive.lua" cache="false"/>
+    <script type="server" src="server/buy.lua" cache="false"/>
+
+    <file src="assets/aw_ui_carshop_button_buy1.png" />
+    <file src="assets/aw_ui_carshop_button_buy2.png" />
+    <file src="assets/aw_ui_carshop_button_close1.png" />
+    <file src="assets/aw_ui_carshop_button_close2.png" />
+    <file src="assets/aw_ui_carshop_button_testdrive1.png" />
+    <file src="assets/aw_ui_carshop_button_testdrive2.png" />
+    <file src="assets/aw_ui_carshop_circle.png" />
+    <file src="assets/aw_ui_carshop_info.png" />
+    <file src="assets/aw_ui_carshop_info2.png" />
+    <file src="assets/aw_ui_carshop_slots.png" />
+    <file src="assets/aw_ui_carshop_country.png" />
+
+    <file src="assets/country/britain.png" />
+    <file src="assets/country/russia.png" />
+    <file src="assets/country/germany.png" />
+    <file src="assets/country/italy.png" />
+    <file src="assets/country/france.png" />
+    <file src="assets/country/japan.png" />
+    <file src="assets/country/usa.png" />
+    <file src="assets/country/sweden.png" />
+    <file src="assets/country/ussr.png" />
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+</meta>

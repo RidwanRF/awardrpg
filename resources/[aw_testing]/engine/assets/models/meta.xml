@@ -1,0 +1,59 @@
+<meta>
+	
+	<script src="shared/config.lua" type="shared" cache="false"/>
+	<script src="shared/shared.lua" type="shared" cache="false"/>
+
+	<script src="server/main.lua" type="server" cache="false"/>
+
+	<script src="client/define.lua" type="client" cache="false"/>
+	<script src="client/sources.lua" type="client" cache="false"/>
+	<script src="client/main.lua" type="client" cache="false"/>
+	<script src="client/std_replace.lua" type="client" cache="false"/>
+
+	<oop>true</oop>
+	<download_priority_group>999</download_priority_group>
+
+	<file src="assets/models/casino/slots.dffc"/>
+	<file src="assets/models/casino/slots.txd"/>
+	<file src="assets/models/casino/slots.col"/>
+	<file src="assets/models/casino/table.dffc"/>
+	<file src="assets/models/casino/table.txd"/>
+	<file src="assets/models/casino/table.col"/>
+	<file src="assets/models/casino/bones_cube.dff"/>
+	<file src="assets/models/casino/bones_cube.txd"/>
+	<file src="assets/models/casino/bones_cube.col"/>
+	<file src="assets/models/casino/blackjack.dffc"/>
+	<file src="assets/models/casino/blackjack.txd"/>
+	<file src="assets/models/casino/blackjack.col"/>
+	<file src="assets/models/casino/croupier_1.dff"/>
+	<file src="assets/models/casino/croupier_1.txd"/>
+	<file src="assets/models/casino/croupier_2.dff"/>
+	<file src="assets/models/casino/croupier_2.txd"/>
+	<file src="assets/models/casino/fortune_wheel.col"/>
+	<file src="assets/models/casino/fortune_wheel.dffc"/>
+	<file src="assets/models/casino/fortune_base.dffc"/>
+	<file src="assets/models/casino/fortune_base.col"/>
+	<file src="assets/models/casino/fortune.txd"/>
+	<file src="assets/models/casino/roulette_base.dffc"/>
+	<file src="assets/models/casino/roulette_base.col"/>
+	<file src="assets/models/casino/roulette_wheel.dffc"/>
+	<file src="assets/models/casino/roulette_wheel.col"/>
+	<file src="assets/models/casino/roulette_chip.dffc"/>
+	<file src="assets/models/casino/roulette_ball.dffc"/>
+	<file src="assets/models/casino/roulette.txd"/>
+
+
+	
+	<export function="replaceModel" type="shared"/>
+	<export function="restoreModel" type="shared"/>
+
+	<export function="replaceModels" type="shared"/>
+	<export function="restoreModels" type="shared"/>
+
+	<export function="getLoadingState" type="client"/>
+	<export function="getRAMModels" type="client"/>
+
+	<export function="getConfigSetting" type="shared"/>
+
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+</meta>

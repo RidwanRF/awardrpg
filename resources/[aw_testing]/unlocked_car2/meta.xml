@@ -1,0 +1,18 @@
+<meta>
+<info author="www.mta-resource" description="MTA Resource Repalce Master PRO" version="1.3" type="script" />
+<script src="client.lua" type="client"/>
+<file src="g63.txd" type="client"/>
+<file src="g63.dff" type="client"/>
+<file src="gemera.txd" type="client"/>
+<file src="gemera.dff" type="client"/>
+<file src="gt63s.txd" type="client"/>
+<file src="gt63s.dff" type="client"/>
+<file src="m5e60.txd" type="client"/>
+<file src="m5e60.dff" type="client"/>
+<file src="m5f10.txd" type="client"/>
+<file src="m5f10.dff" type="client"/>
+<file src="fordgt40.txd" type="client"/>
+<file src="fordgt40.dff" type="client"/>
+<file src="prado.txd" type="client"/>
+<file src="prado.dff" type="client"/>
+</meta> 

@@ -1,0 +1,102 @@
+﻿<map edf:definitions="editor_main">
+<!-- 	<removeWorldObject model="11340" radius="1" id="123" posX="-2079.95310" posY="159.20313" posZ="30.86719" interior="0" lodModel="11339" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject model="10983" radius="1" id="345" posX="-2076.65" posY="222.852" posZ="31.2188" interior="0" lodModel="11143" rotX="0" rotY="0" rotZ="0"></removeWorldObject> -->
+
+	<removeWorldObject id="removeWorldObject (demolish1_SFXRF) (1)" radius="26.104996" interior="0" model="3866" lodModel="3869" posX="-2116.6797" posY="131.00781" posZ="42.14844" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (demolish4_SFXRF) (1)" radius="37.800194" interior="0" model="3887" lodModel="3888" posX="-2128.1797" posY="171.46094" posZ="42.42969" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (demolish1_SFXRF) (2)" radius="26.104996" interior="0" model="3866" lodModel="3869" posX="-2126.2109" posY="231.97656" posZ="41.6875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (coveredpath1_SFS) (1)" radius="49.954762" interior="0" model="10987" lodModel="0" posX="-2137.8203" posY="264.28125" posZ="35.78125" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodlight) (1)" radius="10.232071" interior="0" model="3864" lodModel="0" posX="-2111.7625" posY="171.55882" posZ="34.99779" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodbeams) (1)" radius="11.740781" interior="0" model="3872" lodModel="0" posX="-2082.5559" posY="153.1982" posZ="34.64803" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodlight) (2)" radius="10.232071" interior="0" model="3864" lodModel="0" posX="-2082.7183" posY="153.55637" posZ="34.42853" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodlight) (3)" radius="10.232071" interior="0" model="3864" lodModel="0" posX="-2059.9026" posY="205.15062" posZ="35.31044" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (concpipe_SFXRF) (1)" radius="6.9771991" interior="0" model="3865" lodModel="0" posX="-2057.7031" posY="229.80469" posZ="35.35156" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (concpipe_SFXRF) (2)" radius="6.9771991" interior="0" model="3865" lodModel="0" posX="-2057.75" posY="249.95313" posZ="35.59375" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (hubhole1_SFSe) (1)" radius="14.529824" interior="0" model="11223" lodModel="0" posX="-2049.1719" posY="250.32031" posZ="33.07813" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (hubhole4_SFSe) (1)" radius="14.648138" interior="0" model="11226" lodModel="0" posX="-2049.1719" posY="250.32031" posZ="29.375" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (concpipe_SFXRF) (3)" radius="6.9771991" interior="0" model="3865" lodModel="0" posX="-2063.2422" posY="258.75" posZ="35.74219" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodlight) (4)" radius="10.232071" interior="0" model="3864" lodModel="0" posX="-2042.3604" posY="264.89636" posZ="35.70887" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (demolish4_SFXRF) (2)" radius="37.800194" interior="0" model="3887" lodModel="3888" posX="-2066.3594" posY="301.91406" posZ="42.17188" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodlight) (5)" radius="10.232071" interior="0" model="3864" lodModel="0" posX="-2101.4714" posY="230.80734" posZ="34.89637" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (rubbled01_SFS) (1)" radius="15.90798" interior="0" model="10984" lodModel="0" posX="-2126.1562" posY="238.61719" posZ="35.26563" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodbeams) (2)" radius="11.740781" interior="0" model="3872" lodModel="0" posX="-2112.4885" posY="267.66162" posZ="35.11678" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (WS_floodlight) (6)" radius="10.232071" interior="0" model="3864" lodModel="0" posX="-2112.7292" posY="267.96542" posZ="35.33147" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (demolish1_SFXRF) (3)" radius="26.104996" interior="0" model="3866" lodModel="3869" posX="-2123.2891" posY="269.53125" posZ="41.85156" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (rubbled03_SFS) (1)" radius="11.998065" interior="0" model="10986" lodModel="0" posX="-2130.0547" posY="275.5625" posZ="35.375" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (rubbled02_SFS) (1)" radius="15.642301" interior="0" model="10985" lodModel="0" posX="-2099.2734" posY="292.91406" posZ="35.07031" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<removeWorldObject id="removeWorldObject (svet)" radius="100" interior="0" model="3872" lodModel="0" posX="-2081.570312" posY="207.006836" posZ="35.764477" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+	<object id="object (hub_SFS) (1)" breakable="true" interior="0" alpha="255" model="10983" doublesided="false" scale="1" dimension="0" posX="-2076.65" posY="222.852" posZ="31.2188" rotX="0" rotY="0" rotZ="0"></object>
+	
+	<object id="object (vegasxrexhse07) (1)" breakable="true" interior="0" alpha="255" model="3488" doublesided="false" scale="1" dimension="0" posX="-2093.214" posY="157.445" posZ="41.5" rotX="0" rotY="0" rotZ="-90"></object>
+	<object id="object (vegasxrexhse06) (1)" breakable="true" interior="0" alpha="255" model="3487" doublesided="false" scale="1" dimension="0" posX="-2093.215" posY="136.503" posZ="41.6" rotX="0" rotY="0" rotZ="-90"></object>
+	<object id="object (vegasxrexhse03) (1)" breakable="true" interior="0" alpha="255" model="3484" doublesided="false" scale="1" dimension="0" posX="-2093.056" posY="182.803" posZ="41.6" rotX="0" rotY="0" rotZ="-90"></object>
+	<object id="object (vegasxrexhse07) (1)" breakable="true" interior="0" alpha="255" model="3488" doublesided="false" scale="1" dimension="0" posX="-2110.694" posY="230.031" posZ="41.5" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (vegasxrexhse06) (1)" breakable="true" interior="0" alpha="255" model="3487" doublesided="false" scale="1" dimension="0" posX="-2110.690" posY="251.008" posZ="41.6" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (vegasxrexhse03) (1)" breakable="true" interior="0" alpha="255" model="3484" doublesided="false" scale="1" dimension="0" posX="-2110.699" posY="276.650" posZ="41.6" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (vegasxrexhse07) (1)" breakable="true" interior="0" alpha="255" model="3488" doublesided="false" scale="1" dimension="0" posX="-2042.251" posY="260.704" posZ="41.5" rotX="0" rotY="0" rotZ="-90"></object>
+	<object id="object (vegasxrexhse06) (1)" breakable="true" interior="0" alpha="255" model="3487" doublesided="false" scale="1" dimension="0" posX="-2042.271" posY="281.678" posZ="41.6" rotX="0" rotY="0" rotZ="-90"></object>
+	<object id="object (vegasxrexhse06) (1)" breakable="true" interior="0" alpha="255" model="3487" doublesided="false" scale="1" dimension="0" posX="-2042.237" posY="239.739" posZ="41.6" rotX="0" rotY="0" rotZ="-90"></object>
+	<object id="object (vegasxrexhse03) (1)" breakable="true" interior="0" alpha="255" model="3484" doublesided="false" scale="1" dimension="0" posX="-2042.125" posY="214.114" posZ="41.6" rotX="0" rotY="0" rotZ="-90"></object>
+	
+    <object dimension="0" interior="0" model="1597" owner="autoligenda" posX="-2075.3" posY="224.0" posZ="37.561897" rotX="0" rotY="0" rotZ="180"></object>
+    <object dimension="0" interior="0" model="1597" owner="autoligenda" posX="-2075.3" posY="240.0" posZ="37.561897" rotX="0" rotY="0" rotZ="180"></object>
+    <object dimension="0" interior="0" model="1597" owner="autoligenda" posX="-2075.3" posY="256.0" posZ="37.561897" rotX="0" rotY="0" rotZ="180"></object>
+    <object dimension="0" interior="0" model="1597" owner="autoligenda" posX="-2075.3" posY="272.0" posZ="37.561897" rotX="0" rotY="0" rotZ="180"></object>
+	
+	
+    <object dimension="0" interior="0" model="3463" owner="Daeman" posX="-2075.3" posY="232.0" posZ="35.061897" rotX="0" rotY="0" rotZ="0"></object>
+    <object dimension="0" interior="0" model="3463" owner="Daeman" posX="-2075.3" posY="248.0" posZ="35.061897" rotX="0" rotY="0" rotZ="0"></object>
+    <object dimension="0" interior="0" model="3463" owner="Daeman" posX="-2075.3" posY="264.0" posZ="35.068798" rotX="0" rotY="0" rotZ="0"></object>
+    <object dimension="0" interior="0" model="3463" owner="Daeman" posX="-2075.3" posY="280.0" posZ="35.068798" rotX="0" rotY="0" rotZ="0"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2026.509" posY="190.47765" posZ="28.887501" rotX="0" rotY="0" rotZ="89.092194"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2020.046" posY="233.51888" posZ="28.40546" rotX="0" rotY="0" rotZ="101.42773"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2027.8831" posY="303.1228" posZ="34.864063" rotX="0" rotY="0" rotZ="137.20047"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2064.4915" posY="305.73001" posZ="34.864063" rotX="0" rotY="0" rotZ="135.26202"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2126.6299" posY="302.71292" posZ="33.734009" rotX="0" rotY="0" rotZ="103.18991"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2131.4792" posY="223.15161" posZ="34.020313" rotX="0" rotY="0" rotZ="297.20853"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2133.0352" posY="179.82936" posZ="34.521229" rotX="0" rotY="0" rotZ="196.05804"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2136.8848" posY="122.60381" posZ="34.165829" rotX="0" rotY="0" rotZ="181.25558"></object>
+    <object dimension="0" interior="0" model="708" owner="Daeman" posX="-2071.0486" posY="126.37381" posZ="31.119696" rotX="0" rotY="0" rotZ="359.94275"></object>
+    <object dimension="0" interior="0" model="672" owner="Daeman" posX="-2072.2615" posY="181.35179" posZ="32.163605" rotX="0" rotY="0" rotZ="170.7002"></object>
+    <object dimension="0" interior="0" model="672" owner="Daeman" posX="-2070.1992" posY="161.67491" posZ="31.275854" rotX="0" rotY="0" rotZ="164.53247"></object>
+    <object dimension="0" interior="0" model="672" owner="Daeman" posX="-2044.1466" posY="193.60002" posZ="31.778538" rotX="0" rotY="0" rotZ="98.784241"></object>
+    <object dimension="0" interior="0" model="672" owner="Daeman" posX="-2033.2218" posY="190.21893" posZ="30.180298" rotX="0" rotY="0" rotZ="125.92212"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2034.0372" posY="301.07703" posZ="34.164063" rotX="0" rotY="0" rotZ="174.91138"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2042.4884" posY="301.78641" posZ="34.164063" rotX="0" rotY="0" rotZ="162.75214"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2050.4917" posY="302.73593" posZ="34.408638" rotX="0" rotY="0" rotZ="117.99219"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2058.5308" posY="297.75845" posZ="35.174999" rotX="0" rotY="0" rotZ="8.2069092"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2067.5195" posY="298.64911" posZ="34.931568" rotX="0" rotY="0" rotZ="64.421173"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2080.5298" posY="297.56406" posZ="34.515339" rotX="0" rotY="0" rotZ="277.45343"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2087.8452" posY="302.66074" posZ="34.364063" rotX="0" rotY="0" rotZ="159.38586"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2094.8047" posY="299.66058" posZ="34.723541" rotX="0" rotY="0" rotZ="57.196167"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2103.6833" posY="299.73621" posZ="34.147644" rotX="0" rotY="0" rotZ="308.46826"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2114.9548" posY="298.82748" posZ="33.875031" rotX="0" rotY="0" rotZ="287.49805"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2123.6685" posY="301.20395" posZ="34.337879" rotX="0" rotY="0" rotZ="222.82518"></object>
+    <object dimension="0" interior="0" model="778" owner="Daeman" posX="-2131.9111" posY="300.09772" posZ="34.520313" rotX="0" rotY="0" rotZ="220.18193"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2132.3853" posY="293.25589" posZ="33.571877" rotX="0" rotY="0" rotZ="274.26358"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2132.5498" posY="283.07822" posZ="33.571877" rotX="0" rotY="0" rotZ="262.28076"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2134.0718" posY="271.29559" posZ="33.571877" rotX="0" rotY="0" rotZ="248.18329"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2133.4456" posY="263.73557" posZ="33.720314" rotX="0" rotY="0" rotZ="317.4379"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2134.594" posY="255.83377" posZ="33.720314" rotX="0" rotY="0" rotZ="221.04539"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2133.0642" posY="249.22653" posZ="33.720314" rotX="0" rotY="0" rotZ="313.38483"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2133.7327" posY="240.64748" posZ="33.735786" rotX="0" rotY="0" rotZ="194.61226"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2134.2649" posY="229.00609" posZ="33.720314" rotX="0" rotY="0" rotZ="199.72263"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2132.5923" posY="193.08052" posZ="33.990227" rotX="0" rotY="0" rotZ="321.16635"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2133.1113" posY="185.47791" posZ="34.016357" rotX="0" rotY="0" rotZ="273.76297"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2132.635" posY="170.39357" posZ="34.312576" rotX="0" rotY="0" rotZ="219.83961"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2131.9492" posY="159.71327" posZ="34.302582" rotX="0" rotY="0" rotZ="96.83783"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2132.8235" posY="149.18875" posZ="34.44873" rotX="0" rotY="0" rotZ="31.283905"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2134.3928" posY="139.16388" posZ="34.234112" rotX="0" rotY="0" rotZ="161.33447"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2127.6375" posY="122.78819" posZ="34.292702" rotX="0" rotY="0" rotZ="242.92444"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2118.5654" posY="122.99021" posZ="34.29578" rotX="0" rotY="0" rotZ="270.76727"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2109.0532" posY="122.6578" posZ="34.299156" rotX="0" rotY="0" rotZ="293.67584"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2098.1038" posY="122.42325" posZ="34.299946" rotX="0" rotY="0" rotZ="286.2746"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2087.3743" posY="123.53155" posZ="33.345741" rotX="0" rotY="0" rotZ="350.24252"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2077.2241" posY="123.14278" posZ="31.773041" rotX="0" rotY="0" rotZ="344.07477"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2065.845" posY="122.58949" posZ="30.270197" rotX="0" rotY="0" rotZ="344.60342"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2068.665" posY="134.11264" posZ="32.412102" rotX="0" rotY="0" rotZ="18.613922"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2071.6707" posY="143.90613" posZ="32.771568" rotX="0" rotY="0" rotZ="106.54785"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2066.7776" posY="155.84572" posZ="29.09947" rotX="0" rotY="0" rotZ="139.30676"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2069.9033" posY="190.86383" posZ="32.156742" rotX="0" rotY="0" rotZ="12.428101"></object>
+    <object dimension="0" interior="0" model="737" owner="Daeman" posX="-2056.0784" posY="193.35365" posZ="31.077145" rotX="0" rotY="0" rotZ="337.53641"></object>
+</map>

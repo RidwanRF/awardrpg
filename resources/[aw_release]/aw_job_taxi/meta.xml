@@ -1,0 +1,50 @@
+<meta>
+    <info author="Amethyst" type="script" />
+    <oop>true</oop>
+
+    <script src="config.lua" type="shared" cache="false"/>
+
+    <script src="client/utils.lua" type="client" cache="false"/>
+
+	<script src="server/main.lua" type="server" cache="false"/>
+	<script src="server/mysql.lua" type="server" cache="false"/>
+
+	<script src="client/main.lua" type="client" cache="false"/>
+
+    <file src="assets/aw_ui_taxi_blackout.png" />
+    <file src="assets/aw_ui_taxi_black.png" />
+    <file src="assets/aw_ui_taxi_humanblackout.png" />
+    <file src="assets/aw_ui_taxi_human.png" />
+    <file src="assets/aw_ui_taxi_money.png" />
+    <file src="assets/aw_ui_taxi_premium.png" />
+    <file src="assets/aw_ui_taxi_button_close1.png" />
+    <file src="assets/aw_ui_taxi_button_close2.png" />
+    <file src="assets/aw_ui_taxi_button_job1.png" />
+    <file src="assets/aw_ui_taxi_button_job2.png" />
+    <file src="assets/aw_ui_taxi_button_rent1.png" />
+    <file src="assets/aw_ui_taxi_button_rent2.png" />
+    <file src="assets/aw_ui_taxi_button_end1.png" />
+    <file src="assets/aw_ui_taxi_button_end2.png" />
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+    
+	<file src="assets/images/accept.png"/>
+	<file src="assets/images/accept_hover.png"/>
+	<file src="assets/images/exit.png"/>
+	<file src="assets/images/main.png"/>
+	<file src="assets/images/orders.png"/>
+	<file src="assets/images/pane.png"/>
+	<file src="assets/images/round.png"/>
+	<file src="assets/images/round_2.png"/>
+	<file src="assets/images/start.png"/>
+	<file src="assets/images/stats.png"/>
+	<file src="assets/images/string.png"/>
+	<file src="assets/images/refresh.png"/>
+	<file src="assets/images/back.png"/>
+
+</meta>

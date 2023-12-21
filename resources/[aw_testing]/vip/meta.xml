@@ -1,0 +1,14 @@
+<meta>
+	<script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" cache="false" />
+	
+	<export function="addPlayerVipTime" type="server" http="true"/>
+	<export function="givePlayerVIP" type="server"/>
+	<export function="takePlayerVIP" type="server"/>
+	<export function="giveAccVIP" type="server" http="true"/>
+	<export function="takeAccVIP" type="server" http="true"/>
+	<export function="getTimeVIP" type="server"/>
+	<export function="isPlayerVIP" type="server"/>
+	<export function="isPlayerVIP" type="client"/>
+	<export function="getVIPsTable" type="client"/>
+</meta>

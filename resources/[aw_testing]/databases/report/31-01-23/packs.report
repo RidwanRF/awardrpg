@@ -1,0 +1,5 @@
+{
+	bestsellers = {},
+	total = 0,
+	uses = 0
+}

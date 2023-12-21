@@ -1,0 +1,181 @@
+
+	local bindElements = {}
+
+	function getCurrentBindKey()
+		local data = bindElements[currentBindElement] or {}
+		return data.key or 'f'
+	end
+
+	------------------------------------------------
+
+	local curTooltipState
+	local function setTooltipState(state)
+		if curTooltipState == state then return end
+		curTooltipState = state
+
+		local data = bindElements[currentBindElement] or {}
+
+		exports.hud_notify:actionNotify((data.key or ''):upper(), data.text or '',
+			state and 'infinite' or 0)
+	end
+
+	setTooltipState(false)
+
+	------------------------------------------------
+
+	local function onKey(button, state)
+		if button == getCurrentBindKey() and state then
+
+			if currentBindElement and not isCursorShowing() then
+
+				local data = bindElements[currentBindElement] or {}
+
+				if data.func then
+					data.func(currentBindElement)
+				end
+
+				setTooltipState(false)
+
+				if isTimer(tooltipTimer) then killTimer(tooltipTimer) end
+
+				tooltipTimer = setTimer(function()
+
+					if not isCursorShowing() then
+						if isElement(currentBindElement) then
+							setTooltipState(true)
+						end
+						killTimer(tooltipTimer)
+					end
+
+				end, 100, 0)
+
+				cancelEvent()
+
+			end
+			
+		end
+	end
+
+	local function addHandlers()
+		addEventHandler('onClientKey', root, onKey)
+	end
+
+	local function removeHandlers()
+		removeEventHandler('onClientKey', root, onKey)
+	end
+
+	------------------------------------------------
+
+	function callBindHandler(marker)
+		currentBindElement = marker
+		setTooltipState(true)
+		addHandlers()
+	end
+
+	addEventHandler('onClientVehicleExit', root, function(player)
+		if player == localPlayer and waitForExit then
+			callBindHandler(waitForExit)
+			waitForExit = nil
+		end
+	end)
+
+	local function onHit(player)
+		if (
+			source.dimension == player.dimension and
+			source.interior == player.interior and
+			player == localPlayer and bindElements[source]
+		) then
+
+			if not player.vehicle or (bindElements[source].acceptVehicle and localPlayer.vehicleSeat == 0) then
+				callBindHandler(source)
+			else
+				waitForExit = source
+			end
+
+		end
+	end
+
+	local function onLeave(player)
+		if (
+			source.dimension == player.dimension and
+			source.interior == player.interior and
+			player == localPlayer
+		) then
+			setTooltipState(false)
+			waitForExit = nil
+			currentBindElement = nil
+			removeHandlers()
+		end
+	end
+
+	addEventHandler('onClientElementDestroy', resourceRoot, function()
+		if source == currentBindElement then
+			setTooltipState(false)
+			removeHandlers()
+			currentBindElement = nil
+		end
+	end)
+
+	------------------------------------------------
+
+	------------------------------------------------
+
+	function dialogSetSpeaker(name)
+		currentDialogStructure.speaker = name
+	end
+
+	function createBindHandler(element, key, text, func, acceptVehicle)
+
+		if bindElements[element] then return end
+
+		bindElements[element] = {
+			text = text,
+			func = func,
+			key = key,
+			acceptVehicle = acceptVehicle,
+			check = setTimer(function(element)
+
+				if element == currentBindElement then
+					local x,y,z = getElementPosition(localPlayer)
+					local ex,ey,ez = getElementPosition(element)
+
+					local dist = getDistanceBetweenPoints3D(x,y,z, ex,ey,ez)
+
+					if not (dist < 10 and
+						element.interior == localPlayer.interior and
+						element.dimension == localPlayer.dimension
+					) then
+						setTooltipState(false)
+						removeHandlers()
+						currentBindElement = nil
+					end
+
+				end
+
+
+			end, 1000, 0, element),
+		}
+
+		addEventHandler('onClientMarkerHit', element, onHit)
+		addEventHandler('onClientMarkerLeave', element, onLeave)
+
+		if isElementWithinMarker(localPlayer, element) then
+			setTimer(callBindHandler, 500, 1, element)
+		end
+
+	end
+
+	function removeBindHandler(element)
+
+		if currentBindElement == element then
+			setTooltipState(false)
+			currentBindElement = nil
+			removeHandlers()
+		end
+
+		if bindElements[element] and isTimer(bindElements[element].check) then
+			killTimer(bindElements[element].check)
+		end
+
+		bindElements[element] = nil
+	end

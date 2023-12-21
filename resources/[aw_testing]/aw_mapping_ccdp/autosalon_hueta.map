@@ -1,0 +1,58 @@
+<map edf:definitions="editor_main">
+	<object id="object (bigboxtmp15) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="9518" doublesided="false" scale="1" dimension="0" posX="825.90039" posY="-2078.2998" posZ="7.2" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (bigboxtmp15) (2)" breakable="true" interior="0" collisions="true" alpha="255" model="9518" doublesided="false" scale="1" dimension="0" posX="843.5" posY="-2078.30005" posZ="7.2" rotX="0" rotY="0" rotZ="90"></object>
+<!-- 	<object id="object (Carshow2_SFSe) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="0" posX="795.40002" posY="-2064" posZ="13.3" rotX="0" rotY="0" rotZ="180"></object>
+ 	<object id="object (Carshow2_SFSe) (2)" breakable="true" interior="0" collisions="true" alpha="255" model="1872" doublesided="false" scale="1" dimension="0" posX="876.40002" posY="-2091.8999" posZ="13.3" rotX="0" rotY="0" rotZ="0"></object>
+	<object id="object (fenceshit3) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="983" doublesided="false" scale="1" dimension="0" posX="818.5" posY="-2096.5" posZ="12.9" rotX="0" rotY="0" rotZ="0"></object>
+	<object id="object (fenceshit2) (1)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="812" posY="-2099.7" posZ="12.6" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (fenceshit) (1)" breakable="true" interior="0" alpha="255" model="982" doublesided="false" scale="1" dimension="0" posX="849.5" posY="-2114.8" posZ="12.9" rotX="0" rotY="0" rotZ="353"></object>
+	<object id="object (fenceshit2) (2)" breakable="true" interior="0" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="851.29999" posY="-2095.7" posZ="12.9" rotX="0" rotY="0" rotZ="357"></object>
+	<object id="object (fenceshit) (2)" breakable="true" interior="0" alpha="255" model="982" doublesided="false" scale="1" dimension="0" posX="860.70001" posY="-2127.5" posZ="12.9" rotX="0" rotY="0" rotZ="270"></object>
+	<object id="object (fenceshit2) (4)" breakable="true" interior="0" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="859.79999" posY="-2056.2" posZ="12.9" rotX="0" rotY="0" rotZ="90"></object>
+	<object id="object (fenceshit) (3)" breakable="true" interior="0" alpha="255" model="982" doublesided="false" scale="1" dimension="0" posX="838.29999" posY="-2093.8" posZ="12.5" rotX="0" rotY="0" rotZ="270"></object>
+	<object id="object (fenceshit3) (2)" breakable="true" interior="0" alpha="255" model="983" doublesided="false" scale="1" dimension="0" posX="822.29999" posY="-2093.8" posZ="12.5" rotX="0" rotY="0" rotZ="270"></object> -->
+<!-- 	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2063.401" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2081.213" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2107.463" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2063.401" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2081.213" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2094.361" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="879.429" posY="-2107.463" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="885.097" posY="-2113.209" posZ="19.79" rotX="0" rotY="0" rotZ="90"></object>	 -->
+<!-- 	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2092.499" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2074.687" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2061.539" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2048.437" posZ="19.79" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2092.499" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2074.687" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2061.539" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="792.371" posY="-2048.437" posZ="14.209" rotX="0" rotY="0" rotZ="0"></object>
+	<object dimension="0" interior="0" model="3851" owner="Daeman" posX="786.703" posY="-2042.691" posZ="19.79" rotX="0" rotY="0" rotZ="90"></object> -->
+	<object id="object (kmb_container_open) (1)" breakable="true" interior="0" alpha="255" model="3043" doublesided="false" scale="1" dimension="0" posX="836.59998" posY="-2096.7" posZ="5.1" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (kmb_container_open) (2)" breakable="true" interior="0" alpha="255" model="3043" doublesided="false" scale="1" dimension="0" posX="839.70001" posY="-2096.7" posZ="5.1" rotX="0" rotY="0" rotZ="179.995"></object>
+<!-- 	<object id="object (fenceshit2) (3)" breakable="true" interior="0" collisions="true" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="813.09998" posY="-2028.4" posZ="12.6" rotX="0" rotY="0" rotZ="90"></object> -->
+
+	<object id="object (pkr_chp_med05) (2)" breakable="true" interior="0" collisions="true" alpha="255" model="1861" doublesided="false" scale="1" dimension="0" posX="1101.09998" posY="1762.30005" posZ="9.8" rotX="0" rotY="0" rotZ="270"></object>
+
+	<object id="object (des_ranchjetty) (1)" breakable="true" interior="0" alpha="255" model="11495" doublesided="false" scale="1" dimension="0" posX="164.5" posY="-1901.3" posZ="0.4" rotX="0" rotY="0" rotZ="180"></object>
+	<object id="object (des_ranchjetty) (2)" breakable="true" interior="0" alpha="255" model="11495" doublesided="false" scale="1" dimension="0" posX="164.5" posY="-1923.3" posZ="0.4" rotX="0" rotY="0" rotZ="179.995"></object>
+	<object id="object (des_ranchjetty) (3)" breakable="true" interior="0" alpha="255" model="11495" doublesided="false" scale="1" dimension="0" posX="170.5" posY="-1942.8" posZ="0.3" rotX="0" rotY="0" rotZ="213.995"></object>
+	<object id="object (des_ranchjetty) (4)" breakable="true" interior="0" alpha="255" model="11495" doublesided="false" scale="1" dimension="0" posX="164.5" posY="-1879.3" posZ="0.4" rotX="0" rotY="0" rotZ="179.995"></object>
+	
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3322.2258" posY="-7358.5371" posZ="21.905365" rotX="0" rotY="0" rotZ="135.85922"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3315.8391" posY="-7352.3389" posZ="21.905365" rotX="0" rotY="0" rotZ="135.85922"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3309.4521" posY="-7346.1406" posZ="21.905365" rotX="0" rotY="0" rotZ="135.85922"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3315.396" posY="-7339.5376" posZ="21.860729" rotX="0" rotY="0" rotZ="50.742249"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3322.4421" posY="-7345.2964" posZ="21.860729" rotX="0" rotY="0" rotZ="50.742249"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3328.0537" posY="-7352.3359" posZ="21.860729" rotX="0" rotY="0" rotZ="50.742249"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3317.929" posY="-7364.7251" posZ="21.860729" rotX="0" rotY="0" rotZ="50.742249"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3304.0688" posY="-7353.3979" posZ="21.860729" rotX="0" rotY="0" rotZ="50.742249"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3327.5815" posY="-7359.6899" posZ="23.66073" rotX="-87.199997" rotY="0" rotZ="232.76709"></object>
+    <object dimension="0" interior="0" model="3095" owner="autoligenda" posX="3311.1411" posY="-7359.375" posZ="21.860729" rotX="-178.8" rotY="-180.39999" rotZ="137.4538"></object>
+    <object dimension="0" interior="0" model="10831" owner="autoligenda" posX="3317.1287" posY="-7351.0615" posZ="26.860729" rotX="-178.8" rotY="-180.39999" rotZ="229.07364"></object>
+    <object dimension="0" interior="0" model="3499" owner="autoligenda" posX="3326.6309" posY="-7345.0596" posZ="25.916094" rotX="-178.8" rotY="-180.39999" rotZ="269.62952"></object>
+    <object dimension="0" interior="0" model="3499" owner="autoligenda" posX="3327.614" posY="-7347.666" posZ="25.916094" rotX="-178.8" rotY="-180.39999" rotZ="269.62952"></object>
+    <object dimension="0" interior="0" model="3499" owner="autoligenda" posX="3329.8018" posY="-7349.5801" posZ="25.916094" rotX="-178.8" rotY="-180.39999" rotZ="269.62952"></object>
+    <object dimension="0" interior="0" model="3499" owner="autoligenda" posX="3332.8875" posY="-7351.8003" posZ="25.916094" rotX="-178.8" rotY="-180.39999" rotZ="269.62952"></object>
+    <object dimension="0" interior="0" model="3499" owner="autoligenda" posX="3306.7854" posY="-7342.5723" posZ="25.96073" rotX="-178.8" rotY="-180.39999" rotZ="60.970947"></object>
+</map>

@@ -1,0 +1,96 @@
+﻿<meta>
+    <info name="CCDPlanet Radar" author="Daeman" type="script" version="18-01-06" />
+    <min_mta_version client="1.5.6-9.18728" server="1.3.0-9.04570" />
+    
+    <oop>true</oop>
+    <script src="assets/hou_circle.lua" type="client" />
+    <script src="minimap.lua" type="client" cache="true" />
+    <script src="maximap.lua" type="client" cache="true" />
+    
+    <export function="playersShowType" type="client" />
+    <export function="getRadarCoords" type="client" />
+    <export function="renewRadarBorder" type="server" />
+    
+    <file src="assets/mask3d.fx" />
+    <file src="assets/tex_matrix.fx" />
+    <file src="assets/mask.png" />
+    <file src="assets/border.png" />
+    <file src="assets/hud_mask.fx" />
+    <file src="assets/hou_circle.fx" />
+    <file src="assets/blur.fx" />
+    <file src="include/tex_matrix.fx" type="client" />
+    
+    <file src="images/up.png" />
+    <file src="images/down.png" />
+    <file src="images/alpha.png" />
+    <file src="images/water.png" />
+    <file src="images/radar.dds" />
+    <file src="images/localPlayer.png" />
+    <file src="images/0.png" />
+    <file src="images/1.png" />
+    <file src="images/2.png" />
+    <file src="images/3.png" />
+    <file src="images/4.png" />
+    <file src="images/5.png" />
+    <file src="images/6.png" />
+    <file src="images/7.png" />
+    <file src="images/8.png" />
+    <file src="images/9.png" />
+    <file src="images/10.png" />
+    <file src="images/11.png" />
+    <file src="images/12.png" />
+    <file src="images/13.png" />
+    <file src="images/14.png" />
+    <file src="images/15.png" />
+    <file src="images/16.png" />
+    <file src="images/17.png" />
+    <file src="images/18.png" />
+    <file src="images/19.png" />
+    <file src="images/20.png" />
+    <file src="images/21.png" />
+    <file src="images/22.png" />
+    <file src="images/23.png" />
+    <file src="images/24.png" />
+    <file src="images/25.png" />
+    <file src="images/26.png" />
+    <file src="images/27.png" />
+    <file src="images/28.png" />
+    <file src="images/29.png" />
+    <file src="images/30.png" />
+    <file src="images/31.png" />
+    <file src="images/32.png" />
+    <file src="images/33.png" />
+    <file src="images/34.png" />
+    <file src="images/35.png" />
+    <file src="images/36.png" />
+    <file src="images/37.png" />
+    <file src="images/38.png" />
+    <file src="images/39.png" />
+    <file src="images/40.png" />
+    <file src="images/41.png" />
+    <file src="images/42.png" />
+    <file src="images/43.png" />
+    <file src="images/44.png" />
+    <file src="images/45.png" />
+    <file src="images/46.png" />
+    <file src="images/47.png" />
+    <file src="images/48.png" />
+    <file src="images/49.png" />
+    <file src="images/50.png" />
+    <file src="images/51.png" />
+    <file src="images/52.png" />
+    <file src="images/53.png" />
+    <file src="images/54.png" />
+    <file src="images/55.png" />
+    <file src="images/56.png" />
+    <file src="images/57.png" />
+    <file src="images/58.png" />
+    <file src="images/59.png" />
+    <file src="images/60.png" />
+    <file src="images/61.png" />
+    <file src="images/62.png" />
+    <file src="images/63.png" />
+    <file src="images/64.png" />
+    
+    <file src="images/map.png" />
+</meta>

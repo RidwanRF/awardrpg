@@ -1,0 +1,11 @@
+﻿<map edf:definitions="editor_main">
+    <object dimension="0" interior="0" model="1905" owner="autoligenda" posX="785.0" posY="-2056.4" posZ="-23.3" rotX="0" rotY="0" rotZ="0"></object>
+	<object id="object (fenceshit) (3)" breakable="true" interior="0" alpha="255" model="982" doublesided="false" scale="1" dimension="0" posX="838.29999" posY="-2093.8" posZ="12.5" rotX="0" rotY="0" rotZ="270"></object>
+	<object id="object (fenceshit3) (2)" breakable="true" interior="0" alpha="255" model="983" doublesided="false" scale="1" dimension="0" posX="822.29999" posY="-2093.8" posZ="12.5" rotX="0" rotY="0" rotZ="270"></object>
+	
+    <object dimension="0" interior="0" model="1906" owner="autoligenda" posX="890.85" posY="-2056.2" posZ="-30.15" rotX="0" rotY="0" rotZ="90"></object>
+    <object dimension="0" interior="0" model="1907" owner="autoligenda" posX="890.85" posY="-2056.2" posZ="-30.15" rotX="0" rotY="0" rotZ="90"></object>
+	
+	
+	
+</map>

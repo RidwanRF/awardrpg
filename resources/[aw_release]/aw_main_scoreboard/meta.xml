@@ -1,0 +1,24 @@
+<meta>
+
+	<min_mta_version client="1.3.0-9.04431" />
+	<oop>true</oop>
+
+	<file src="assets/aw_ui_scoreboard_blackout.png" />
+	<file src="assets/aw_ui_scoreboard_logotype.png" />
+	<file src="assets/aw_ui_scoreboard_line.png" />
+
+	<file src="assets/line.png" />
+	<file src="assets/main.png" />
+	<file src="assets/scroll.png" />
+	<file src="assets/star.png" />
+	<file src="assets/team_bg.png" />
+	<file src="assets/font.ttf" />
+	<file src="assets/font2.ttf" />
+
+	<script src="shared.lua" type="shared" />
+	<script src="client.lua" type="client" />
+	<script src="server.lua" type = "server"/>
+
+
+
+</meta>
